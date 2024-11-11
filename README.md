@@ -14,7 +14,7 @@ https://webshop.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?clou
 
 ## FIGMA
 
-https://www.figma.com/design/RR7fBuqM3Y2AzLm2G3ueys/WebShop_IKT1?node-id=0-1&node-type=canvas&t=78dj7vd4sksN1LNh-0
+https://www.figma.com/design/I0WaHb0w6Ov6pzfRF52PkY/Untitled?node-id=0-1&node-type=canvas&t=balBgaWABajXEAEH-0
 
 ## Specifikáció
 
