@@ -1,1 +1,4 @@
+----NAVIGÁCIÓS MENÖ----
+
 2024.11.12. - A mai napon a navigációs menün dolgoztam a Figmában. A terv még nem fejeződött be. Elkészült az egésznek az alapja és az Airsoft menü lenyíló része. 
+2024.11.17. - A mai napon a navigációs menün dolgoztam a Figmában. A terv még nem fejeződött be. Elkészült a számítógépes megjelenítési forma.
