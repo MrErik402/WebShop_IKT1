@@ -1,0 +1,2 @@
+2024.11.16. - Kosár oldalsáv alapját megterveztem Figmában (szín, kosár helye, bezárás, font)
+2024.11.17. - A teljes Kosár oldalsávot megterveztem Figmában
