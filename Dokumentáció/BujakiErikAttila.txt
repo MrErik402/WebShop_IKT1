@@ -2,6 +2,10 @@
 
 2024.11.20. - A mai napon a Jirában neveztem át feladatokat és egészítettem ki a még nem elkészített feladatokkal.
 
+----FIGMA----
+
+2024.11.20. (Második IKT) - A mai napon a Figmán belül a "Kész oldalak" pagen az oldalak közötti útvonalakat ábrázoltam. 
+
 ----NAVIGÁCIÓS MENÜ----
 
 2024.11.12. - A mai napon a navigációs menün dolgoztam a Figmában. A terv még nem fejeződött be. Elkészült az egésznek az alapja és az Airsoft menü lenyíló része. 
@@ -11,3 +15,8 @@
 ----BEVÁSÁRLÓ OLDAL SÁV----
 
 2024.11.20. - A mai napon befejeztem a bevásárló oldalsávot. 
+
+----AIRSOFT->FEGYVER----
+
+2024.11.20. (Második IKT) - Elkészítettem az Airsoft menüből lenyíló fegyver oldal tablet grafikus tervét. (Adatfeltöltésre vár)
+
