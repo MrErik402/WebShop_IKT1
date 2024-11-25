@@ -2,3 +2,4 @@
 2024.11.17. - A teljes Kosár oldalsávot megterveztem Figmában
 2024.11.18. - A logót megterveztem, majd átméreteztem a megfelelő méretre
 2024.11.20. - Oldalsáv megtervezése Figmában
+2024.11.25. - Elektronikus játékok grafikus nézetét megterveztem Figmában
