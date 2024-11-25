@@ -5,6 +5,7 @@
 ----FIGMA----
 
 2024.11.20. (Második IKT) - A mai napon a Figmán belül a "Kész oldalak" pagen az oldalak közötti útvonalakat ábrázoltam. 
+2024.11.25. - A mai napon a Figmán belül a "Kész oldalak" pagen az oldalak közötti útvonalakat ábrázoltam. 
 
 ----NAVIGÁCIÓS MENÜ----
 
@@ -20,3 +21,6 @@
 
 2024.11.20. (Második IKT) - Elkészítettem az Airsoft menüből lenyíló fegyver oldal tablet grafikus tervét. (Adatfeltöltésre vár)
 
+----JÁTÉKOK->TÁRSASJÁTÉK----
+
+2024.11.25. - Elkészítettem a társasjáték oldal tablat grafikus tervét.
