@@ -24,3 +24,7 @@
 ----JÁTÉKOK->TÁRSASJÁTÉK----
 
 2024.11.25. - Elkészítettem a társasjáték oldal tablat grafikus tervét.
+
+----AIRSOFT->RUHÁZAT----
+
+2024.12.02. - Elkészítettem az Airsoft ruházat oldal grafikai tervét.
