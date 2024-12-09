@@ -3,3 +3,5 @@
 2024.11.18. - A logót megterveztem, majd átméreteztem a megfelelő méretre
 2024.11.20. - Oldalsáv megtervezése Figmában
 2024.11.25. - Elektronikus játékok grafikus nézetét megterveztem Figmában
+2024.11.26. - Műanyag játékok grafikus nézetét megterveztem Figmában
+2024.11.30-2024.12.03. - Airsoft kiegészítők grafikus nézetét megterveztem Figmában
