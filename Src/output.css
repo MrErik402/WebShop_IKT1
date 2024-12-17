@@ -598,6 +598,10 @@ video {
   float: inline-start;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .-my-3 {
   margin-top: -0.75rem;
   margin-bottom: -0.75rem;
@@ -625,20 +629,12 @@ video {
   margin-top: -0.5rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .flex {
@@ -661,12 +657,20 @@ video {
   height: 1.5rem;
 }
 
+.h-\[4em\] {
+  height: 4em;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-\[4em\] {
-  height: 4em;
+.h-\[170px\] {
+  height: 170px;
+}
+
+.h-1\/3 {
+  height: 33.333333%;
 }
 
 .w-1\/2 {
@@ -685,28 +689,36 @@ video {
   width: 1.5rem;
 }
 
-.w-\[30\%\] {
-  width: 30%;
+.w-\[100\%\] {
+  width: 100%;
 }
 
-.w-full {
-  width: 100%;
+.w-\[30\%\] {
+  width: 30%;
 }
 
 .w-\[32\%\] {
   width: 32%;
 }
 
-.w-\[33\%\] {
-  width: 33%;
-}
-
 .w-\[35\%\] {
   width: 35%;
 }
 
-.w-\[100\%\] {
+.w-full {
   width: 100%;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .max-w-10 {
@@ -743,6 +755,14 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.content-center {
+  align-content: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -761,10 +781,6 @@ video {
 
 .gap-0 {
   gap: 0px;
-}
-
-.place-self-center {
-  place-self: center;
 }
 
 .self-center {
@@ -789,6 +805,19 @@ video {
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#0065c9\] {
@@ -839,6 +868,56 @@ video {
   background-color: rgb(134 112 112 / var(--tw-bg-opacity, 1));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-opacity-30 {
+  --tw-bg-opacity: 0.3;
+}
+
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
+}
+
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
+
+.bg-\[url\(\'\.\.\/Pictures\/Fooldal\/kinevet\.png\'\)\] {
+  background-image: url('../Pictures/Fooldal/kinevet.png');
+}
+
+.bg-\[url\(\'\.\.\/Pictures\/Fooldal\/fegyok\.png\'\)\] {
+  background-image: url('../Pictures/Fooldal/fegyok.png');
+}
+
+.bg-\[url\(\'\.\.\/Pictures\/Fooldal\/katonak\.png\'\)\] {
+  background-image: url('../Pictures/Fooldal/katonak.png');
+}
+
+.bg-\[url\(\'\.\.\/Pictures\/Fooldal\/pcb\.png\'\)\] {
+  background-image: url('../Pictures/Fooldal/pcb.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -877,16 +956,12 @@ video {
   padding-left: 0.5rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -895,6 +970,11 @@ video {
 
 .align-middle {
   vertical-align: middle;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -907,40 +987,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-\[100\%\] {
-  font-size: 100%;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-extrabold {
-  font-weight: 800;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .text-white {
@@ -964,14 +1016,14 @@ video {
     border-radius: 0.5rem;
   }
 
-  .dark\:bg-tarsas1-dark {
-    --tw-bg-opacity: 1;
-    background-color: rgb(219 175 160 / var(--tw-bg-opacity, 1));
-  }
-
   .dark\:bg-\[white\] {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  }
+
+  .dark\:bg-tarsas1-dark {
+    --tw-bg-opacity: 1;
+    background-color: rgb(219 175 160 / var(--tw-bg-opacity, 1));
   }
 
   .dark\:bg-tarsas4-dark {
