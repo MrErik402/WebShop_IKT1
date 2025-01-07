@@ -10,16 +10,14 @@ const Navbar = () => {
                 <summary style="list-style: none;" role="button">
                 <h4  class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center ml-[2em] mr-[2em] mt-[1em] hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl list-none">Airsoft <</h4>
                 </summary>
-                <ul class="fixed bg-tarsas2-light dark:bg-tarsas2-dark" style="text-align: center">
-                <li><a href="#">Accesories</a></li>
+                <ul class=" bg-tarsas2-light dark:bg-tarsas2-dark" style="text-align: center; width: 15em;">
+                <li><a class="" href="#"><img src="../Pictures/Navbar/fegyver.png" class="" style="display: inline">Fegyverek<img src="../Pictures/Navbar/fegyverMasik.png" style="display: inline"></a></li>
                 <hr />
-                <li><a href="#">Casual</a></li>
+                <li><a href="#"><img src="../Pictures/Navbar/polo.png" class="" style="display: inline">Ruházat<img src="../Pictures/Navbar/polo.png" class="" style="display: inline"></a></li>
                 <hr />
-                <li><a href="#">Clothing</a></li>
+                <li><a href="#"><img src="../Pictures/Navbar/tavcso.png" class="" style="display: inline">Kiegészítők<img src="../Pictures/Navbar/tavcso.png" class="" style="display: inline"></a></li>
                 <hr />
-                <li><a href="#">Men</a></li>
-                <hr />
-                <li><a href="#">Women</a></li>
+                <li><a href="#"><img src="../Pictures/Navbar/loszer.png" class="" style="display: inline">Lőszerek<img src="../Pictures/Navbar/loszer.png" class="" style="display: inline"></a></li>
                 <hr />
                 </ul>
                 </details>
