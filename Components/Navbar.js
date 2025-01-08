@@ -1,47 +1,53 @@
 const Navbar = () => {
-    return(
-        `
-            <div class="flex justify-between h-20">
-                <div class="flex flex-col self-center text-start leading-4 text-pretty antialiased">
-                    <h1 class="text-xl font-bold tracking-wide">Minta webáruház</h1>
-                    <p class="text-sm text-gray-700">Szép webdesign-al</p>
-                </div>
-                <div class="flex self-center text-start leading-5 tracking-tight text-pretty antialiased gap-5  text-lg font-semibold pr-20">
-                    <a href="">Home</a>
-                    <details class="dropdown menu-drop">
-                        <summary role="button">
-                          <h4 class="text">Shop ˇ</h4>
-                        </summary>
-                        <ul class="test" style="text-align: justify">
-                          <li><a href="#">Accesories</a></li>
-                          <hr />
-                          <li><a href="#">Casual</a></li>
-                          <hr />
-                          <li><a href="#">Clothing</a></li>
-                          <hr />
-                          <li><a href="#">Men</a></li>
-                          <hr />
-                          <li><a href="#">Women</a></li>
-                          <hr />
-                        </ul>
-                      </details>
-                      <details class="dropdown menu-drop">
-                        <summary role="button">
-                          <h4 class="text">My account ˇ</h4>
-                        </summary>
-                        <ul class="test" style="text-align: justify">
-                          <li><a href="#">Regisztráció</a></li>
-                          <hr />
-                          <li><a href="#">Bejelentkezés</a></li>
-                          <hr />
-                        </ul>
-                      </details>
-                      <a href="">Blog</a>
-                      <a href="">Contact us</a>
-                </div>
-            </div>
-        `
-    )
+  return(
+      `
+
+      <div id="cegLogo"><img src="../Pictures/Fooldal/Cég logó.png" alt="Társas estek" title="Társas estek" class="flex-row h-[4em] float-start dark:bg-[white] dark:bg-opacity-20 dark:rounded-lg"></div>
+      <div id="menupontok" class="flex flex-row-reverse w-[100%] float-end justify-self-center ">
+          <div class="flex flex-row flex-wrap justify-between text-base" id="gombok">
+              
+              <details class="dropdown menu-drop  ">
+              <summary style="list-style: none;" role="button">
+              <h4  class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center ml-[2em] mr-[2em] mt-[1em] hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl list-none">Airsoft <</h4>
+              </summary>
+              <ul class=" bg-tarsas2-light dark:bg-tarsas2-dark" style="text-align: center; width: 17em;">
+              <li><a class="" href="#"><img id="kepNav" src="../Pictures/Navbar/fegyver.png" class="" style="display: inline">Fegyverek<img id="kepNav" src="../Pictures/Navbar/fegyverMasik.png" style="display: inline"></a></li>
+              <hr />
+              <li><a href="#"><img id="kepNav" src="../Pictures/Navbar/polo.png" class="" style="display: inline">Ruházat<img id="kepNav" src="../Pictures/Navbar/polo.png" class="" style="display: inline"></a></li>
+              <hr />
+              <li><a href="#"><img id="kepNav" src="../Pictures/Navbar/tavcso.png" class="" style="display: inline">Kiegészítők<img id="kepNav" src="../Pictures/Navbar/tavcso.png" class="" style="display: inline"></a></li>
+              <hr />
+              <li><a href="#"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class="" style="display: inline">Lőszerek<img id="kepNav" src="../Pictures/Navbar/loszer.png" class="" style="display: inline"></a></li>
+              <hr />
+              </ul>
+              </details>
+
+              <details class="dropdown menu-drop  ">
+              <summary style="list-style: none;" role="button">
+              <h4  class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl">Játékok <</h4>
+              </summary>
+              <ul class=" bg-tarsas2-light dark:bg-tarsas2-dark" style="text-align: center; width: 17em; margin: 15px -10em !important;">
+              <li><a class="" href="#"><img id="kepNav" src="../Pictures/Navbar/jatekos.png" class="" style="display: inline">Társasjáték<img id="kepNav" src="../Pictures/Navbar/jatekos.png" style="display: inline"></a></li>
+              <hr />
+              <li><a href="#"><img id="kepNav" src="../Pictures/Navbar/kocsi.png" class="" style="display: inline">Elektronikus<img id="kepNav" src="../Pictures/Navbar/kocsi.png" class="" style="display: inline"></a></li>
+              <hr />
+              <li><a href="#"><img id="kepNav" src="../Pictures/Navbar/katona.png" class="" style="display: inline;">Műanyag<img id="kepNav" src="../Pictures/Navbar/katona.png" class="" style="display: inline"></a></li>
+              <hr />
+              <li><a href="#"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class="" style="display: inline;">Fegyverek<img id="kepNav" src="../Pictures/Navbar/loszer.png" class="" style="display: inline"></a></li>
+              <hr />
+              </ul>
+              </details>
+              <p class="bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl">Rólunk</p>
+          </div>
+          <div class="h-[5em] w-[6em]" id="kosar">
+              <img src="../Pictures/Fooldal/Kosár.png" alt="Kosárka" class="h-[4em]"> 
+              <p id="rendeltTermekekSzama" class="h-[1.5em] w-[1.5em] text-white ml-[3.6em] align-baseline text-center rounded-full bg-red-600 absolute top-0">0</p>
+          </div>
+
+      </div>
+      
+      `
+  ) 
 }
 
 document.querySelector("#navbar").innerHTML += Navbar()

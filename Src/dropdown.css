@@ -104,7 +104,9 @@
     bottom: 0;
     z-index: 1;
   }
-  img{
+  #kepNav{
     margin-left: 0.75em;
     margin-right: 0.75em;
+    width: 3em; 
+    height: 3em;
   }
