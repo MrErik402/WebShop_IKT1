@@ -11,7 +11,7 @@
         "nev": "Nerf Minecraft Sabrewing",
         "kep": "../../Pictures/Jatekfegyverek/minecraftSabrewing.png",
         "id": 34,
-        "ar": 24999,
+        "ar": 21999,
         "leiras": "Az íj szabályos Elit nyilakat lő ki. Az íj egy speciális tárral rendelkezik 8 nyílvessző számára, amely az íjtest igényeire lett kialakítva, és az egyik oldaláról (konkrétan a felső felében) van behelyezve. Különleges formája miatt a tár nem kompatibilis más blasterek más táraival, pedig szabványos Elite dartshoz készült. A tár csak ehhez a blasterhez készült. Maga a lövöldözés úgy történik, hogy a játékos meghúzza a zsinórt, ami aktiválja a robbanómotort. Ezt követően a blaster közepén lévő ravasz minden egyes megnyomása egy nyílvesszőt lő ki. Így ahhoz, hogy a robbantó tüzeljen, meg kell feszíteni a húrt, és egyidejűleg meg kell nyomni a robbantó közepén lévő gombot.",
         "kedvelt": true
     },
@@ -19,7 +19,7 @@
         "nev": "Nerf Microshot Minecraft Ghast",
         "kep": "../../Pictures/Jatekfegyverek/minecraftGhast.png",
         "id": 35,
-        "ar": 4899,
+        "ar": 4299,
         "leiras": "Egy kis egynyíl kézi pisztoly, amely a MINECRAFT játék készítőivel együttműködésben készült. Beletöltődik a hordóba, manuálisan megnyújtja és elsüti. A csomag két ELITE nyilat tartalmaz. A MICROSHOTS egy gyűjtői sorozat, amely a legnépszerűbb NERF pisztolyokat vagy a legnépszerűbb fegyvereket játékokból alakítja át kis JOLT pisztolyokká. A pisztolyok különféle formákban kaphatók. A népszerű számítógépes játékok fegyvereitől az őrült tárgyakon át a klasszikus NERF pisztolyok kicsinyített változataiig. Ezek a termékek nagyon keresettek a rajongók és a gyűjtők körében egyaránt. A MICROSHOTS kézi pisztolyok egy nyíl kapacitással és teljesen kompatibilisek az ELITE nyilakkal. Viszonylag alacsony ára is előnyös.",
         "kedvelt": false
     },
@@ -27,7 +27,7 @@
         "nev": "Nerf SS Hydro Frenzy",
         "kep": "../../Pictures/Jatekfegyverek/nerfSS.png",
         "id": 36,
-        "ar": 8599,
+        "ar": 8199,
         "leiras": "A Nerf Hydro Frenzy 2 csővel rendelkezik a főben. A cső permetezés közben forog, és minden irányban vízsugarat bocsát ki. A szivattyúzással a kamrát levegővel nyomás alá helyezik. A ravaszt megnyomva két folyamatos vízsugár szabadul fel. A víz feltöltése a kupak kinyitása után történik. Ezután csak nyomja meg a fogantyút, hogy nyomás alá kerüljön, majd nyomja meg a ravaszt. Ez a típusú Super Soaker három vízpermetezési móddal rendelkezik. Attól függően, hogy a narancssárga kupak hogyan van elfordítva a hordónál, a víz akár egyenesen, akár oldalra, vagy véletlenszerűen \"őrülten\" csoboghat körülötted.",
         "kedvelt": false
     },
@@ -35,7 +35,7 @@
         "nev": "Nerf Microshot Fortnite Thunder Crash",
         "kep": "../../Pictures/Jatekfegyverek/fortniteThunder.png",
         "id": 37,
-        "ar": 4999,
+        "ar": 4299,
         "leiras": "Egy kis egynyíl kézi pisztoly, amely a FORTNITE játék készítőivel együttműködésben készült. A limitált kiadású NERF MICROSHOT FORTNITE ELITE nyilak része. Beletöltődik a hordóba, manuálisan nyújtja és tüzel. A csomag két ELITE nyilat tartalmaz a FORTNITE kivitelben. A NERF robbantók olyan lövedékeket lőnek ki, amelyek torkolati sebessége 50-100 FPS a robbantó típusától függően. Ezért játék közben védened kell a szemed! SOHA NE játsszon Nerfet megfelelő szemvédelem nélkül, mert a védetlen szemet eltaláló lövedékek súlyos szemsérülést vagy látásvesztést okozhatnak!",
         "kedvelt": true
     },
@@ -43,7 +43,7 @@
         "nev": "Nerf Dinosquad - Rex-Rampage",
         "kep": "../../Pictures/Jatekfegyverek/dinoSquad.png",
         "id": 38,
-        "ar": 20999,
+        "ar": 20199,
         "leiras": "A megjelenést a Tyrannosaur REX ihlette. A REX-RAMPAGE ELIT nyilakat lő. Egy kivehető 10 nyílból álló íves tárral tölthető. A tartályok kompatibilisek a CLIP rendszerrel és cserélhetők. Beépített viszonylag masszív készlettel rendelkezik, amely nyíltartókat tartalmaz. A fő felett egy integrált (fix) irányzék található. Ez egy elektromos pisztoly, így működéséhez 4 x 1,5 V AA elem szükséges (nem tartozék). A NERF DINOSQUAD egy olyan kiadás, amely tematikusan a dinoszauruszokra összpontosít. Minden pisztoly egy dinoszauruszfajtának van beállítva (pl. REX, TRICERA stb.). A kiadás kézi és elektromos pisztolyokat is tartalmaz magazinokhoz. Az ebből a kiadásból származó termékek szabványos ELITE nyilakat használnak.",
         "kedvelt": false
     },
@@ -51,7 +51,7 @@
         "nev": "Nerf Dinosquad - Stego-Smash",
         "kep": "../../Pictures/Jatekfegyverek/stegosmash.png",
         "id": 39,
-        "ar": 5499,
+        "ar": 5699,
         "leiras": "A NERF DINOSQUAD - STEGOSMASH egy kézi pisztoly a DINOSQUAD kiadásból. A megjelenést a Stegosaurus dinoszaurusz ihlette. Ez egy egyszerű egynyíl pisztoly. Közvetlenül a hordóba töltődik. A fő elöl alatt egy tartó található 4 nyíl számára. Kézi pisztolyról van szó, így működéséhez nincs szükség elemre.",
         "kedvelt": true
     },
