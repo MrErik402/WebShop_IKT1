@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Társas estek - Rólunk</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-tarsas1-light dark:bg-tarsas4-dark h-screen flex flex-col">
+    <div id="navbar" class="flex w-[100%] bg-tarsas3-light dark:bg-tarsas3-dark h-[4em]">
+        <div id="cegLogo"><img src="../Pictures/Fooldal/Cég logó.png" alt="Társas estek" title="Társas estek" class="flex-row h-[4em] float-start dark:bg-[white] dark:bg-opacity-20 dark:rounded-lg"></div>
+        <div id="menupontok" class="flex flex-row-reverse w-[100%] float-end justify-self-center ">
+            <div class="flex flex-row flex-wrap justify-between text-base" id="gombok">
+                <p class="bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center ml-[2em] mr-[2em] mt-[1em] hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl">Airsoft <</p>
+                <p class="bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl">Játékok <</p>
+                <p class="bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl">Rólunk</p>
+            </div>
+            <div class="h-[5em] w-[6em]" id="kosar">
+                <img src="../Pictures/Fooldal/Kosár.png" alt="Kosárka" class="h-[4em]"> 
+                <p id="rendeltTermekekSzama" class="h-[1.5em] w-[1.5em] text-white ml-[3.6em] align-baseline text-center rounded-full bg-red-600 absolute top-0">0</p>
+            </div>
+        </div>
+    </div>
+    <div id="tartalom" class="px-8 py-16">
+        <div id="bemutatkozas" class="flex flex-wrap w-full lg:flex-nowrap gap-4 text-tarsas4-light bg-tarsas2-light rounded-xl p-4">
+            <div id="bemutatkozasSzoveg" class="w-full lg:w-2/5">
+                <p class="text-4xl font-bold mb-3 text-center">Társas estek</p>
+                <p class="text-2xl font-bold text-center mb-3">Játékok és Airsoft Kiegészítők Minden Korosztálynak</p>
+                <p class="font-bold text-justify">Kínálatunkban mindent megtalálsz, ami szükséges egy jó társasjáték esthez, vagy a legújabb airsoft felszereléshez, hogy garantált szórakozást nyújtsunk minden vásárlónknak.</p>
+            </div>
+            <div id="celjaink" class="w-full lg:w-3/5 flex flex-col lg:flex-row lg:flex-wrap lg:justify-between gap-4">
+                <div class="text-4xl font-bold text-center lg:w-full lg:text-start">Célunk:</div>
+                <div class="bg-tarsas3-light rounded-xl px-6 py-2 lg:w-[30%]">
+                    <p class="font-bold text-2xl">1.</p>
+                    <p class="text-black">Izgalmas és szórakoztató termékeket biztosítani minden korosztály számára.</p>
+                </div>
+                <div class="bg-tarsas3-light rounded-xl px-6 py-2 lg:w-[30%]">
+                    <p class="font-bold text-2xl">2.</p>
+                    <p class="text-black">Kínálatunkkal élményeket nyújtani a gyerekeknek és felnőtteknek egyaránt.</p>
+                </div>
+                <div class="bg-tarsas3-light rounded-xl px-6 py-2 lg:w-[30%]">
+                    <p class="font-bold text-2xl">3.</p>
+                    <p class="text-black">Garantálni a szórakozást a társasjátékok és airsoft felszerelések széles választékával.</p>
+                </div>
+            </div>
+        </div>
+        <div id="csapatunk"></div>
+    </div>
+    <div id="lablec" class="w-full bg-tarsas3-light dark:bg-tarsas3-dark dark:text-white py-4 justify-self-end mt-auto flex flex-wrap gap-8 lg:gap-0">
+        <div id="hirlevel" class="flex flex-col w-full lg:w-1/3 px-16 gap-4">
+            <p>Iratkozzon fel a hírlevelünkre!</p>
+            <input type="email" name="" id="" placeholder="E-mail" class="rounded text-lg p-2">
+            <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">Feliratkozás</button>
+        </div>
+        <div id="elerhetoseg" class="flex flex-col w-full lg:w-1/3 px-16 text-center">
+            <p class="mb-4 text-lg">Elérhetőség</p>
+            <p>emailunk@email.com</p>
+            <p>+36 30 582 9419</p>
+        </div>
+        <div id="hivatalos" class="flex flex-col w-full lg:w-1/3 px-16">
+            <div id="logoHivatalos" class="flex h-1/2 justify-between">
+                <img src="../Pictures/Fooldal/Cég logó.png" alt="">
+                <p class="self-center">Társas estek™ 2024</p>
+            </div>
+            <div id="gombokHivatalos" class="flex h-1/2 justify-between px-4">
+            <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">ÁSZF</button>
+            <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">Adatvédelem</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
