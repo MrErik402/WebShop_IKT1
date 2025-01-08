@@ -21,7 +21,22 @@ const Navbar = () => {
                 <hr />
                 </ul>
                 </details>
-                <p class="bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl">Játékok <</p>
+
+                <details class="dropdown menu-drop  ">
+                <summary style="list-style: none;" role="button">
+                <h4  class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl">Játékok <</h4>
+                </summary>
+                <ul class=" bg-tarsas2-light dark:bg-tarsas2-dark" style="text-align: center; width: 17em; margin: 15px -10em !important;">
+                <li><a class="" href="#"><img src="../Pictures/Navbar/jatekos.png" class="" style="display: inline">Társasjáték<img src="../Pictures/Navbar/jatekos.png" style="display: inline"></a></li>
+                <hr />
+                <li><a href="#"><img src="../Pictures/Navbar/kocsi.png" class="" style="display: inline">Elektronikus<img src="../Pictures/Navbar/kocsi.png" class="" style="display: inline"></a></li>
+                <hr />
+                <li><a href="#"><img src="../Pictures/Navbar/katona.png" class="" style="display: inline">Műanyag<img src="../Pictures/Navbar/katona.png" class="" style="display: inline"></a></li>
+                <hr />
+                <li><a href="#"><img src="../Pictures/Navbar/loszer.png" class="" style="display: inline">Fegyverek<img src="../Pictures/Navbar/loszer.png" class="" style="display: inline"></a></li>
+                <hr />
+                </ul>
+                </details>
                 <p class="bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl">Rólunk</p>
             </div>
             <div class="h-[5em] w-[6em]" id="kosar">

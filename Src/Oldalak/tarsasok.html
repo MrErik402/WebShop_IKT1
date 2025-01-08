@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/dropdown.css">
+    <script defer type="module" src="./JavaScript/Components/Main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	
+    <title>Tarsasok</title>
+
+</script>
+</head>
+<body>
+
+    <div class="-navbar">
+        <div id="navbar" class="h-full mx-auto w-full max-w-8xl px-2.5 md:px-20 "> <!-- MaxWidthWrapper, azért kell, hogy megadjunk egy max méretet, reszponzivitás miatt -->
+        </div>
+    </div>
+
+    <div class="popUp hidden  fixed top-0 right-0 max-w-xs bg-[#D5B4B4] z-50 h-screen overflow-y-hidden">
+        <div onClick="closePopUp()" class=" text-center hover:cursor-pointer max-w-10 h-6 p-1 relative left-0">
+            <img src="./Pictures/x-Kosar.png" />
+        </div>
+        <div class="innerContent  overflow-y-scroll h-full w-full px-4 pt-2 pb-8">
+                <div class="flex flex-col items-center mx-auto">
+                    <img class="w-20" src="./Pictures/popupshoppingcart.png" alt="">
+                    <h1 class="pt-2">Összesen</h1>
+                    <h1 class="pt-1 pb-4 font-bold" id="finalPrice">0$</h1>
+                    <button onClick="closePopUp()" class="fizetes ring-1 max-w-screen-lg w-full ring-gray-400 p-1 bg-[#867070] text-white rounded-md">
+                        Fizetés
+                    </button>
+                    <div class="kosarbanLevoTermekek mt-5 flex flex-col gap-2">
+                        
+                    </div>
+                </div>
+        </div>
+      </div>
+      
+
+    <div class="-main mt-5 bg-[#F5EBEB]">
+        <div id="main" class="h-full mx-auto w-full  px-2.5 md:px-20 pt-5 overflow-hidden  "> <!-- MaxWidthWrapper, azért kell, hogy megadjunk egy max méretet, reszponzivitás miatt -->
+            <div class="flex -ml-10">
+                  <div class="flex flex-col flex-initial w-full ">
+                    <div class="my-4">
+                        <div id="termekek" class=" flex flex-wrap max-w-screen-7xl mx-auto self-center 2xl:mx-auto  ">
+                            
+                            
+                        </div>
+                    </div>
+
+                  </div>
+                  <div class="flex flex-col flex-initial max-w-lg w-full ">
+                    <h1 class="font-semibold text-xl">Filter by price</h1>
+                    <div class="lines">
+                        <div class="red-line">&nbsp</div>
+                        <div class="gray-line">&nbsp</div>
+                    </div>
+                        <div class="h-32 flex justify-center items-center ">
+                            <div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full px-1  ">
+                              <div>
+                                <input type="range"
+                                       step="1"
+                                       x-bind:min="min" x-bind:max="max"
+                                       x-on:input="mintrigger"
+                                       x-model="minprice"
+                                       class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+                          
+                                <input type="range" 
+                                       step="1"
+                                       x-bind:min="min" x-bind:max="max"
+                                       x-on:input="maxtrigger"
+                                       x-model="maxprice"
+                                       class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+                          
+                                <div class="relative z-10 h-2 flex flex-col justify-center max-w-7xl mx-auto">
+                                  <div class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-gray-200"></div>
+                          
+                                  <div class="absolute z-20 top-0 bottom-0 rounded-md bg-red-500" x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+                          
+                                  <div class="absolute z-30 w-6 h-6 top-0 left-0 bg-red-300 rounded-full -mt-2 -ml-1" x-bind:style="'left: '+minthumb+'%'"></div>
+                          
+                                  <div class="absolute z-30 w-6 h-6 top-0 right-0 bg-red-300 rounded-full -mt-2 -mr-3" x-bind:style="'right: '+maxthumb+'%'"></div>
+                           
+                                </div>
+                          
+                              </div>
+                              
+                              <div class="flex justify-between items-center pt-5">
+                                    <div class="">
+                                        <button onclick="filter()" class="bg-gray-500/50 py-0.5 px-2 rounded-sm">FILTER</button>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <p>Price:</p>
+                                        <div class="gap-0 flex justify-end">
+                                            <p class="pl-2">Ft</p>
+                                        <input id="min"  type="text" maxlength="4" x-on:input="mintrigger" x-model="minprice" class="text-center max-w-10">
+                                        </div>
+                                        <p class="px-2">-</p>
+                                        <div>
+                                        $<input id="max" type="text" maxlength="4" x-on:input="maxtrigger" x-model="maxprice" class="text-center max-w-10">
+                                    </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          
+                          <script>
+                              function range() {
+                                  return {
+                                    minprice: 1, 
+                                    maxprice: 10000,
+                                    min: 1, 
+                                    max: 10000,
+                                    minthumb: 0,
+                                    maxthumb: 0, 
+                                    
+                                    mintrigger() {   
+                                      this.minprice = Math.min(this.minprice, this.maxprice -1 );      
+                                      this.minthumb = ((this.minprice - this.min) / (this.max - this.min)) * 100;
+                                    },
+                                     
+                                    maxtrigger() {
+                                      this.maxprice = Math.max(this.maxprice, this.minprice + 1); 
+                                      this.maxthumb = 100 - (((this.maxprice - this.min) / (this.max - this.min)) * 100);    
+                                    }, 
+                                  }
+                              }
+                          </script>
+                        </div>
+
+
+                    <div class="-my-3">
+                        <h1 class="font-semibold text-xl">Product categories</h1>
+                        <div class="lines">
+                            <div class="red-line">&nbsp</div>
+                            <div class="gray-line">&nbsp</div>
+                        </div>
+                        <div class="product-list-div">
+                            <ul class="product-list">
+                            <li>Accessories</li>
+                            <li>Casual</li>
+                            <li>Clothing</li>
+                            <li>Men</li>
+                            <li>Woman</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="my-10">
+                        <h1 class="font-semibold text-xl">Top rated products</h1>
+                        <div class="lines">
+                            <div class="red-line">&nbsp</div>
+                            <div class="gray-line">&nbsp</div>
+                        </div>
+
+                        
+                        
+
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./JavaScript/Cart/Cart.js"></script>
+    <script type="module" src="./JavaScript/Products/Products.js"></script>
+    
+</body>
+</html>
