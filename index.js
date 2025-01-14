@@ -1,3 +1,3 @@
 function redirect() {
-    window.location.replace("/Src/WebShop_IKT1/index.html");
+    window.location.replace("/WebShop_IKT1/Src/index.html");
 }
