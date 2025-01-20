@@ -42,6 +42,7 @@ export default async function Casual(){
     try {
         await fetch("/Src/Javascript/Products/Tarsasjatekok/products.json")
         .then(res => res.json())
+        .then(res => console.log(res))
         .then(data => PassData(data))
     } catch (error) {
         console.log(error)
