@@ -1,40 +1,32 @@
-let rangeMin = 100;
-const range = document.querySelector(".range-selected");
-const rangeInput = document.querySelectorAll(".range-input input");
-const rangePrice = document.querySelectorAll(".range-price input");
+window.onload = function () {
+  slideOne();
+  slideTwo();
+};
 
+let sliderOne = document.getElementById("slider-1");
+let sliderTwo = document.getElementById("slider-2");
+let displayValOne = document.getElementById("range1");
+let displayValTwo = document.getElementById("range2");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.getElementById("slider-1").max;
 
-rangeInput.forEach((input) => {
-    input.addEventListener("input", (e) => {
-      let minRange = parseInt(rangeInput[0].value);
-      let maxRange = parseInt(rangeInput[1].value);
-      if (maxRange - minRange < rangeMin) {     
-        if (e.target.className === "min") {
-          rangeInput[0].value = maxRange - rangeMin;        
-        } else {
-          rangeInput[1].value = minRange + rangeMin;        
-        }
-      } else {
-        rangePrice[0].value = minRange;
-        rangePrice[1].value = maxRange;
-        range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
-        range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
-      }
-    });
-  });
-
-  rangePrice.forEach((input) => {
-    input.addEventListener("input", (e) => {
-      let minPrice = rangePrice[0].value;
-      let maxPrice = rangePrice[1].value;
-      if (maxPrice - minPrice >= rangeMin && maxPrice <= rangeInput[1].max) {
-        if (e.target.className === "min") {
-          rangeInput[0].value = minPrice;
-          range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
-        } else {
-          rangeInput[1].value = maxPrice;
-          range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-        }
-      }
-    });
-  });
+function slideOne() {
+  if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+    sliderOne.value = parseInt(sliderTwo.value) - minGap;
+  }
+  displayValOne.textContent = sliderOne.value + "Ft";
+  fillColor();
+}
+function slideTwo() {
+  if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+    sliderTwo.value = parseInt(sliderOne.value) + minGap;
+  }
+  displayValTwo.textContent = sliderTwo.value + "Ft";
+  fillColor();
+}
+function fillColor() {
+  percent1 = (sliderOne.value / sliderMaxValue) * 100;
+  percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+  sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #D5B4B4 ${percent1}% , #D5B4B4 ${percent2}%, #dadae5 ${percent2}%)`;
+}
