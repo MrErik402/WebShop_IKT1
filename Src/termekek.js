@@ -394,9 +394,9 @@ let jatekFegyverek = [
 let muanyag = [
     {
         nev: "McLaren P1",
-        kep: "../Pictures/Muanyag/mcLaren",
+        kep: "../Pictures/Muanyag/mcLaren.png",
         id: 34,
-        ar: 181990,
+        ar: 99000,
         leiras: "„A levegő sima, kanyargó, organikus görbék mentén szeret mozogni, és a biomimetikából, valamint a hidro- és aerodinamikából ihletet merítve tanulmányoztuk pörölycápák és repülő sólymok képeit.\"",
         kedvelt: true,
     },
