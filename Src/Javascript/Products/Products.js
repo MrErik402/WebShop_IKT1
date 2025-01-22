@@ -2,9 +2,30 @@ import TarsasProducts from "./Tarsasjatekok/Tarsasjatekok.js";
 import Elektronikus from "./Elektronikus/Elektronikus.js"
 import Jatekfegyverek from "./Jatekfegyverek/Jatekfegyverek.js"
 
+let minRangeSlider = document.querySelector("#slider-1")
+let maxRangeSlider = document.querySelector("#slider-2")
+
 let minPrice = 1;
-let maxPrice = 50000;
+let maxPrice = 70000;
 window.productList = [];
+
+minRangeSlider.addEventListener("input", () => {
+    minPrice = minRangeSlider.value
+    CatchData()
+})
+
+maxRangeSlider.addEventListener("input", () => {
+    maxPrice = maxRangeSlider.value
+    CatchData()
+})
+
+let szuresRendezettseg = document.querySelector("#rendezes")
+
+
+szuresRendezettseg.addEventListener("change", () => {
+        CatchData(szuresRendezettseg.value)
+    }
+)
 
 const ClearPage = () => {
     document.querySelector("#termekek").innerHTML = "";
@@ -105,12 +126,24 @@ window.vasarlas = function(id) {
 
 let DisplayItems = (products) => {
     document.querySelector("#termekek").innerHTML = ``
-    window.productList = products; 
+    window.productList = products;
+    let ennyiProductsNincs = 0;
 
     products.forEach(product => {
         if(product.ar > maxPrice || product.ar < minPrice) {
+            ennyiProductsNincs++;
+            if(ennyiProductsNincs == products.length){
+                document.querySelector("#termekek").innerHTML += `
+                <div class="flex w-full min-w-[40ch] xl:min-w-[1ch]  xl:max-w-[25ch] 2xl:max-w-[30ch] justify-center mx-auto my-2">
+                    <div class="hover:ring-2 min-w-[40ch]  transition-all hover:ring-black/42 w-full max-w-36 xl:ml-1 lg:max-w-[19ch] xl:min-w-[25ch] 2xl:max-w-[25vh] mx-auto ring-1 ring-black/40 px-2 py-5 rounded-sm shadow-[rgba(0,0,15,0.5)_8px_8px_6px_1px] shadow-black/10 ">
+                        <h1 class="text-center">Nincs ilyen termék!</h1>
+                    </div>
+                </div>
+                `
+            }
             return;
         }
+        
         const shortDescription = product.leiras.substring(0, 100);
         document.querySelector("#termekek").innerHTML += `
         <div class="flex w-full min-w-[40ch] xl:min-w-[1ch]  xl:max-w-[25ch] 2xl:max-w-[30ch] justify-center mx-auto my-2">
@@ -141,8 +174,7 @@ let DisplayItems = (products) => {
 
 let loading = true;
 
-async function CatchData() {
-
+async function CatchData(szuro) {
     if(loading){
         document.querySelector("#termekek").innerHTML += `Betöltés...`
     }
@@ -153,7 +185,17 @@ async function CatchData() {
     }
 
     if(document.title === "Elektronikus") {
-        const elektronikusJatekok = await Elektronikus();
+        let elektronikusJatekok = await Elektronikus();
+
+        if(szuro == "olcsoToDraga"){
+            elektronikusJatekok = elektronikusJatekok.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            elektronikusJatekok = elektronikusJatekok.sort((a, b) => b.ar - a.ar)
+        }
+        DisplayItems(elektronikusJatekok);
+
         DisplayItems(elektronikusJatekok);
     }
 
