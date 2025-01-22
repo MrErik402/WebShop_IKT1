@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../Styles/style.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/dropdown.css">
+    <script defer type="module" src="./JavaScript/Components/Main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	
+    <link rel="stylesheet" href="./double-range.css">
+
+    <title>Elektronikus</title>
+
+</script>
+</head>
+<body>
+
+    <div class="-navbar">
+        <div id="navbar" class="h-full mx-auto w-full max-w-8xl px-2.5 md:px-20 "> <!-- MaxWidthWrapper, azért kell, hogy megadjunk egy max méretet, reszponzivitás miatt -->
+        </div>
+    </div>
+
+    <div class="popUp hidden  fixed top-0 right-0 max-w-xs bg-[#D5B4B4] z-50 h-screen overflow-y-hidden">
+        <div onClick="closePopUp()" class=" text-center hover:cursor-pointer max-w-10 h-6 p-1 relative left-0">
+            <img src="../../Pictures/x-Kosar.png" />
+        </div>
+        <div class="innerContent  overflow-y-scroll h-full w-full px-4 pt-2 pb-8">
+                <div class="flex flex-col items-center mx-auto">
+                    <img class="w-20" src="../../Pictures/popupshoppingcart.png" alt="">
+                    <h1 class="pt-2">Összesen</h1>
+                    <h1 class="pt-1 pb-4 font-bold" id="finalPrice">0$</h1>
+                    <button onClick="closePopUp()" class="fizetes ring-1 max-w-screen-lg w-full ring-gray-400 p-1 bg-[#867070] text-white rounded-md">
+                        Fizetés
+                    </button>
+                    <div class="kosarbanLevoTermekek mt-5 flex flex-col gap-2">
+                        
+                    </div>
+                </div>
+        </div>
+      </div>
+        
+
+    <div class="-main mt-5 bg-tarsas3-dark">
+
+        <div class="xl:hidden flex justify-between text-2xl p-10 self-center items-center space-x-3"> <!-- Szűrő mobilra -->
+            <div class="">
+                <p>Rendezés:</p>
+                <div class="py-1 flex items-center px-4 border-1 rounded-xl border border-black">
+                        
+                        <select id="rendezes" class="flex text-center justify-center w-full">
+                            <option value="default">Alapértelmezett</option>
+                            <option value="olcsoToDraga">Olcsó -> Drága</option>
+                            <option value="dragaToOlcso">Drága -> Olcsó</option>
+                            <option value="a-z">A-Z</option>
+                            <option value="z-a">Z-A</option>
+                        </select>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <div class="bg-white w-20 h-20 rounded-2xl flex justify-center self-center items-center">
+                        <img class="w-14 h-14" src="../../Pictures/filter 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="wrapper flex flex-col mx-auto justify-center">
+            
+            <div class="container">
+              <div class="slider-track"></div>
+              <input type="range" step="500" min="0" max="100000" value="0" id="slider-1" oninput="slideOne()">
+              <input type="range" step="500" min="0" max="100000" value="70000" id="slider-2" oninput="slideTwo()">
+            </div>
+
+            <div class="values">
+                <span id="range1">
+                  0
+                </span>
+                <span> &dash; </span>
+                <span id="range2">
+                  100
+                </span>
+              </div>
+          </div>
+
+
+
+        <div id="main" class="h-full mx-auto w-full  px-2.5 md:px-20 pt-5 overflow-hidden  "> <!-- MaxWidthWrapper, azért kell, hogy megadjunk egy max méretet, reszponzivitás miatt -->
+            <div class="flex xl:-ml-20">
+                  <div class="flex flex-col flex-initial w-full ">
+                    <div class="my-4">
+                        <div id="termekek" class=" flex flex-wrap max-w-full mx-auto self-center 2xl:mx-auto  ">
+                            
+                            
+                        </div>
+                        
+                    </div>
+
+                  </div>
+
+                  
+                  
+
+                  <div class="hidden xl:flex xl:flex-col xl:flex-initial max-w-lg w-full ">
+                    
+
+
+                    <div class="-my-3">
+                        <h1 class="font-semibold text-xl">Product categories</h1>
+                        <div class="lines">
+                            <div class="red-line">&nbsp</div>
+                            <div class="gray-line">&nbsp</div>
+                        </div>
+                        <div class="product-list-div">
+                            <ul class="product-list">
+                            <li>Accessories</li>
+                            <li>Casual</li>
+                            <li>Clothing</li>
+                            <li>Men</li>
+                            <li>Woman</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="my-10">
+                        <h1 class="font-semibold text-xl">Top rated products</h1>
+                        <div class="lines">
+                            <div class="red-line">&nbsp</div>
+                            <div class="gray-line">&nbsp</div>
+                        </div>
+
+                        
+                        
+
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+
+    <script src="./range.js"></script>
+    <script src="../JavaScript/Cart/Cart.js"></script>
+    <script type="module" src="../Javascript/Products/Products.js"></script>
+    
+</body>
+</html>

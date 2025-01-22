@@ -1,0 +1,27 @@
+name: tailwindcss-update
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:          
+  tailwindcss-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: update tailwindcss
+        uses: ZoeyVid/tailwindcss-update@main
+        with:
+          input: ./Src/input.css
+          output: ./Src/output.css
+          params: "--minify -c ./tailwind.config.js"
+          
+      - name: push changes
+        run: |
+          git add --force Src/output.css
+          git config user.name "GitHub"
+          git config user.email "noreply@github.com"
+          git diff-index --quiet HEAD || git commit -sm "tailwindcss-update"
+          git push
