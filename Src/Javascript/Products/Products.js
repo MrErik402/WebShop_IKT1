@@ -11,12 +11,12 @@ window.productList = [];
 
 minRangeSlider.addEventListener("input", () => {
     minPrice = minRangeSlider.value
-    CatchData()
+    CatchData(szuresRendezettseg.value)
 })
 
 maxRangeSlider.addEventListener("input", () => {
     maxPrice = maxRangeSlider.value
-    CatchData()
+    CatchData(szuresRendezettseg.value)
 })
 
 let szuresRendezettseg = document.querySelector("#rendezes")
