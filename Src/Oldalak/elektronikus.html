@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../Styles/style.css">
-    <link rel="stylesheet" href="./Styles/navbar.css">
-    <link rel="stylesheet" href="./Styles/dropdown.css">
+
     <script defer type="module" src="./JavaScript/Components/Main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -17,15 +15,16 @@
 	
     <link rel="stylesheet" href="./double-range.css">
 
+    
+
     <title>Elektronikus</title>
 
 </script>
 </head>
 <body>
 
-    <div class="-navbar">
-        <div id="navbar" class="h-full mx-auto w-full max-w-8xl px-2.5 md:px-20 "> <!-- MaxWidthWrapper, azért kell, hogy megadjunk egy max méretet, reszponzivitás miatt -->
-        </div>
+    <div id="navbar" class="flex w-[100%] bg-tarsas3-light dark:bg-tarsas3-dark h-[4em]">
+     
     </div>
 
     <div class="popUp hidden  fixed top-0 right-0 max-w-xs bg-[#D5B4B4] z-50 h-screen overflow-y-hidden">
@@ -152,6 +151,7 @@
     <script src="./range.js"></script>
     <script src="../JavaScript/Cart/Cart.js"></script>
     <script type="module" src="../Javascript/Products/Products.js"></script>
+    <script src="../Navbar.js"></script>
     
 </body>
 </html>
