@@ -114,7 +114,12 @@ window.inputChange = function (id, num){
         num = 1;
     }
     else if(num == 0){
-        removeThisItem(id);
+        if(confirm("⚠FIGYELEM RENDSZERÜZENET⚠\n\nBiztosan törölni szeretnéd a terméket a kosaradból?")){
+            removeThisItem(id);
+        }
+        else{
+            num = 1;
+        }
     }
 
     const index = cart.findIndex(product => product.id === id)
