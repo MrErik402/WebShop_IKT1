@@ -68,7 +68,7 @@ window.popUp = function(){
                     <h1 class="pt-2 px-1 font-thin">${nev}</h1>
                     <div class="flex gap-2 justify-between px-1 pb-2">
                         <h1 class="text-right float-right font-medium">${formattedAr} Ft</h1>
-                        <input onChange="inputChange(${id}, Number(this.value))" min="1" type="number" value="${quantity}" class="w-8 bg-white/50" />
+                        <input onChange="inputChange(${id}, Number(this.value))" min="0" type="number" value="${quantity}" class="w-8 bg-white/50" />
                     </div>
                     <button class="hover:ring-1 ring-black/20 remove-item p-1 m-1 rounded-lg text-white bg-[#867070]">Eltávolítás</button>
                 </div>
@@ -109,9 +109,18 @@ window.closePopUp = function(){
 }
 
 window.inputChange = function (id, num){
+
+    if(num < 0){
+        num = 1;
+    }
+    else if(num == 0){
+        removeThisItem(id);
+    }
+
     const index = cart.findIndex(product => product.id === id)
     cart[index].quantity = num
     saveTheCart();
+    updateCartNumber();
     popUp();
 }
 
