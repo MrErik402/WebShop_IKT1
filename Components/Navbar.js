@@ -65,7 +65,7 @@ const Navbar = () => {
         </a>
     </div>
     <div class="h-[5em] w-[6em]" id="kosar">
-        <img src="../Pictures/Fooldal/Kosár.png" alt="Kosárka" class="h-[4em]">
+        <img src="../Pictures/Fooldal/Kosár.png" alt="Kosárka" class="h-[4em]" onclick="popUp()">
         <p id="cartAmount"
             class="h-[1.5em] w-[1.5em] text-white ml-[3.6em] align-baseline text-center rounded-full bg-red-600 absolute top-0">
             0</p>

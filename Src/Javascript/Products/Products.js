@@ -82,7 +82,10 @@ window.popUp = function(){
         btn.addEventListener("click", (e) => {
             const id = parseInt(e.target.closest(".item-container").getAttribute("data-id"));
             console.log(id)
-            removeThisItem(id, cart);
+            if(confirm("⚠FIGYELEM RENDSZERÜZENET⚠\n\nEltávolítsuk ezt a tárgyat a kosaradból?")){
+                removeThisItem(id, cart);
+            }
+            
         });
     });
 
@@ -194,8 +197,25 @@ async function CatchData(szuro) {
     }
 
     if(document.title === "Tarsasok") {
-        const tarsasJatekok = await TarsasProducts();
-        DisplayItems(tarsasJatekok);
+        let tarsasProducts = await TarsasProducts();
+
+        if(szuro == "olcsoToDraga"){
+            tarsasProducts = tarsasProducts.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            tarsasProducts = tarsasProducts.sort((a, b) => b.ar - a.ar)
+        }
+        if(szuro == "a-z"){
+            tarsasProducts = tarsasProducts.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            tarsasProducts = tarsasProducts.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
+        
+        DisplayItems(tarsasProducts);
+
+        DisplayItems(tarsasProducts);
     }
 
     if(document.title === "Elektronikus") {
@@ -208,13 +228,36 @@ async function CatchData(szuro) {
         if(szuro == "dragaToOlcso"){
             elektronikusJatekok = elektronikusJatekok.sort((a, b) => b.ar - a.ar)
         }
+        if(szuro == "a-z"){
+            elektronikusJatekok = elektronikusJatekok.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            elektronikusJatekok = elektronikusJatekok.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
         DisplayItems(elektronikusJatekok);
 
         DisplayItems(elektronikusJatekok);
     }
 
     if(document.title === "Jatekfegyverek") {
-        const jatekFegyverek = await Jatekfegyverek();
+        let jatekFegyverek = await Jatekfegyverek();
+
+        if(szuro == "olcsoToDraga"){
+            jatekFegyverek = jatekFegyverek.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            jatekFegyverek = jatekFegyverek.sort((a, b) => b.ar - a.ar)
+        }
+        if(szuro == "a-z"){
+            jatekFegyverek = jatekFegyverek.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            jatekFegyverek = jatekFegyverek.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
+        
+        DisplayItems(jatekFegyverek);
+
         DisplayItems(jatekFegyverek);
     }
     

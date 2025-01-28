@@ -1,6 +1,6 @@
 
 
-export default async function Casual(){
+export default async function TarsasProducts(){
 
     let TarsasProducts = []
 
