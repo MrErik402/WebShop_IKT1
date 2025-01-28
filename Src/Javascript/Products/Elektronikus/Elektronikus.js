@@ -19,7 +19,25 @@ export default async function Casual(){
             this.ar = ar;
             this.leiras = leiras;
             this.img = img;
+
+            const itemId = this.id;
+            const existingItem = popular.find(item => item.id === itemId); //true - false
+
+            if(!existingItem && this.ar === 12999){
+                popular.push({
+                    id: this.id,
+                    img: this.img,
+                    ar: this.ar,
+                    nev: this.nev
+                })
+                saveThePopular()
+            }
+            
+            
         }
+
+
+
         PlaceThisItemToTheCart() {
             const itemId = this.id;
             const existingItem = cart.find(item => item.id === itemId); //true - false
@@ -36,6 +54,7 @@ export default async function Casual(){
                 });
             }
             saveTheCart();
+            
         }
     }
 
