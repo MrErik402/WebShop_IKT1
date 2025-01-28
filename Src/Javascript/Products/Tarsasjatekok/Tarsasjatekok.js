@@ -20,6 +20,9 @@ export default async function TarsasProducts(){
             this.leiras = leiras;
             this.img = img;
         }
+
+        
+
         PlaceThisItemToTheCart() {
             const itemId = this.id;
             const existingItem = cart.find(item => item.id === itemId); //true - false
@@ -37,6 +40,7 @@ export default async function TarsasProducts(){
             }
             saveTheCart();
         }
+
     }
 
     try {

@@ -1,4 +1,5 @@
 let cart = !localStorage.getItem("productsInCart") ? [] : JSON.parse(localStorage.getItem("productsInCart"));
+let popular = !localStorage.getItem("populartsInCart") ? [] : JSON.parse(localStorage.getItem("populartsInCart"));
 
 function updateCartNumber() {
 
@@ -16,7 +17,11 @@ function updateCartNumber() {
 }
 
 function saveTheCart() {
-    
     localStorage.setItem("productsInCart", JSON.stringify(cart));
+}
+
+
+function saveThePopular(){
+    localStorage.setItem("popular", JSON.stringify(popular));
 }
 
