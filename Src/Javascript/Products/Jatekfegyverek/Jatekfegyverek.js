@@ -1,6 +1,6 @@
 
 
-export default async function Casual(){
+export default async function JatekFegyverek(){
 
     let Jatekfegyverek = []
 

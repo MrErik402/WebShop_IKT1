@@ -1,6 +1,6 @@
 
 
-export default async function TarsasProducts(){
+export default async function TarsasJatek(){
 
     let TarsasProducts = []
 
@@ -27,7 +27,7 @@ export default async function TarsasProducts(){
             const itemId = this.id;
             const existingItem = cart.find(item => item.id === itemId); //true - false
     
-            if (existingItem) {
+            if (existingItem) { //ELEKTRONIKUSBÓL VÁR MEGOLDÁT MÉG
                 existingItem.quantity += 1;
             } else {
                 cart.push({
@@ -46,7 +46,6 @@ export default async function TarsasProducts(){
     try {
         await fetch("/Src/Javascript/Products/Tarsasjatekok/products.json")
         .then(res => res.json())
-        .then(res => console.log(res))
         .then(data => PassData(data))
     } catch (error) {
         console.log(error)
