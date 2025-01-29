@@ -2,7 +2,7 @@
 Ez a webshop az első féléves projektmunka feladatunk lesz. Résztvevő csapattagok: Nagyapáti Szilárd, Dóczi Adrián Márk, Bujáki Erik Attila
 
 # Fontos linkek
-
+:)
 ## Deploy
 https://docziadrian.github.io/WebShop_IKT1/Src/index.html
 

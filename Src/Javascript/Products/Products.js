@@ -68,7 +68,7 @@ window.popUp = function(){
                     <h1 class="pt-2 px-1 font-thin">${nev}</h1>
                     <div class="flex gap-2 justify-between px-1 pb-2">
                         <h1 class="text-right float-right font-medium">${formattedAr} Ft</h1>
-                        <input onChange="inputChange(${id}, Number(this.value))" min="1" type="number" value="${quantity}" class="w-8 bg-white/50" />
+                        <input onChange="inputChange(${id}, Number(this.value))" min="0" type="number" value="${quantity}" class="w-8 bg-white/50" />
                     </div>
                     <button class="hover:ring-1 ring-black/20 remove-item p-1 m-1 rounded-lg text-white bg-[#867070]">Eltávolítás</button>
                 </div>
@@ -82,7 +82,10 @@ window.popUp = function(){
         btn.addEventListener("click", (e) => {
             const id = parseInt(e.target.closest(".item-container").getAttribute("data-id"));
             console.log(id)
-            removeThisItem(id, cart);
+            if(confirm("⚠FIGYELEM RENDSZERÜZENET⚠\n\nEltávolítsuk ezt a tárgyat a kosaradból?")){
+                removeThisItem(id, cart);
+            }
+            
         });
     });
 
@@ -109,9 +112,23 @@ window.closePopUp = function(){
 }
 
 window.inputChange = function (id, num){
+
+    if(num < 0){
+        num = 1;
+    }
+    else if(num == 0){
+        if(confirm("⚠FIGYELEM RENDSZERÜZENET⚠\n\nBiztosan törölni szeretnéd a terméket a kosaradból?")){
+            removeThisItem(id);
+        }
+        else{
+            num = 1;
+        }
+    }
+
     const index = cart.findIndex(product => product.id === id)
     cart[index].quantity = num
     saveTheCart();
+    updateCartNumber();
     popUp();
 }
 
@@ -180,8 +197,25 @@ async function CatchData(szuro) {
     }
 
     if(document.title === "Tarsasok") {
-        const tarsasJatekok = await TarsasProducts();
-        DisplayItems(tarsasJatekok);
+        let tarsasProducts = await TarsasProducts();
+
+        if(szuro == "olcsoToDraga"){
+            tarsasProducts = tarsasProducts.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            tarsasProducts = tarsasProducts.sort((a, b) => b.ar - a.ar)
+        }
+        if(szuro == "a-z"){
+            tarsasProducts = tarsasProducts.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            tarsasProducts = tarsasProducts.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
+        
+        DisplayItems(tarsasProducts);
+
+        DisplayItems(tarsasProducts);
     }
 
     if(document.title === "Elektronikus") {
@@ -194,13 +228,36 @@ async function CatchData(szuro) {
         if(szuro == "dragaToOlcso"){
             elektronikusJatekok = elektronikusJatekok.sort((a, b) => b.ar - a.ar)
         }
+        if(szuro == "a-z"){
+            elektronikusJatekok = elektronikusJatekok.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            elektronikusJatekok = elektronikusJatekok.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
         DisplayItems(elektronikusJatekok);
 
         DisplayItems(elektronikusJatekok);
     }
 
     if(document.title === "Jatekfegyverek") {
-        const jatekFegyverek = await Jatekfegyverek();
+        let jatekFegyverek = await Jatekfegyverek();
+
+        if(szuro == "olcsoToDraga"){
+            jatekFegyverek = jatekFegyverek.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            jatekFegyverek = jatekFegyverek.sort((a, b) => b.ar - a.ar)
+        }
+        if(szuro == "a-z"){
+            jatekFegyverek = jatekFegyverek.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            jatekFegyverek = jatekFegyverek.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
+        
+        DisplayItems(jatekFegyverek);
+
         DisplayItems(jatekFegyverek);
     }
     
