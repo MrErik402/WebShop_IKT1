@@ -14,7 +14,7 @@ jobs:
       - name: update tailwindcss
         uses: ZoeyVid/tailwindcss-update@main
         with:
-          input: ./Styles/Src/input.css
+          input: ./Src/Styles/input.css
           output: ./Src/Styles/output.css
           params: "--minify -c ./tailwind.config.js"
           
