@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -50,6 +51,11 @@
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
+=======
+/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
+.\@container {
+  container-type: inline-size;
+>>>>>>> 6990818ffb2a9c1921af5e29e01f0d4507002b23
 }
 
 ::backdrop {

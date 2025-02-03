@@ -1,6 +1,7 @@
 import TarsasProducts from "./Tarsasjatekok/Tarsasjatekok.js";
 import Elektronikus from "./Elektronikus/Elektronikus.js"
 import Jatekfegyverek from "./Jatekfegyverek/Jatekfegyverek.js"
+import Muanyag from "./Muanyag/Muanyag.js"
 
 let minRangeSlider = document.querySelector("#slider-1")
 let maxRangeSlider = document.querySelector("#slider-2")
@@ -286,6 +287,28 @@ async function CatchData(szuro) {
 
         DisplayItems(jatekFegyverek);
     }
+
+    if(document.title === "Muanyag") {
+        let muanyagJatekok = await Muanyag();
+
+        if(szuro == "olcsoToDraga"){
+            muanyagJatekok = muanyagJatekok.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            muanyagJatekok = muanyagJatekok.sort((a, b) => b.ar - a.ar)
+        }
+        if(szuro == "a-z"){
+            muanyagJatekok = muanyagJatekok.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            muanyagJatekok = muanyagJatekok.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
+        DisplayItems(muanyagJatekok);
+
+        DisplayItems(muanyagJatekok);
+    }
+
     
 
     loading = false
