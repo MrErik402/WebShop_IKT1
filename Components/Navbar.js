@@ -87,8 +87,19 @@ const Navbar = () => {
 }
 
 let burgerMenu = document.getElementById("burgerMenu");
+let tartalom = document.getElementById("tartalom");
+let burgerNyitott = false;
 let burgerKattintas = () => {
-    burgerMenu.style.backgroundColor = "blue"
+    if (burgerNyitott) {
+        burgerMenu.style.display = "none";
+        tartalom.style.marginTop = "0em";
+        burgerNyitott = false;
+    } else {
+        burgerMenu.style.display = "flex";
+        //tartalom.style.marginTop = "8em";
+        burgerNyitott = true;
+    }
+
 }
 
 //document.querySelector("#navbar").innerHTML += Navbar()
