@@ -1,6 +1,4 @@
-/*! tailwindcss v4.0.0 | MIT License | https://tailwindcss.com */
-@tailwind base;
-@tailwind components;
+/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
 .\@container {
   container-type: inline-size;
 }
