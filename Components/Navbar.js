@@ -87,19 +87,47 @@ const Navbar = () => {
 }
 
 let burgerMenu = document.getElementById("burgerMenu");
-let tartalom = document.getElementById("tartalom");
 let burgerNyitott = false;
 let burgerKattintas = () => {
     if (burgerNyitott) {
         burgerMenu.style.display = "none";
-        tartalom.style.marginTop = "0em";
         burgerNyitott = false;
     } else {
         burgerMenu.style.display = "flex";
-        //tartalom.style.marginTop = "8em";
         burgerNyitott = true;
     }
-
 }
+
+let airsoftNyitott = false;
+let airsoftBurger = document.getElementById("burgerAirsoftAlmenu");
+let airsoftKatt = () => {
+    if (airsoftNyitott) {
+        airsoftBurger.style.display = "none"
+        airsoftNyitott = false;
+    } else {
+        airsoftBurger.style.display = "flex"
+        airsoftNyitott = true;
+    }
+}
+
+let jatekokNyitott = false;
+let jatekBurger = document.getElementById("burgerJatekokAlmenu");
+let jatekokKatt = () => {
+    if (jatekokNyitott) {
+        jatekBurger.style.display = "none"
+        jatekokNyitott = false;
+    } else {
+        jatekBurger.style.display = "flex"
+        jatekokNyitott = true;
+    }
+}
+
+
+addEventListener("resize", (event) => {
+    if (window.innerWidth >= 1024) {
+        burgerNyitott = true;
+        burgerKattintas();
+    }
+})
 
 //document.querySelector("#navbar").innerHTML += Navbar()
