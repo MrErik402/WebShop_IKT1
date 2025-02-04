@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 	
-    <link rel="stylesheet" href="./Styles/output.css">
+    <link rel="stylesheet" href="./Styles/output2.css">
     <link rel="stylesheet" href="./Styles/double-range.css">
 
     
@@ -26,8 +26,8 @@
 </head>
 <body class="bg-[#F5EBEB] dark:bg-tarsas3-dark">
 
-    <div id="navbar" class="flex w-[100%] bg-tarsas3-light dark:bg-tarsas3-dark h-[4em]">
-     
+    <div id="navbar" class="bg-tarsas1-light dark:bg-tarsas4-dark flex flex-col">
+        
     </div>
 
     <div class="popUp hidden  fixed top-0 right-0 max-w-xs bg-[#D5B4B4] z-50 h-screen overflow-y-hidden">
@@ -52,7 +52,7 @@
 
     <div class="-main mt-5 bg-[#F5EBEB] dark:bg-tarsas3-dark">
 
-        <div class="bg-[#F5EBEB] dark:bg-tarsas3-dark xl:hidden flex justify-between text-2xl p-10 self-center items-center space-x-3"> <!-- Szűrő mobilra -->
+        <div class="bg-[#F5EBEB] dark:bg-tarsas3-dark xl:visible flex justify-between text-2xl p-10 self-center items-center space-x-3"> <!-- Szűrő mobilra -->
             <div class="">
                 <p>Rendezés:</p>
                 <div class="py-1 flex items-center px-4 border-1 rounded-xl border border-black">
@@ -68,7 +68,7 @@
             <div class="">
                 <div class="">
                     <div class="bg-[#F5EBEB] dark:bg-tarsas3-dark w-20 h-20 rounded-2xl flex justify-center self-center items-center">
-                        <img class="w-14 h-14" src="../Pictures/filter 1.png" alt="">
+                        <img class="w-14 h-14 xl:hidden" src="../Pictures/filter 1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
               <input type="range" step="500" min="0" max="100000" value="70000" id="slider-2" oninput="slideTwo()">
             </div>
 
-            <div class="values">
+            <div class="values !w-full">
                 <span id="range1">
                   0
                 </span>
@@ -116,7 +116,7 @@
                   
                   
 
-                  <div class="z-0 hidden xl:flex xl:flex-col xl:flex-initial max-w-md w-full ">
+                  <div class="z-0 hidden xl:flex xl:flex-col xl:flex-initial max-w-md w-full">
 
                     <div class="-my-3 w-full">
                         <div class="wrapper flex-col mx-auto justify-center bg-[#F5EBEB] dark:bg-tarsas3-dark">
@@ -141,7 +141,7 @@
                         <div class="w-full h-0.5 bg-black mt-5">
                             <hr class="w-full">
                             <h1 class="text-xl font-bold indent-2 p-2">Kategória leírás</h1>
-                            <p class="indent-4 text-lg px-2">Ebben a kategóriában...</p>
+                            <p class="indent-4 text-lg px-2">Játsz kedvedre az elektonikus autóinkkal, amivel barátaiddal is könnyedén játszhatsz. Versenyezzetek terepen, utcán vagy akár a szobába.</p>
                             <div class="w-full h-0.5 bg-black mt-5">
                                 <hr class="w-full">
                             </div>
@@ -185,10 +185,15 @@
         </div>
     </div>
 
+    <div class="footer"></div>
+
+
+
     <script src="../Components/Navbar.js"></script>
     <script src="./Javascript/range.js"></script>
     <script src="./Javascript/Cart/Cart.js"></script>
     <script type="module" src="./Javascript/Products/Products.js"></script>
+    <script src="../Components/Footer.js"></script>
     
 </body>
 </html>

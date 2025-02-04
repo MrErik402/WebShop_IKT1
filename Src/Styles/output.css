@@ -272,6 +272,9 @@
 .min-h-\[140px\] {
   min-height: 140px;
 }
+.\!w-full {
+  width: 100% !important;
+}
 .w-1\/2 {
   width: calc(1/2 * 100%);
 }
@@ -1577,6 +1580,21 @@
   &:hover {
     @media (hover: hover) {
       cursor: pointer;
+    }
+  }
+}
+.hover\:border-2 {
+  &:hover {
+    @media (hover: hover) {
+      border-style: var(--tw-border-style);
+      border-width: 2px;
+    }
+  }
+}
+.hover\:bg-\[\#6C5E5E\] {
+  &:hover {
+    @media (hover: hover) {
+      background-color: #6C5E5E;
     }
   }
 }
