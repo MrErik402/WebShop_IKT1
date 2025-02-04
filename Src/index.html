@@ -93,7 +93,7 @@
             </div>
 
 
-            <div id="burgerGomb" class="flex justify-center items-center w-16 mr-2 lg:hidden" onclick="burgerKattintas()">
+            <div id="burgerGomb" class="flex justify-center items-center w-16 mr-2 lg:hidden" onclick="burgerKattintas()" style="cursor: pointer;">
                 <img src="../Pictures/Navbar/burger_icon.png" alt="" class="h-4/5">
             </div>
 
@@ -103,10 +103,45 @@
 
         
     </div>
-    <div id="burgerMenu" class="hidden w-full bg-tarsas3-light dark:bg-tarsas2-dark text-center flex-col lg:hidden">
-        <div id="burgerAirsoft" class="py-4 border-b border-black">Airsoft</div>
-        <div id="burgerJatekok" class="py-4 border-b border-black">Jatekok</div>
-        <div id="burgerRolunk" class="py-4">Rolunk</div>
+    <div id="burgerMenu" class="hidden w-full bg-tarsas4-light dark:bg-tarsas3-dark text-center flex-col lg:hidden dark:text-white">
+        <div id="burgerAirsoft" class="py-4 border-b border-black cursor-pointer" onclick="airsoftKatt()">
+            <p class="text-white">Airsoft</p>
+        </div>
+        <div id="burgerAirsoftAlmenu" class="hidden flex-col bg-tarsas3-light dark:bg-tarsas2-dark dark:text-white">
+            <a href="#">
+                <p class="border-y border-black p-4">Fegyverek</p>
+            </a>
+            <a href="#">
+                <p class="border-b border-black p-4">Ruházat</p>
+            </a>
+            <a href="#">
+                <p class="border-b border-black p-4">Kiegészítők</p>
+            </a>
+            <a href="#">
+                <p class="border-b border-black p-4">Lőszerek</p>
+            </a>
+        </div>
+        <div id="burgerJatekok" class="py-4 border-b border-black cursor-pointer" onclick="jatekokKatt()">
+            <p class="text-white">Jatekok</p>
+        </div>
+        <div id="burgerJatekokAlmenu" class="hidden flex-col bg-tarsas3-light dark:bg-tarsas2-dark dark:text-white">
+            <a href="">
+                <p class="border-y border-black p-4">Társas</p>
+            </a>
+            <a href="">
+                <p class="border-b border-black p-4">Elektronikus</p>
+            </a>
+            <a href="">
+                <p class="border-b border-black p-4">Műanyag</p>
+            </a>
+            <a href="">
+                <p class="border-b border-black p-4">Fegyverek</p>
+            </a>
+
+        </div>
+        <a href="./rolunk.html">
+            <div id="burgerRolunk" class="py-4 text-white">Rolunk</div>
+        </a>
     </div>
     <div id="tartalom" class="px-8 py-16">
         <div id="reklamElemek" class="flex flex-wrap gap-4 lg:gap-0 justify-between">
