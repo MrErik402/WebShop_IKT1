@@ -6,18 +6,44 @@ import Muanyag from "./Muanyag/Muanyag.js"
 let minRangeSlider = document.querySelector("#slider-1")
 let maxRangeSlider = document.querySelector("#slider-2")
 
+let minRangeSlider2 = document.querySelector("#slider-3")
+let maxRangeSlider2 = document.querySelector("#slider-4")
+
 let minPrice = 1;
 let maxPrice = 70000;
 window.productList = [];
+let timeoutId = null;
 
 minRangeSlider.addEventListener("input", () => {
-    minPrice = minRangeSlider.value
-    CatchData(szuresRendezettseg.value)
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+        minPrice = minRangeSlider.value;
+        CatchData(szuresRendezettseg.value);
+    }, 1000);
+})
+
+minRangeSlider2.addEventListener("input", () => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+        minPrice = minRangeSlider2.value;
+        CatchData(szuresRendezettseg.value);
+    }, 1000);
 })
 
 maxRangeSlider.addEventListener("input", () => {
-    maxPrice = maxRangeSlider.value
-    CatchData(szuresRendezettseg.value)
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+        maxPrice = maxRangeSlider.value;
+        CatchData(szuresRendezettseg.value);
+    }, 1000);
+})
+
+maxRangeSlider2.addEventListener("input", () => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+        maxPrice = maxRangeSlider2.value;
+        CatchData(szuresRendezettseg.value);
+    }, 1000);
 })
 
 let szuresRendezettseg = document.querySelector("#rendezes")
