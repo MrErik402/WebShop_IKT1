@@ -190,7 +190,7 @@ let DisplayItems = (products) => {
         
         const shortDescription = product.leiras.substring(0, 100);
         document.querySelector("#termekek").innerHTML += `
-        <div class="flex w-full min-w-[40ch] xl:min-w-[1ch]  xl:max-w-[25ch] 2xl:max-w-[30ch] justify-center mx-auto my-2">
+        <div class="flex xl:w-full min-w-[40ch] xl:min-w-[1ch]  xl:max-w-[25ch] 2xl:max-w-[30ch] justify-center mx-auto my-2">
                 <div class="hover:ring-2 min-w-[40ch]  transition-all hover:ring-black/42 w-full max-w-36 xl:ml-1 lg:max-w-[19ch] xl:min-w-[25ch] 2xl:max-w-[25vh] mx-auto ring-1 ring-black/40 px-2 py-5 rounded-sm shadow-[rgba(0,0,15,0.5)_8px_8px_6px_1px] shadow-black/10 ">
                 
                     <div class="rounded-sm ">
@@ -199,13 +199,13 @@ let DisplayItems = (products) => {
                         </div>
                         
                         <h1 id="title" class="pt-5  text-lg">${product.nev}</h1>
-                        <h1 class=" text-lg" id="description">${shortDescription}...</h1>
+                        <h1 class=" text-lg xl:text-md relative max-w-sm xl:h-40 h-20" id="description">${shortDescription}...</h1>
                         <div class="flex flex-col pt-2">
                         
                         <p class="font-medium text-lg italic font-poppins">${product.ar} Ft</p>
                         
                         <div class="flex justify-start mt-2 space-x-1 w-full">
-                            <button onClick="vasarlas(${product.id})" class="w-full text-lg bg-[#867070] rounded-md py-1 p-3 text-white">Kosárba</button>
+                            <button onClick="vasarlas(${product.id})" class=" w-full text-lg bg-[#867070] rounded-md py-1 p-3 text-white hover:bg-[#6C5E5E] border-gray-400 hover:border-2">Kosárba</button>
                         </div>
 
 
