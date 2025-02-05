@@ -22,7 +22,7 @@ const Navbar = () => {
                               Airsoft <</h4>
                       </summary>
                       <ul class=" bg-tarsas2-light dark:bg-tarsas2-dark" style="text-align: center; width: 17em;">
-                          <li><a class="" href="#"><img id="kepNav" src="../Pictures/Navbar/fegyver.png" class=""
+                          <li><a class="" href=""><img id="kepNav" src="../Pictures/Navbar/fegyver.png" class=""
                                       style="display: inline">Fegyverek<img id="kepNav" src="../Pictures/Navbar/fegyverMasik.png"
                                       style="display: inline"></a></li>
                           <hr />

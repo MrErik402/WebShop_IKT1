@@ -1,7 +1,11 @@
 import TarsasProducts from "./Tarsasjatekok/Tarsasjatekok.js";
-import Elektronikus from "./Elektronikus/Elektronikus.js"
-import Jatekfegyverek from "./Jatekfegyverek/Jatekfegyverek.js"
-import Muanyag from "./Muanyag/Muanyag.js"
+import Elektronikus from "./Elektronikus/Elektronikus.js";
+import Jatekfegyverek from "./Jatekfegyverek/Jatekfegyverek.js";
+import Muanyag from "./Muanyag/Muanyag.js";
+import AirFegyverek from "./AirsoftFegyverek/AirFegyverek.js";
+import AirKiegeszito from "./AirsoftKiegeszitok/AirKiegeszitok.js";
+import AirRuhazat from "./AirsoftRuhazat/AirRuhazat.js";
+import AirToltenyek from "./AirsoftToltenyek/AirToltenyek.js";
 
 let minRangeSlider = document.querySelector("#slider-1")
 let maxRangeSlider = document.querySelector("#slider-2")
@@ -309,7 +313,88 @@ async function CatchData(szuro) {
         DisplayItems(muanyagJatekok);
     }
 
+    if(document.title === "Airsoft fegyverek") {
+        let airsoftFegyver = await AirFegyverek();
+
+        if(szuro == "olcsoToDraga"){
+            airsoftFegyver = airsoftFegyver.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            airsoftFegyver = airsoftFegyver.sort((a, b) => b.ar - a.ar)
+        }
+        if(szuro == "a-z"){
+            airsoftFegyver = airsoftFegyver.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            airsoftFegyver = airsoftFegyver.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
+        DisplayItems(airsoftFegyver);
+
+        DisplayItems(airsoftFegyver);
+    }
+
+    if(document.title === "Airsoft kiegészítők") {
+        let AirsoftKiegeszitok = await AirKiegeszito();
+
+        if(szuro == "olcsoToDraga"){
+            AirsoftKiegeszitok = AirsoftKiegeszitok.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            AirsoftKiegeszitok = AirsoftKiegeszitok.sort((a, b) => b.ar - a.ar)
+        }
+        if(szuro == "a-z"){
+            AirsoftKiegeszitok = AirsoftKiegeszitok.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            AirsoftKiegeszitok = AirsoftKiegeszitok.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
+        DisplayItems(AirsoftKiegeszitok);
+
+        DisplayItems(AirsoftKiegeszitok);
+    }
+    if(document.title === "Airsoft ruházat") {
+        let AirsoftRuhazat = await AirRuhazat();
+
+        if(szuro == "olcsoToDraga"){
+            AirsoftRuhazat = AirsoftRuhazat.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            AirsoftRuhazat = AirsoftRuhazat.sort((a, b) => b.ar - a.ar)
+        }
+        if(szuro == "a-z"){
+            AirsoftRuhazat = AirsoftRuhazat.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            AirsoftRuhazat = AirsoftRuhazat.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
+        DisplayItems(AirsoftRuhazat);
+
+        DisplayItems(AirsoftRuhazat);
+    }
     
+    if(document.title === "Airsoft töltények") {
+        let AirsoftToltenyek = await AirToltenyek();
+
+        if(szuro == "olcsoToDraga"){
+            AirsoftToltenyek = AirsoftToltenyek.sort((a, b) => a.ar - b.ar)
+        }
+
+        if(szuro == "dragaToOlcso"){
+            AirsoftToltenyek = AirsoftToltenyek.sort((a, b) => b.ar - a.ar)
+        }
+        if(szuro == "a-z"){
+            AirsoftToltenyek = AirsoftToltenyek.sort((a, b) =>  a.nev.localeCompare(b.nev))
+        }
+        if(szuro == "z-a"){
+            AirsoftToltenyek = AirsoftToltenyek.sort((a, b) =>  b.nev.localeCompare(a.nev))
+        }
+        DisplayItems(AirsoftToltenyek);
+
+        DisplayItems(AirsoftToltenyek);
+    }
 
     loading = false
 }
