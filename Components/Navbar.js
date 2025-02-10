@@ -10,10 +10,10 @@ let FullNavbar = () => {
                 </div>
             </a>
             <div class="">
-                <div class="flex flex-row flex-wrap justify-between text-base" id="gombok">
-                    <div class="h-full w-[6em]" id="kosar">
+                <div " class=" flex flex-row flex-wrap justify-between text-base" id="gombok">
+                    <div onClick="popUp() class="hover:cursor-pointer h-full w-[6em]" id="kosar">
                         <img src="../Pictures/Fooldal/Kosár.png" alt="Kosárka" class="h-[4em]">
-                        <p id="rendeltTermekekSzama" class="h-[1.5em] w-[1.5em] text-white ml-[3.6em] align-baseline text-center rounded-full bg-red-600 absolute top-0">0</p>
+                        <p id="cartAmount" class="h-[1.5em] w-[1.5em] text-white ml-[3.6em] align-baseline text-center rounded-full bg-red-600 absolute top-0">0</p>
                     </div>
                     <details class="dropdown menu-drop hidden lg:block h-full" id="airsoftDetails">
                         <summary style="list-style: none;" role="button">
@@ -22,11 +22,11 @@ let FullNavbar = () => {
                                 Airsoft <</h4>
                         </summary>
                         <ul class=" bg-tarsas2-light dark:bg-tarsas2-dark" style="text-align: center; width: 17em;">
-                            <li><a class="" href="#"><img id="kepNav" src="../Pictures/Navbar/fegyver.png" class=""
+                            <li><a class="" href=""><img id="kepNav" src="../Pictures/Navbar/fegyver.png" class=""
                                         style="display: inline">Fegyverek<img id="kepNav" src="../Pictures/Navbar/fegyverMasik.png"
                                         style="display: inline"></a></li>
                             <hr />
-                            <li><a href="#"><img id="kepNav" src="../Pictures/Navbar/polo.png" class=""
+                            <li><a href="./jatekFegyverek.html"><img id="kepNav" src="../Pictures/Navbar/polo.png" class=""
                                         style="display: inline">Ruházat<img id="kepNav" src="../Pictures/Navbar/polo.png" class=""
                                         style="display: inline"></a></li>
                             <hr />
@@ -49,7 +49,7 @@ let FullNavbar = () => {
                         <ul class=" bg-tarsas2-light dark:bg-tarsas2-dark"
                             style="text-align: center; width: 17em; margin: 15px -10em !important;">
                             <li>
-                                <a class="" href="#">
+                                <a class="" href="./tarsasJatek.html">
                                     <img id="kepNav" src="../Pictures/Navbar/jatekos.png" class="" style="display: inline">
                                     Társasjáték
                                     <img id="kepNav" src="../Pictures/Navbar/jatekos.png" style="display: inline">
@@ -57,19 +57,19 @@ let FullNavbar = () => {
                             </li>
                             <hr/>
                             <li>
-                                <a href="#"><img id="kepNav" src="../Pictures/Navbar/kocsi.png" class=""
+                                <a href="./elektronikus.html"><img id="kepNav" src="../Pictures/Navbar/kocsi.png" class=""
                                         style="display: inline">Elektronikus<img id="kepNav" src="../Pictures/Navbar/kocsi.png"
                                         class="" style="display: inline"></a>
                                     </li>
                             <hr/>
                             <li>
-                                <a href="#"><img id="kepNav" src="../Pictures/Navbar/katona.png" class=""
+                                <a href="./muanyag.html"><img id="kepNav" src="../Pictures/Navbar/katona.png" class=""
                                         style="display: inline;">Műanyag<img id="kepNav" src="../Pictures/Navbar/katona.png"
                                         class="" style="display: inline">
                                     </a>
                                 </li>
                             <hr/>
-                            <li><a href="#"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
+                            <li><a href="./jatekFegyverek.html"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
                                         style="display: inline;">Fegyverek<img id="kepNav" src="../Pictures/Navbar/loszer.png"
                                         class="" style="display: inline">
                                 </a>
