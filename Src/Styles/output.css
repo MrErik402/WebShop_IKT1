@@ -673,12 +673,23 @@ video {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+
+.-ml-1 {
+  margin-left: -0.25rem;
 
 .-ml-1 {
   margin-left: -0.25rem;
@@ -690,7 +701,17 @@ video {
 
 .-mt-2 {
   margin-top: -0.5rem;
+
+.-mr-3 {
+  margin-right: -0.75rem;
 }
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.-mt-36 {
+  margin-top: -9rem;
 
 .-mt-36 {
   margin-top: -9rem;
@@ -738,7 +759,13 @@ video {
 
 .mt-56 {
   margin-top: 14rem;
+
+.mt-56 {
+  margin-top: 14rem;
 }
+
+.mt-\[1em\] {
+  margin-top: 1em;
 
 .mt-\[1em\] {
   margin-top: 1em;
@@ -794,7 +821,13 @@ video {
 
 .h-2 {
   height: 0.5rem;
+
+.h-2 {
+  height: 0.5rem;
 }
+
+.h-20 {
+  height: 5rem;
 
 .h-20 {
   height: 5rem;
@@ -802,7 +835,13 @@ video {
 
 .h-32 {
   height: 8rem;
+
+.h-32 {
+  height: 8rem;
 }
+
+.h-4\/5 {
+  height: 80%;
 
 .h-4\/5 {
   height: 80%;
@@ -810,11 +849,18 @@ video {
 
 .h-6 {
   height: 1.5rem;
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-96 {
   height: 24rem;
+
+.h-96 {
+  height: 24rem;
 }
+
 
 .h-\[1\.5em\] {
   height: 1.5em;
@@ -836,9 +882,11 @@ video {
   height: 5em;
 }
 
+
 .h-auto {
   height: auto;
 }
+
 
 .h-full {
   height: 100%;
@@ -988,9 +1036,11 @@ video {
   cursor: pointer;
 }
 
+
 .resize {
   resize: both;
 }
+
 
 .list-none {
   list-style-type: none;
@@ -1381,7 +1431,15 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
 .py-2 {
   padding-top: 0.5rem;
