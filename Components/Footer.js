@@ -1,7 +1,7 @@
 const footer = () => {
     return(
         `
-        <div class="h-96 mt-56 md:h-52 md:mt-40" />
+        <div class=" min-h-[90vh]" />
         <div id="lablec" class="w-full bg-tarsas3-light dark:bg-tarsas3-dark dark:text-white py-4 justify-self-end mt-auto flex flex-wrap gap-8 lg:gap-0 absolute bottom-0 h-auto ">
             <div id="hirlevel" class="flex flex-col w-full lg:w-1/3 px-16 gap-4">
                 <p>Iratkozzon fel a hírlevelünkre!</p>
