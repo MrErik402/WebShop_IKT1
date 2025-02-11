@@ -18,9 +18,9 @@ let FullNavbar = () => {
         </button>
 
         <!-- Dropdown menu -->
-        <div id="dropdown" class="z-10 bg-tarsas2-light dark:bg-tarsas2-dark h-auto">
-        <ul class="bg-gray-400"
-            style="text-align: center; width: 17em; margin: 15px -10em !important;">
+        <div id="dropdown" class="z-10  h-auto hidden">
+        <ul class="border-black border-b-2 border-l-2 border-r-2 rounded-b-xl bg-tarsas2-light dark:bg-tarsas2-dark"
+            style="text-align: center; width: 17em; margin: 6px -2em !important;">
             <li>
                 <a class="" href="#">
                     <img id="kepNav" src="../Pictures/Navbar/jatekos.png" class="" style="display: inline">
@@ -28,26 +28,26 @@ let FullNavbar = () => {
                     <img id="kepNav" src="../Pictures/Navbar/jatekos.png" style="display: inline">
                 </a>
             </li>
-            <hr/>
+            <div class="w-[25vh] my-2 mx-auto flex justify-center h-0.5 bg-black/70"></div>
             <li>
                 <a href="#"><img id="kepNav" src="../Pictures/Navbar/kocsi.png" class=""
                         style="display: inline">Elektronikus<img id="kepNav" src="../Pictures/Navbar/kocsi.png"
                         class="" style="display: inline"></a>
                     </li>
-            <hr/>
+                    <div class="w-[25vh] my-2 mx-auto flex justify-center h-0.5 bg-black/70"></div>
             <li>
                 <a href="#"><img id="kepNav" src="../Pictures/Navbar/katona.png" class=""
                         style="display: inline;">Műanyag<img id="kepNav" src="../Pictures/Navbar/katona.png"
-                        class="" style="display: inline">
-                    </a>
+                        class="" style="display: inline" />
+                </a>
                 </li>
-            <hr/>
+            <div class="w-[25vh] my-2 mx-auto flex justify-center h-0.5 bg-black/70"></div>
             <li><a href="#"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
                         style="display: inline;">Fegyverek<img id="kepNav" src="../Pictures/Navbar/loszer.png"
                         class="" style="display: inline">
                 </a>
             </li>
-            <hr/>
+            <div class="w-[25vh] my-2 mx-auto flex justify-center h-0.5 bg-black/70"></div>
         </ul>
         </div>
 
