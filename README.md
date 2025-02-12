@@ -36,3 +36,7 @@ A weboldal felépítése és alapja egy olyan webshop lesz, amely játékok áru
 Világos mód: https://colorhunt.co/palette/867070d5b4b4e4d0d0f5ebeb
 
 Sötét mód: https://colorhunt.co/palette/49243e704264bb8493dbafa0 
+
+### Tailwind telepítés
+
+npx tailwindcss -i ./Src/Styles/input.css -o ./Src/Styles/output.css --watch
