@@ -24,8 +24,8 @@
 
 <body class="bg-tarsas1-light dark:bg-tarsas4-dark flex flex-col min-h-screen relative">   
     <!-- Ide kerul a navbar a ../Components/Navbar.js ből-->
-    <div id="tartalom" class="px-8 pr-0 py-16 pt-0 flex">
-        <div id="kosarTartalom" class="w-3/4 pt-4 flex flex-col gap-6">
+    <div id="tartalom" class="md:pl-8 pr-0 py-16 pt-0 flex flex-col md:flex-row gap-8 md:gap-0">
+        <div id="kosarTartalom" class="md:w-3/4 pt-4 flex flex-col gap-6 w-full items-center">
             <div class="termek flex flex-col md:flex-row items-center border border-black w-4/5 gap-4 py-4 shadow-lg dark:bg-tarsas3-dark dark:text-white">
                 <img src="../Pictures/AirsoftFegyverek/1911-gold.png" alt="Termék" class="w-1/5 object-contain">
                 <div class="flex flex-col w-3/5">
@@ -70,20 +70,20 @@
             </div>
             
         </div>
-        <div id="osszegzes" class="md:w-1/4 w-1/2 bg-white p-2 h-fit">
-            <p>x termék ára:</p>
-            <p>1 milio</p>
+        <div id="osszegzes" class="md:w-1/4 w-full bg-white p-2 h-fit text-lg font-semibold">
+            <p class="">3 termék ára:</p>
+            <p>11.000 Ft</p>
             <hr>
             <p>Szállítási költség:</p>
             <p>1 000 Ft</p>
             <hr>
             <p>Végösszeg</p>
-            <p>X millio Ft</p>
+            <p>12.000 Ft</p>
             <hr>
             <div class="flex flex-col pt-6">
                 <div class="mb-2">
                     <input type="checkbox" name="aszfElfogad" id="aszfElfogad" class="bg-gray-300">
-                    <label for="aszfElfogad">Elfogadom az aszfet</label>
+                    <label for="aszfElfogad">*Elfogadom az ÁSZF-et</label>
                 </div>
                 <div>
                     <input type="checkbox" name="hirlevelElfogad" id="hirlevelElfogad" class="bg-gray-300">
