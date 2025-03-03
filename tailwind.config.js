@@ -21,7 +21,11 @@ module.exports = {
           dark: "#49243E"
         }
       }
-    }
+    },
+    screens: {
+      'xs': '800px', // min-width
+      'xxs' : '400px',
+    },
   }
 }
 

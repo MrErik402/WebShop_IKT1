@@ -14,7 +14,7 @@ let FullNavbar = () => {
                     <p id="cartAmount" class="h-[1.5em] w-[1.5em] text-white ml-[3.6em] align-baseline text-center rounded-full bg-red-600 absolute top-0">0</p>
                 </div>
                 
-        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl" type="button">Játékok
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl hidden lg:block" type="button">Játékok
         </button>
 
         <!-- Dropdown menu -->
@@ -51,7 +51,7 @@ let FullNavbar = () => {
         </ul>
         </div>
 
-        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdownFegyver" class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl" type="button">Fegyverek
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdownFegyver" class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl hidden lg:block" type="button">Fegyverek
         </button>
 
         <!-- Dropdown menu -->
@@ -124,12 +124,12 @@ let FullNavbar = () => {
             </a>
         </div>
         <div id="burgerJatekok" class="py-4 border-b border-black cursor-pointer" onclick="jatekokKatt()">
-            <p class="text-white">Jatekok</p>
+            <p class="text-white">Játékok</p>
         </div>
         <div id="burgerJatekokAlmenu" class="hidden flex-col bg-tarsas3-light dark:bg-tarsas2-dark dark:text-white">
             <a href="./tarsasJatek.html">
                 <p class="border-y border-black p-4"><img id="kepNav" src="../Pictures/Navbar/jatekos.png" class=""
-                style="display: inline;">Társas<img id="kepNav" src="../Pictures/Navbar/jatekos.png" class=""
+                style="display: inline;">Társasjátékok<img id="kepNav" src="../Pictures/Navbar/jatekos.png" class=""
                 style="display: inline;"></p>
             </a>
             <a href="./elektronikus.html">

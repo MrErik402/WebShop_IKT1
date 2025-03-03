@@ -24,8 +24,8 @@
 
 <body class="bg-tarsas1-light dark:bg-tarsas4-dark flex flex-col min-h-screen relative">   
     <!-- Ide kerul a navbar a ../Components/Navbar.js ből-->
-    <div id="tartalom" class="px-8 pr-0 py-16 pt-0 flex">
-        <div id="kosarTartalom" class="w-3/4 pt-4 flex flex-col gap-6">
+    <div id="tartalom" class="md:pl-8 pr-0 py-16 pt-0 flex flex-col md:flex-row gap-8 md:gap-0">
+        <div id="kosarTartalom" class="md:w-3/4 pt-4 flex flex-col gap-6 w-full items-center">
             <div class="termek flex flex-col md:flex-row items-center border border-black w-4/5 gap-4 py-4 shadow-lg dark:bg-tarsas3-dark dark:text-white">
                 <img src="../Pictures/AirsoftFegyverek/1911-gold.png" alt="Termék" class="w-1/5 object-contain">
                 <div class="flex flex-col w-3/5">
@@ -70,26 +70,95 @@
             </div>
             
         </div>
-        <div id="osszegzes" class="md:w-1/4 w-1/2 bg-white p-2 h-fit">
-            <p>x termék ára:</p>
-            <p>1 milio</p>
+        <div id="osszegzes" class="md:w-1/4 w-full bg-white p-2 h-fit text-lg font-semibold">
+            <p class="">3 termék ára:</p>
+            <p>11.000 Ft</p>
             <hr>
             <p>Szállítási költség:</p>
             <p>1 000 Ft</p>
             <hr>
             <p>Végösszeg</p>
-            <p>X millio Ft</p>
+            <p>12.000 Ft</p>
             <hr>
             <div class="flex flex-col pt-6">
                 <div class="mb-2">
                     <input type="checkbox" name="aszfElfogad" id="aszfElfogad" class="bg-gray-300">
-                    <label for="aszfElfogad">Elfogadom az aszfet</label>
+                    <label for="aszfElfogad">*Elfogadom az ÁSZF-et</label>
                 </div>
                 <div>
                     <input type="checkbox" name="hirlevelElfogad" id="hirlevelElfogad" class="bg-gray-300">
                     <label for="hirlevelElfogad">Feliratkozom a hírlevélre</label>
                 </div>
-                <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl mt-4">Fizetés</button>
+                <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl mt-4" type="button">
+                    Fizetés
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-md max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow-sm dark:bg-[#704264]">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Fizetés és szállítási adatok
+                    </h3>
+                    <button type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="authentication-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                    <form class="space-y-4" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium dark:text-white">Email:</label>
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" required>
+                        </div>
+                        <div>
+                            <label for="nev" class="block mb-2 text-sm font-medium dark:text-white">Név:</label>
+                            <input type="text" name="nev" id="nev" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" required>
+                        </div>
+                        <div>
+                            <label for="tel" class="block mb-2 text-sm font-medium dark:text-white">Telefonszám:</label>
+                            <input type="text" name="tel" id="tel" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" required>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-1/3">
+                                <label for="irszam" class="block mb-2 text-sm font-medium dark:text-white">Irányítószám:</label>
+                                <input type="text" name="tel" id="tel" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" required>
+                            </div>
+                            <div class="w-2/3">
+                                <label for="telepules" class="block mb-2 text-sm font-medium dark:text-white">Település:</label>
+                                <input type="text" name="tel" id="tel" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="cim" class="block mb-2 text-sm font-medium dark:text-white">Utca, házszám:</label>
+                            <input type="text" name="cim" id="cim" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" required>
+                        </div>
+
+                        
+                        <p class="text-sm dark:text-white">Fizetési mód:</p>
+                        <div class="flex justify-between">
+                            <div class="flex items-center">
+                                <input id="fizetes-radio-1" type="radio" value="" name="fizetes-radio" class="w-4 h-4 bg-gray-300 border-gray-300 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-200 dark:border-gray-600">
+                                <label for="fizetes-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-white">Utánvét</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input checked id="fizetes-radio-2" type="radio" value="" name="fizetes-radio" class="w-4 h-4 bg-gray-300 border-gray-300 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-200 dark:border-gray-600">
+                                <label for="fizetes-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-white">Bankkártya</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full text-white bg-[#867070] font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-[#49243E]">Fizetés megerősítése</button>
+                        
+                    </form>
+                </div>
             </div>
         </div>
     </div>
