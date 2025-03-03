@@ -17,6 +17,11 @@
 	
     <link rel="stylesheet" href="./Styles/output.css">
     <link rel="stylesheet" href="./Styles/double-range.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8.0.6/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@swiper/swiper-bundle.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.0.6/swiper-bundle.min.js"></script>
 
     
 
@@ -74,6 +79,73 @@
                 </div>
             </div>
 
+        </div>
+
+        <div class="relative w-full overflow-hidden">
+            <div class="swiper-container">
+              
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide flex space-x-4">
+                  <div class="w-1/2 bg-gray-200 p-4 text-center">Item 1</div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide flex space-x-4">
+                  <div class="w-1/2 bg-gray-200 p-4 text-center">Item 5</div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide flex space-x-4">
+                    <div class="w-1/2 bg-gray-200 p-4 text-center">Item 3</div>
+                  </div>
+                  <!-- Slide 4 -->
+                <div class="swiper-slide flex space-x-4">
+                    <div class="w-1/2 bg-gray-200 p-4 text-center">Item 6</div>
+                  </div>
+                
+              </div>
+        
+        
+            
+            </div>
+          </div>
+          
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 1,
+              spaceBetween: 1,
+              loop: true,
+              autoplay: {
+                delay: 3000,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              breakpoints: {
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 1,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 1,
+                },
+              },
+            });
+          </script>
+
+        
+
+        <div class="flex overflow-hidden justify-center items-center w-full max-w-screen-lg bg-gray-400 mx-auto">
+            <img class="slide-left w-56 h-56" src="../Pictures/AirsoftFegyverek/barrett-m82.png" alt="">
         </div>
         
         <div class="flex wrapper xl:hidden flex-col mx-auto justify-center bg-[#F5EBEB] dark:bg-tarsas3-dark">

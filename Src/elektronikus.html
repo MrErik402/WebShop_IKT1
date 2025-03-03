@@ -57,7 +57,7 @@
             <div class="">
                 <p>Rendezés:</p>
                 <div class="py-1 flex items-center px-4 border-1 rounded-xl border border-black">
-                        <select id="rendezes" class="flex text-center justify-center w-full bg-[#F5EBEB] dark:bg-tarsas3-dark">
+                        <select id="rendezes" class="appearance-none bg-none flex text-center justify-center w-full bg-[#F5EBEB] dark:bg-tarsas3-dark">
                             <option value="default">Alapértelmezett</option>
                             <option value="olcsoToDraga">Olcsó -> Drága</option>
                             <option value="dragaToOlcso">Drága -> Olcsó</option>
@@ -93,7 +93,79 @@
                 </span>
               </div>
           </div>
+
+            <div class="text-center text-3xl font-medium p-2 mt-4 flex flex-col my-12">
+                <div class="overflow-hidden flex flex-col w-full">
+                    <h1>Legkedveltebb termékek</h1>
+                    <div id="default-carousel" class="relative w-full max-w-screen-xl mx-auto" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96 mx-auto items-center self-center justify-center flex">
+                            <!-- Carousel images -->
+                            <div class="flex transition-transform duration-1000 ease-in-out" id="carousel-items">
+                                <!-- Item 1 -->
+                                <div class="flex-shrink-0 w-full flex justify-center items-center">
+                                    <div class="  p-2 flex items-center justify-center w-full">
+                                        <img src="../Pictures/AirsoftFegyverek/granatveto.png" class="max-h-52 max-w-xs w-full self-center mx-auto" alt="..." />
+                                        <img src="../Pictures/AirsoftFegyverek/CZ_P-09.png" class="max-w-xs max-h-52 w-full self-center mx-auto" alt="..." />
+                                    </div>
+                                </div>
+                                
+                                <!-- Item 2 -->
+                                <div class="flex-shrink-0 w-full flex justify-center items-center">
+                                    <div class="  p-2 flex items-center justify-center w-full">
+                                        <img src="../Pictures/AirsoftFegyverek/1911-gold.png" class="max-w-xs max-h-52 w-full self-center mx-auto" alt="..." />
+                                        <img src="../Pictures/AirsoftFegyverek/ASG-MK23.png" class="max-w-xs max-h-52 w-full self-center mx-auto" alt="..." />
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                
+
+
+                
+
+            
+
+                
+                
+<script>
+    const carouselItems = document.getElementById('carousel-items');
+    let currentIndex = 0;
+
+    
+
+
+    function nextSlide() { 
+        currentIndex = (currentIndex + 1) % carouselItems.children.length;
+        const offset = -currentIndex * 50;
+        carouselItems.style.transform = `translateX(${offset}%)`;
+
+        if(currentIndex == 10){
+            removeHTML();
+            clearInterval(nextSlide);
+            setInterval(nextSlide, 1000)
+        }
+
+        document.querySelector("#carousel-items").innerHTML += (`
+        <div class="flex-shrink-0 w-full flex justify-center items-center">
+            <div class="p-2 flex items-center justify-center w-full">
+                <img src="../Pictures/AirsoftFegyverek/granatveto.png" class="max-h-52 max-w-xs w-full self-center mx-auto" alt="..." />
+                <img src="../Pictures/AirsoftFegyverek/CZ_P-09.png" class="max-w-xs max-h-52 w-full self-center mx-auto" alt="..." />
+            </div>
         </div>
+    `)
+    }
+    setInterval(nextSlide, 1000)
+
+    
+</script>
 
         
 
@@ -184,7 +256,7 @@
                     </div>
             </div>
         </div>
-    </div>
+            </div>
 
 
     <div class="footer"></div>
