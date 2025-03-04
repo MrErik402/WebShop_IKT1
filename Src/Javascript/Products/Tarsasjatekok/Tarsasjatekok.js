@@ -46,7 +46,7 @@ export default async function TarsasJatek(){
 
     
     try {
-        if(window.location.hostname === '127.0.0.1'){ //Host meghatározása
+        if(window.location.hostname === "127.0.0.1"){ //Host meghatározása
             await fetch(baseUrl + "Src/Javascript/Products/Tarsasjatekok/products.json")
             .then(res => res.json())
             .then(data => PassData(data))
