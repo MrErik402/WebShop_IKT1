@@ -1,0 +1,130 @@
+[
+    {
+        "nev": "Little lives pets: Mangó",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/interaktivMaki.png",
+        "id": 17,
+        "ar": 1999,
+        "leiras": "Ismerd meg Mangót, a legaranyosabb kis interaktív maki babát, aki hamar a gyerekek legjobb barátjává válik! A Little Live Pets: Mangó, az interaktív maki babám egy igazán szeretnivaló, puha plüssfigura, amely valósághű viselkedésével hódítja meg a szíveket. Mangó több mint 70 különböző hangot és mozdulatot képes produkálni, így igazi társ a játékban. Ha a szájába helyezed az ujjadat, szopizni kezd, és boldogan csücsül az öledben. Emellett etetheted a hozzá tartozó cumisüvegből is, ami után elégedetten gügyög és boldogan mocorog.",
+        "kedvelt": false
+    },
+    {
+        "nev": "Furby",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/furbyInteraktiv.png",
+        "id": 18,
+        "ar": 19999,
+        "leiras": "A népszerű Furby nem csak egy hagyományos plüssfigura, hanem annál sokkal több! A Furby-k mindegyike külön személyiséggel rendelkezik, ennek köszönhetően más és más reakciókat produkálnak. De vajon a Te Furby-d milyen személyiséget sajátít el? Minden azon múlik, hogyan játszol és foglalkozol vele! A kis lila szőrmók minden egyes megmozdulásodra reagál, így akár etetheted, felemelheted, rázhatod, megfordíthatod vagy zenét játszhatsz le neki, mindenre reagálni fog!",
+        "kedvelt": false
+    },
+    {
+        "nev": "Tamagocsi",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/pocketPet.png",
+        "id": 19,
+        "ar": 1999,
+        "leiras": "Ismét hódít a 90-es évek játék szenzációja, a Tamagotchi! Válaszd ki a 168 féle kisállat közül a kedvencedet, majd gondoskodj róla a kis gombok segítségével, etesd meg, játssz vele, altasd el, gyógyítsd meg, ha beteg, takaríts fel utána, de akár le is zárhatod, hogy senki ne nyúlhasson hozzá!",
+        "kedvelt": true
+    },
+    {
+        "nev": "Verd át a kamerát",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/verdAtAKamerat.png",
+        "id": 20,
+        "ar": 12999,
+        "leiras": "A Tomy 'Verd át a kamerát' társasjáték egy izgalmas ügyességi próba, ahol a cél a drágakő megszerzése, miközben egy mozgásérzékelős kamera próbálja elkapni a játékosokat. Egyszerűen helyezze el a dobozban lévő éberszemű kamerát egy asztalon vagy bármilyen más stabil felületen, rejtsd el a kincset, és kezdődhet az izgalom.",
+        "kedvelt": false
+    },
+    {
+        "nev": "Szuper Mágikus Jinn",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/magikusJinn.png",
+        "id": 21,
+        "ar": 11995,
+        "leiras": "Sziasztok! Szuper Mágikus Jinn vagyok!\\\\ Ez a mókás figura mindig így köszön, és bármikor szívesen játszik a gyerekekkel: méghozzá barkochbát. Csak gondolni kell egy állatra, ruhadarabra, zöldségre vagy gyümölcsre, sportágra vagy foglalkozása, Szuper Mágikus Jinn kitalálja azt! Ez az interaktív lényecske eldöntendő kérdéseket tesz fel, hangfelismerő rendszerének köszönhetően pedig a gyerekek szóban válaszolhatnak, így tulajdonképpen beszélgetnek Jinnel. Igen, nem, nem tudom, attól függ... Ahogy megválaszolják a kérdéseket, Jinn egyre közelebb kerül a megfejtéshez. Remekül leköti a már nagyobb óvodás gyerekeket - sőt, akár a szülőket - is, kompakt mérete miatt pedig utazáshoz is ideális társ. A játék remekül fejleszti a logikus gondolkodást, miközben a gyerekek jól szórakoznak.",
+        "kedvelt": true
+    },
+    {
+        "nev": "Bitzee",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/bitzeeInteraktiv.png",
+        "id": 22,
+        "ar": 19990,
+        "leiras": "Fedezd fel a Disney varázslatos világát a Bitzee Interaktív digitális állat Disney kiadással! Ez az innovatív játék a klasszikus tamagotchi élményt ötvözi a legújabb technológiával, hogy a gyermeked elmerülhessen a Disney karakterek gondozásában és játékában. A Bitzee egy kicsi, hordozható eszköz, melyben 30 különböző Disney karaktert lehet felfedezni, beleértve Mickey egér, Minnie egér, és még sok más népszerű figurát. A gyerekeknek lehetőségük van etetni, gondozni, és játszani ezekkel a digitális barátokkal, miközben különböző kihívásokat és játékokat oldanak meg. A színes kijelző és az interaktív funkciók révén a Bitzee minden pillanatban új élményeket kínál, a gyermekek figyelmét lekötve és kreativitásukat fejlesztve.",
+        "kedvelt": false
+    },
+    {
+        "nev": "Tacsi robotkutya",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/robotKutya.png",
+        "id": 23,
+        "ar": 34999,
+        "leiras": "A kutya az ember legjobb barátja, különösen ha ez a kutya egy robot, hiszen akkor biztos, hogy a gazdi minden parancsát teljesíti! A Tacsi kutyus nagyon cuki, szófogadó és sokat szeret játszani, így ideális játszópajtása lesz a gyerekeknek. Mindenhova követi őket és figyeli minden apró mozdulatukat. Tacsi hangokat képes kiadni, csóválja a farkát vagy épp szaglászik valami után akárcsak egy igazi kutya, de természetesen különféle trükköket is előadhattok közösen. A labdájával lehet irányítani, kétféle funkciót kiválasztva. A követő módban az árnyékok és mozgások segítségével tájékozódik, mint egy valódi kutyus, míg a kézi vezérlés módot bekapcsolva pedig a labdán lévő gombok segítségével lehet vezérelni.",
+        "kedvelt": true
+    },
+    {
+        "nev": "Táncoló kaktusz",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/tancoloKaktusz.png",
+        "id": 24,
+        "ar": 10999,
+        "leiras": "A legtöbb gyerekszobában nem igen vannak növények, hiszen a rendszeres locsolás elmaradása nem tesz túl jót nekik, de most itt a nagyszerű lehetőség, hogy egy mókás kaktusz azért helyet kapjon a polcon vagy éppen az íróasztal egyik sarkán. Ez a kaktusz nem éppen hétköznapi figura, hiszen a benne rejlő elektronikának és a három darab AAA ceruzaelemnek köszönhetően mókás zenével és vicces tánccal tudja szórakoztatni a gyerekeket, ráadásul attól sem kell félni, hogy bárkit megszúrna, hiszen ez egy igazán kedves kaktusz.",
+        "kedvelt": false
+    },
+    {
+        "nev": "LG Kizon W105",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/kizon.png",
+        "id": 25,
+        "ar": 4999,
+        "leiras": "Az LG KizON okoskarpánt GPS és csak a helymeghatározás céljából működő WiFi segítségével mindig segít tájékozódni gyermeke pontos tartózkodási helyéről. A karpánt segítségével, gyermeke egyetlen gombnyomással bármikor aktiválni tud egy előre betáplált telefonszámot. Abban az esetben, ha gyermeke nem reagál a hívásra, egy bizonyos idő után automatikusan aktiválódik a készülék beépített mikrofonja. Ezáltal hallható lesz gyermeke hangja és a környezet zaja.",
+        "kedvelt": false
+    },
+    {
+        "nev": "ZR Walkie Talkie",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/walkieTalkie.png",
+        "id": 26,
+        "ar": 4499,
+        "leiras": "Ez a vagány kültéri Walkie Talkie antennával ideális választás a fiatal felfedezők számára. A menő burkolattal ellátott készülékkel a gyerekek jócskán eltávolodhatnak egymástól, hiszen a készülék több méteres hatótávolsággal is képes működni a szabadban. Használat közben nem szabad elfelejteni, hogy el azonos sávon kell használni mindkét készüléket, és ennék a készüléknél is igaz, hogy vagy beszélünk vagy hallgatunk, így amikor végeztél a mondandóddal ne felejtsük el azt mondani, hogy VÉTEL!! ",
+        "kedvelt": false
+    },
+    {
+        "nev": "Star Wars Lightsaber",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/fenykard.png",
+        "id": 27,
+        "ar": 9999,
+        "leiras": "A Star Wars Lightsaber Forge: Darksaber kinyitható elektronikus fénykard tökéletes választás a Star Wars világának rajongói számára, akik szeretnék a Mandalori örökség egyik legikonikusabb fegyverét a kezükben tartani. A Darksaber nemcsak egy fénykard, hanem a galaxis egyik legkülönlegesebb, fekete pengéjű fegyvere, amelyet Mandalore uralkodói használtak. Most te is csatlakozhatsz ehhez a legendás hagyományhoz ezzel a valósághű fény- és hanghatásokkal felszerelt játékkal.",
+        "kedvelt": true
+    },
+    {
+        "nev": "Óriás zongora",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/zongora.png",
+        "id": 28,
+        "ar": 17999,
+        "leiras": "Játszd el kedvenc zenéidet a hatalamas méretű zongorán! A Zongora óriás játszószőnyeg egy nyomásérzékelős billentyűzet, két oktávval. A zongorán lépkedve tudsz játszani, a játék 8 hangszer hangját tudja utánozni, négy beépített dalt is le tud játszani. A szőnyeg hangereje állítható, a művedet fel tudod vele venni, és vissza is tudod hallgatni! A Zongora óriás játszószőnyeg 4 darab AA ceruzaelemmel működik, a csomagolás az elemeket nem tartalmazza.",
+        "kedvelt": false
+    },
+    {
+        "nev": "Játék mobiltelefon",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/jatekTelefon.png",
+        "id": 29,
+        "ar": 1999,
+        "leiras": "Gyakorold a telefonálást a szétcsúsztatható játéktelefonnal! A Játék mobiltelefon egy élethű mobiltelefon, ami fejleszti a kommunikációs készséget. A telefon fedőlapja elcsúsztatható, a gombok megnyomására a játék különböző mondatokat, hangokat ad ki magából. A telefon kijelzője hologramos, több irányból nézve más-más kép jelenik meg rajta. A Játék mobiltelefon 2 db LR44 gombelemmel működik, a csomagolás az elemeket tartalmazza. A telefon összecsukott méretei: 10 x 5 x 2 cm. A termék fekete, bordó és világoskék színben kapható. A játékok külön kaphatóak. A megjegyzésben kérjük tüntesd fel, hogy melyik változatot szeretnéd!",
+        "kedvelt": false
+    },
+    {
+        "nev": "Első laptopom",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/elsoLaptopom.png",
+        "id": 30,
+        "ar": 8799,
+        "leiras": "Nyiss kaput a szórakoztatásra! A gyermeklaptopunkban 33 különböző tevékenységet találsz. Tanulhatod a betűket, a számokat és a szavakat, valamint zenélhetsz és játékokkal játszhatsz. Imádni fogod, ahogy az egérrel mozoghatsz a képernyőn. Pont olyan, mint az igazi! 3 éves kortól ajánlott. Hat választható működési mód. Olvasási-írási készségek. Problémamegoldás. Próbálj ki! Kezelési útmutató: Tisztítás csak törléssel.",
+        "kedvelt": true
+    },
+    {
+        "nev": "Bobby kutyus",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/bobbyKutyus.png",
+        "id": 31,
+        "ar": 7999,
+        "leiras": "Minden gyerek életében eljön a pillanat amikor bejelentik: \"Anyaaaa, úúúúgy szeretnék egy kutyát!\" A felelős állattartásra fel kell készíteni a gyerekeket, ez a sétáltatható plüss kiskutya pedig nagyszerű első lépés az óvodáskorú gyerekek számára, hiszen megtanulhatják, hogyan kell gondoskodni egy igazi állatról. A kutyus szuper cuki, és különböző funkciókkal is rendelkezik. Csak fel kell tolni a pórázon található pöcköt, hogy az eb ugatni kezdjen és csóválja a farkát séta közben.",
+        "kedvelt": false
+    },
+    {
+        "nev": "Dance Revolution Táncszönyeg",
+        "kep": "/WebShop_IKT1/Pictures/Elektronikus/tancSzonyeg.png",
+        "id": 32,
+        "ar": 9990,
+        "leiras": "Most lehet csak igazán jót táncolni és ugrálni, ideje megmutatni, ki mit tud! A Dance Revolution táncszőnyeg TV-re és PC-re csatlakoztatható, és egy igazán remek szórakozás a gyerekeknek! A hiperaktív gyerkőcök kedvükre mozoghatnak, miközben fejlődnek a reflexeik és a ritmusérzékük. Az ifjú táncosoknak a TV-n vagy a számítógép monitorán megjelenő nyilakat követve kell megismételniük a lépéseket. Akinek több helyes lépése lesz, az nyeri a nagy táncpárbajt. A gyerekek összesen 48 dal és 2 játék közül választhatnak.A táncszőnyeg TV-hez RCA csatlakozóval, PC-re USB csatlakozóval köthető. A táncszőnyeg kizárólag az RCA (kompozit A/V) csatlakozóval rendelkező TV-re köthető. A táncszőnyeg működése nem igényel külön elemeket.A csomagolás tartalmaz egy táncszőnyeget, egy CD-t, a csatlakoztatáshoz szükséges kábeleket, valamint egy adaptert.",
+        "kedvelt": false
+    }
+]

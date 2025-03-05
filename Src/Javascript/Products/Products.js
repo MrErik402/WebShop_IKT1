@@ -202,7 +202,7 @@ let DisplayItems = (products) => {
                             <img class="rounded-sm mx-auto h-max w-max min-h-[140px] max-h-[140px] min-w-[140px] max-w-[140px] " src="${product.img}" alt="${product.nev}">
                         </div>
                         
-                        <h1 id="title" class="pt-5  text-lg">${product.nev}</h1>
+                        <h1 id="title" class="pt-5  text-lg">${product.nev.length > 16 ? product.nev.substring(0,13) + "..." : product.nev}</h1>
                         <h1 class=" text-lg xl:text-md relative max-w-sm xl:h-40 h-20" id="description">${shortDescription}...</h1>
                         <div class="flex flex-col pt-2">
                         
