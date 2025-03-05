@@ -63,12 +63,12 @@ export default async function Casual(){
     
     try {
         if(window.location.hostname === "127.0.0.1"){ //Host meghatározása
-            await fetch(baseUrl + "Src/Javascript/Products/Tarsasjatekok/products.json")
+            await fetch(baseUrl + "Src/Javascript/Products/Elektronikus/products.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }
         else{
-            await fetch(baseUrl + "Src/Javascript/Products/Tarsasjatekok/productsGitHub.json")
+            await fetch(baseUrl + "Src/Javascript/Products/Elektronikus/productsGitHub.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }
