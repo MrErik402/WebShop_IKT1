@@ -58,10 +58,22 @@ export default async function AirToltenyek(){
         }
     }
 
+    const baseUrl = (window.location.hostname === "127.0.0.1") ? "/" : "/WebShop_IKT1/";
+
+    
     try {
-        await fetch("/Src/Javascript/Products/AirsoftToltenyek/products.json")
-        .then(res => res.json())
-        .then(data => PassData(data))
+        if(window.location.hostname === "127.0.0.1"){ //Host meghatározása
+            await fetch(baseUrl + "Src/Javascript/Products/Tarsasjatekok/products.json")
+            .then(res => res.json())
+            .then(data => PassData(data))
+        }
+        else{
+            await fetch(baseUrl + "Src/Javascript/Products/Tarsasjatekok/productsGitHub.json")
+            .then(res => res.json())
+            .then(data => PassData(data))
+        }
+        
+        
     } catch (error) {
         console.log(error)
     }
