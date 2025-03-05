@@ -51,7 +51,7 @@ let FullNavbar = () => {
         </ul>
         </div>
 
-        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdownFegyver" class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl hidden lg:block" type="button">Fegyverek
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdownFegyver" class="text bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em]  hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl hidden lg:block" type="button">Airsoft
         </button>
 
         <!-- Dropdown menu -->
@@ -98,31 +98,7 @@ let FullNavbar = () => {
         </div>
     </div>
     <div id="burgerMenu" class="hidden w-full bg-tarsas4-light dark:bg-tarsas3-dark text-center flex-col lg:hidden dark:text-white">
-        <div id="burgerAirsoft" class="py-4 border-b border-black cursor-pointer" onclick="airsoftKatt()">
-            <p class="text-white">Airsoft</p>
-        </div>
-        <div id="burgerAirsoftAlmenu" class="hidden flex-col bg-tarsas3-light dark:bg-tarsas2-dark dark:text-white">
-            <a href="./airsoftFegyver.html">
-                <p class="border-y border-black p-4"><img id="kepNav" src="../Pictures/Navbar/fegyver.png" class=""
-                style="display: inline;">Fegyverek<img id="kepNav" src="../Pictures/Navbar/fegyverMasik.png" class=""
-                style="display: inline;"></p>
-            </a>
-            <a href="./airsoftRuha.html">
-                <p class="border-b border-black p-4"><img id="kepNav" src="../Pictures/Navbar/polo.png" class="mr-3"
-                style="display: inline;">Ruházat<img id="kepNav" src="../Pictures/Navbar/polo.png" class=""
-                style="display: inline;"></p>
-            </a>
-            <a href="./airsoftKieg.html">
-                <p class="border-b border-black p-4"><img id="kepNav" src="../Pictures/Navbar/tavcso.png" class=""
-                style="display: inline;">Kiegészítők<img id="kepNav" src="../Pictures/Navbar/tavcso.png" class=""
-                style="display: inline;"></p>
-            </a>
-            <a href="./airsoftTolteny.html">
-                <p class="border-b border-black p-4"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
-                style="display: inline;">Lőszerek<img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
-                style="display: inline;"></p>
-            </a>
-        </div>
+        
         <div id="burgerJatekok" class="py-4 border-b border-black cursor-pointer" onclick="jatekokKatt()">
             <p class="text-white">Játékok</p>
         </div>
@@ -145,6 +121,31 @@ let FullNavbar = () => {
             <a href="./jatekFegyverek.html">
                 <p class="border-b border-black p-4"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
                 style="display: inline;">Fegyverek<img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
+                style="display: inline;"></p>
+            </a>
+        </div>
+        <div id="burgerAirsoft" class="py-4 border-b border-black cursor-pointer" onclick="airsoftKatt()">
+            <p class="text-white">Airsoft</p>
+        </div>
+        <div id="burgerAirsoftAlmenu" class="hidden flex-col bg-tarsas3-light dark:bg-tarsas2-dark dark:text-white">
+            <a href="./airsoftFegyver.html">
+                <p class="border-y border-black p-4"><img id="kepNav" src="../Pictures/Navbar/fegyver.png" class=""
+                style="display: inline;">Fegyverek<img id="kepNav" src="../Pictures/Navbar/fegyverMasik.png" class=""
+                style="display: inline;"></p>
+            </a>
+            <a href="./airsoftRuha.html">
+                <p class="border-b border-black p-4"><img id="kepNav" src="../Pictures/Navbar/polo.png" class="mr-3"
+                style="display: inline;">Ruházat<img id="kepNav" src="../Pictures/Navbar/polo.png" class=""
+                style="display: inline;"></p>
+            </a>
+            <a href="./airsoftKieg.html">
+                <p class="border-b border-black p-4"><img id="kepNav" src="../Pictures/Navbar/tavcso.png" class=""
+                style="display: inline;">Kiegészítők<img id="kepNav" src="../Pictures/Navbar/tavcso.png" class=""
+                style="display: inline;"></p>
+            </a>
+            <a href="./airsoftTolteny.html">
+                <p class="border-b border-black p-4"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
+                style="display: inline;">Lőszerek<img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
                 style="display: inline;"></p>
             </a>
         </div>
