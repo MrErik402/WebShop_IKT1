@@ -23,6 +23,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@swiper/swiper-bundle.min.css"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.0.6/swiper-bundle.min.js"></script>
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+
+
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
@@ -44,7 +49,7 @@
                     <img class="w-20" src="../Pictures/popupshoppingcart.png" alt="">
                     <h1 class="pt-2">Összesen</h1>
                     <h1 class="pt-1 pb-4 font-bold" id="finalPrice">0$</h1>
-                    <button onClick="closePopUp()" class="fizetes ring-1 max-w-screen-lg w-full ring-gray-400 p-1 bg-[#867070] text-white rounded-md">
+                    <button onClick="closePopUp(true)" class="fizetes ring-1 max-w-screen-lg w-full ring-gray-400 p-1 bg-[#867070] text-white rounded-md">
                         Fizetés
                     </button>
                     <div class="kosarbanLevoTermekek mt-5 flex flex-col gap-2">
@@ -56,19 +61,18 @@
         
 
     <div class="-main mt-5 bg-[#F5EBEB] dark:bg-tarsas3-dark">
-
+        
         <div class="bg-[#F5EBEB] dark:bg-tarsas3-dark xl:visible flex justify-between text-2xl p-10 self-center items-center space-x-3"> <!-- Szűrő mobilra -->
             <div class="">
-                <p>Rendezés:</p>
-                <div class="py-1 flex items-center px-4 border-1 rounded-xl border border-black">
-                        
-                        <select id="rendezes" class="flex text-center justify-center w-full bg-[#F5EBEB] dark:bg-tarsas3-dark">
-                            <option value="default">Alapértelmezett</option>
-                            <option value="olcsoToDraga">Olcsó -> Drága</option>
-                            <option value="dragaToOlcso">Drága -> Olcsó</option>
-                            <option value="a-z">A-Z</option>
-                            <option value="z-a">Z-A</option>
-                        </select>
+                <div class="py-1 flex flex-col items-center px-4 rounded-xl ">
+                        <label for="small" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900 ">Rendezés</label>
+                            <select id="rendezes" class="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-purple-500">
+                              <option value="default">Alapértelmezett</option>
+                              <option value="olcsoToDraga">Olcsó -> Drága</option>
+                              <option value="dragaToOlcso">Drága -> Olcsó</option>
+                              <option value="a-z">A-Z</option>
+                              <option value="z-a">Z-A</option>
+                            </select>
                 </div>
             </div>
             <div class="">
@@ -78,28 +82,47 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <div class="relative w-full overflow-hidden">
-            <div class="swiper-container">
+        <div id="carousel" class="relative w-full overflow-hidden block md:hidden">
+            <div class="swiper-container mx-auto">
               
               <div class="swiper-wrapper">
                 <!-- Slide 1 -->
-                <div class="swiper-slide flex space-x-4">
-                  <div class="w-1/2 bg-gray-200 p-4 text-center">Item 1</div>
+                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
+                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
+                    <img src="../Pictures/Elektronikus/furbyInteraktiv.png" alt="">
+                  </div>
+                  <div class="w-full max-w-[40vw] p-4 text-center">
+                    <img src="../Pictures/Elektronikus/bobbyKutyus.png" alt="">
+                  </div>
                 </div>
                 <!-- Slide 2 -->
-                <div class="swiper-slide flex space-x-4">
-                  <div class="w-1/2 bg-gray-200 p-4 text-center">Item 5</div>
+                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
+                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
+                    <img src="../Pictures/AirsoftFegyverek/granatveto.png" alt="">
+                  </div>
+                  <div class="w-full max-w-[40vw] p-4 text-center">
+                    <img src="../Pictures/AirsoftRuhazat/kesztyu-removebg-preview.png" alt="">
+                  </div>
                 </div>
                 <!-- Slide 3 -->
-                <div class="swiper-slide flex space-x-4">
-                    <div class="w-1/2 bg-gray-200 p-4 text-center">Item 3</div>
+                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
+                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
+                    <img src="../Pictures/Elektronikus/jatekTelefon.png" alt="">
                   </div>
+                  <div class="w-full max-w-[40vw] p-4 text-center">
+                    <img src="../Pictures/Muanyag/HarryPotta.png" alt="">
+                  </div>
+                </div>
                   <!-- Slide 4 -->
-                <div class="swiper-slide flex space-x-4">
-                    <div class="w-1/2 bg-gray-200 p-4 text-center">Item 6</div>
+                  <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
+                    <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
+                      <img src="../Pictures/Elektronikus/magikusJinn.png" alt="">
+                    </div>
+                    <div class="w-full max-w-[40vw] p-4 text-center">
+                      <img src="../Pictures/Elektronikus/tancSzonyeg.png" alt="">
+                    </div>
                   </div>
                 
               </div>
@@ -108,45 +131,8 @@
             
             </div>
           </div>
-          
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-              slidesPerView: 1,
-              spaceBetween: 1,
-              loop: true,
-              autoplay: {
-                delay: 3000,
-              },
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-              },
-              breakpoints: {
-                640: {
-                  slidesPerView: 1,
-                  spaceBetween: 1,
-                },
-                768: {
-                  slidesPerView: 2,
-                  spaceBetween: 1,
-                },
-                1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 1,
-                },
-              },
-            });
-          </script>
+      
 
-        
-
-        <div class="flex overflow-hidden justify-center items-center w-full max-w-screen-lg bg-gray-400 mx-auto">
-            <img class="slide-left w-56 h-56" src="../Pictures/AirsoftFegyverek/barrett-m82.png" alt="">
-        </div>
         
         <div class="flex wrapper xl:hidden flex-col mx-auto justify-center bg-[#F5EBEB] dark:bg-tarsas3-dark">
             
@@ -265,5 +251,6 @@
     <script src="./Javascript/Cart/Cart.js"></script>
     <script type="module" src="./Javascript/Products/Products.js"></script>
     
+    <script src="./swiper.js"></script>
 </body>
 </html>
