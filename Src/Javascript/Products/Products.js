@@ -137,9 +137,12 @@ window.removeThisItem = function (id) {
     }
 }
 
-window.closePopUp = function(){
+window.closePopUp = function(fizetes = false){
     document.querySelector(".kosarbanLevoTermekek").innerHTML = ``;
     document.querySelector(".popUp").classList.add("hidden");
+    if (fizetes) {
+        window.location.href = "./fizetes.html";
+    }
 }
 
 window.inputChange = function (id, num){
