@@ -527,8 +527,57 @@ let airsoftFegyverek = [
         nev: "Specna Arms Airsoft Sniper SA-S02 CORE",
         kep: "../Pictures/AirsoftFegyverek/sa-s02.png",
         id: 65,
-        ar: 2995,
-        leiras: "Legyél te a vízicsaték királya ezzel az 50 centiméteres vízipisztollyal. A pisztoly garantálja a fergeteges szórakozást a nyári napokon. Magaddal viheted a strandra, a tengerpartra, de akár egy nyári szülinapi partinak is mókás kiegészítője lehet. Csak töltsd meg a tartályt vízzel és már indulhat is a játék.",
+        ar: 52000,
+        leiras: "A Specna Arms Airsoft Sniper SA-S02 CORE egy magas minőségű, kiváló teljesítményű airsoft puska, amely ideális választás a tapasztalt játékosok számára. A fegyver teste és a cső kiváló minőségű ABS műanyagból készült, míg a fogantyú és a válltámasz gumiból. A fegyver hossza 114 cm, a cső hossza 55 cm. A fegyver súlya 2,8 kg. A fegyver 6 mm-es BB lövedékeket lő ki, és a tárkapacitása 30 lövedék. A fegyver sebessége 120 m/s. A fegyverhez mellékelve van egy 8,4 V-os akkumulátor és egy töltő.",
+        kedvelt: false,
+    },
+    {
+        nev: "ASG Airsoft Strike System Sportline MX18",
+        kep: "../Pictures/AirsoftFegyverek/mx-18.png",
+        id: 66,
+        ar: 98000,
+        leiras: "Az ASG Airsoft Strike System Sportline MX18 egy kiváló minőségű, korszerű airsoft fegyver, amely ideális választás a tapasztalt játékosok számára. A fegyver teste és a cső kiváló minőségű ABS műanyagból készült, míg a fogantyú és a válltámasz gumiból. A fegyver hossza 114 cm, a cső hossza 55 cm. A fegyver súlya 2,8 kg. A fegyver 6 mm-es BB lövedékeket lő ki, és a tárkapacitása 30 lövedék. A fegyver sebessége 120 m/s. A fegyverhez mellékelve van egy 8,4 V-os akkumulátor és egy töltő. Az ASG Airsoft Strike System Sportline MX18 kiváló teljesítményt nyújt, és ideális választás azoknak, akik komoly airsoft játékot szeretnének játszani.",
         kedvelt: true,
     },
+    {
+        nev: "Specna Arms SA-C20 PDW CORE X ASR",
+        kep: "../Pictures/AirsoftFegyverek/sa-c20.png",
+        id: 67,
+        ar: 85000,
+        leiras: "A Specna Arms SA-C20 PDW CORE X ASR egy magas minőségű, kiváló teljesítményű airsoft fegyver, amely ideális választás a tapasztalt játékosok számára. A fegyver teste és a cső kiváló minőségű ABS műanyagból készült, míg a fogantyú és a válltámasz gumiból. A fegyver hossza 114 cm, a cső hossza 55 cm. A fegyver súlya 2,8 kg. A fegyver 6 mm-es BB lövedékeket lő ki, és a tárkapacitása 30 lövedék. A fegyver sebessége 120 m/s. A fegyverhez mellékelve van egy 8,4 V-os akkumulátor és egy töltő.",
+        kedvelt: false
+    },
+    {
+        nev: "Umarex 1.6 Jouli Smith & Wesson M&P R8 CO2 Airsoft Revolver",
+        kep: "../Pictures/AirsoftFegyverek/sw-r8.png",
+        id: 68,
+        ar: 120000,
+        leiras: "A Smith & Wesson M&P R8 CO2 Airsoft Revolver egy magas minőségű, kiváló teljesítményű airsoft fegyver, amely ideális választás a tapasztalt játékosok számára. A fegyver teste és a cső kiváló minőségű ABS műanyagból készült, míg a fogantyú és a válltámasz gumiból. A fegyver hossza 114 cm, a cső hossza 55 cm. A fegyver súlya 2,8 kg. A fegyver 6 mm-es BB lövedékeket lő ki, és a tárkapacitása 30 lövedék. A fegyver sebessége 120 m/s. A fegyverhez mellékelve van egy 8,4 V-os akkumulátor és egy töltő.",
+        kedvelt: false,
+    },
+    {
+        nev: "Umarex Smith & Wesson M&P9 M2.0 T4E",
+        kep: "../Pictures/AirsoftFegyverek/sw-p9.png",
+        id: 69,
+        ar: 120000,
+        leiras: "Az Umarex Smith & Wesson M&P9 M2.0 T4E pisztoly egy magas minőségű, kiváló teljesítményű airsoft fegyver, amely ideális választás a tapasztalt játékosok számára. A fegyver teste és a cső kiváló minőségű ABS műanyagból készült, míg a fogantyú és a válltámasz gumiból. A fegyver hossza 114 cm, a cső hossza 55 cm. A fegyver súlya 2,8 kg. A fegyver 6 mm-es BB lövedékeket lő ki, és a tárkapacitása 30 lövedék. A fegyver sebessége 120 m/s. A fegyverhez mellékelve van egy 8,4 V-os akkumulátor és egy töltő.",
+        kedvelt: false,
+    },
+    
+    {
+        nev: "Cyma CM612",
+        kep: "../Pictures/AirsoftFegyverek/cyma-cm612.png",
+        id: 70,
+        ar: 45000,
+        leiras: "A Cyma CM612 egy magas minőségű, kiváló teljesítményű airsoft fegyver, amely ideális választás a tapasztalt játékosok számára. A fegyver teste és a cső kiváló minőségű ABS műanyagból készült, míg a fogantyú és a válltámasz gumiból. A fegyver hossza 114 cm, a cső hossza 55 cm. A fegyver súlya 2,8 kg. A fegyver 6 mm-es BB lövedékeket lő ki, és a tárkapacitása 30 lövedék. A fegyver sebessége 120 m/s. A fegyverhez mellékelve van egy 8,4 V-os akkumulátor és egy töltő.",
+        kedvelt: false
+    },
+    {
+        nev: "Airsoftová pistole MK23 Special Operation S Tlumičem plyn",
+        kep: "../Pictures/AirsoftFegyverek/ASG-MK23.png",
+        id: 71,
+        ar: 120000,
+        leiras: "A MK23 Special Operation S Tlumičem plyn egy magas minőségű, kiváló teljesítményű airsoft fegyver, amely ideális választás a tapasztalt játékosok számára. A fegyver teste és a cső kivál�� minőségű ABS műanyagból készült, míg a fogantyú és a válltámasz gumiból. A fegyver hossza 114 cm, a cső hossza 55 cm. A fegyver súlya 2,8 kg. A fegyver 6 mm-es BB lövedékeket lő ki, és a tárkapacitása 30 lövedék. A fegyver sebessége 120 m/s. A fegyverhez mellékelve van egy 8,4 V-os akkumulátor és egy töltő.",
+        kedvelt: false
+    }
 ]
