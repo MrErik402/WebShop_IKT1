@@ -38,7 +38,8 @@
 
 </script>
 </head>
-<body class="bg-[#F5EBEB] dark:bg-tarsas3-dark">
+<body class="bg-[#F5EBEB] dark:bg-tarsas3-dark flex flex-col min-h-[150vw] ">
+  <div class="">
     <!-- Ide kerul a navbar a ../Components/Navbar.js ből-->
     <div class="popUp hidden  fixed top-0 right-0 max-w-xs bg-[#D5B4B4] z-50 h-screen overflow-y-hidden">
         <div onClick="closePopUp()" class=" text-center hover:cursor-pointer max-w-10 h-6 p-1 relative left-0">
@@ -62,31 +63,11 @@
 
     <div class="-main mt-5 bg-[#F5EBEB] dark:bg-tarsas3-dark">
         
-        <div class="bg-[#F5EBEB] dark:bg-tarsas3-dark xl:visible flex justify-between text-2xl p-10 self-center items-center space-x-3"> <!-- Szűrő mobilra -->
-            <div class="">
-                <div class="py-1 flex flex-col items-center px-4 rounded-xl ">
-                        <label for="small" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900 ">Rendezés</label>
-                            <select id="rendezes" class="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-purple-500">
-                              <option value="default">Alapértelmezett</option>
-                              <option value="olcsoToDraga">Olcsó -> Drága</option>
-                              <option value="dragaToOlcso">Drága -> Olcsó</option>
-                              <option value="a-z">A-Z</option>
-                              <option value="z-a">Z-A</option>
-                            </select>
-                </div>
-            </div>
-            <div class="">
-                <div class="">
-                    <div class="bg-[#F5EBEB] xl:hidden dark:bg-tarsas3-dark w-20 h-20 rounded-2xl flex justify-center self-center items-center">
-                        <img class="w-14 h-14" src="../Pictures/filter 1.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
-        <div id="carousel" class="relative w-full overflow-hidden block md:hidden">
+        <div id="carousel" class="relative w-full overflow-hidden block xl:hidden">
             <div class="swiper-container mx-auto">
-              
+              <h1 class="text-center p-2 font-bold text-lg">Legkedveltebb termékek</h1>
               <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
@@ -131,7 +112,20 @@
             
             </div>
           </div>
-      
+          
+          <div class="bg-[#F5EBEB] flex-col mx-auto my-5 dark:bg-tarsas3-dark  h-20 rounded-2xl flex justify-center self-center items-center xl:hidden">
+            <img class="w-14 h-14" src="../Pictures/filter 1.png" alt="">
+            <div class="py-1 flex-col  flex  items-center px-4 rounded-xl ">
+              <label for="small" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900 ">Rendezés</label>
+                  <select id="rendezes" class="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-purple-500">
+                    <option value="default">Alapértelmezett</option>
+                    <option value="olcsoToDraga">Olcsó -> Drága</option>
+                    <option value="dragaToOlcso">Drága -> Olcsó</option>
+                    <option value="a-z">A-Z</option>
+                    <option value="z-a">Z-A</option>
+                  </select>
+      </div>
+          </div>
 
         
         <div class="flex wrapper xl:hidden flex-col mx-auto justify-center bg-[#F5EBEB] dark:bg-tarsas3-dark">
@@ -160,7 +154,7 @@
 
 
 
-        <div id="main" class="h-full mx-auto w-full  px-2.5 md:px-20 pt-5 overflow-hidden  "> <!-- MaxWidthWrapper, azért kell, hogy megadjunk egy max méretet, reszponzivitás miatt -->
+        <div id="main" class="h-full mx-auto w-full  px-2.5 md:px-20 pt-5   "> <!-- MaxWidthWrapper, azért kell, hogy megadjunk egy max méretet, reszponzivitás miatt -->
             <div class="flex xl:-ml-10">
                   <div class="flex flex-col flex-initial w-full ">
                     <div class="my-4">
@@ -170,13 +164,41 @@
                         </div>
                         
                     </div>
-
                   </div>
 
                   
                   
 
                   <div class="z-[0] hidden xl:flex xl:flex-col xl:flex-initial max-w-md w-full ">
+                      
+
+                    <div class="bg-[#F5EBEB]  dark:bg-tarsas3-dark xl:visible flex justify-between text-2xl self-center items-center space-x-3"> <!-- Szűrő mobilra -->
+                      <div class="">
+                        <img class="mx-auto rotate-45" src="../Pictures/filter 1.png" alt="">
+                          <div class="py-1  flex flex-col items-center px-4 rounded-xl ">
+                                  <label for="small" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900 ">Rendezés</label>
+                                      <select id="rendezes" class="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-purple-500">
+                                        <option value="default">Alapértelmezett</option>
+                                        <option value="olcsoToDraga">Olcsó -> Drága</option>
+                                        <option value="dragaToOlcso">Drága -> Olcsó</option>
+                                        <option value="a-z">A-Z</option>
+                                        <option value="z-a">Z-A</option>
+                                      </select>
+                          </div>
+                          
+                      </div>
+                      <div class="">
+                        <div class="">
+                          <div class="bg-[#F5EBEB] xl:hidden dark:bg-tarsas3-dark w-20 h-20 rounded-2xl flex justify-center self-center items-center">
+                            <img class="w-14 h-14" src="../Pictures/filter 1.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    
+
 
                     <div class="-my-3 w-full">
                         <div class="wrapper flex-col mx-auto justify-center bg-[#F5EBEB] dark:bg-tarsas3-dark">
@@ -246,11 +268,37 @@
         </div>
     </div>
 
+    <div id="lablec" class="w-full bg-tarsas3-light dark:bg-tarsas3-dark dark:text-white py-4 self-end mt-auto flex flex-wrap gap-8 lg:gap-0 relative bottom-0 h-auto">
+      <div id="hirlevel" class="flex flex-col w-full lg:w-1/3 px-16 gap-4">
+          <p>Iratkozzon fel a hírlevelünkre!</p>
+          <input type="email" name="" id="" placeholder="E-mail" class="rounded text-lg p-2">
+          <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">Feliratkozás</button>
+      </div>
+      <div id="elerhetoseg" class="flex flex-col w-full lg:w-1/3 px-16 text-center">
+          <p class="mb-4 text-lg">Elérhetőség</p>
+          <p>emailunk@email.com</p>
+          <p>+36 30 582 9419</p>
+      </div>
+      <div id="hivatalos" class="flex flex-col w-full lg:w-1/3 px-16">
+          <div id="logoHivatalos" class="flex h-1/2 justify-between">
+              <img src="../Pictures/Fooldal/Cég logó.png" alt="">
+              <p class="self-center">Társas estek™ 2024</p>
+          </div>
+          <div id="gombokHivatalos" class="flex h-1/2 justify-between px-4">
+          <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">ÁSZF</button>
+          <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">Adatvédelem</button>
+
+          </div>
+      </div>
+  </div>
+
+    <script src="../Components/Footer.js"></script>
     <script src="../Components/Navbar.js"></script>
     <script src="./Javascript/range.js"></script>
     <script src="./Javascript/Cart/Cart.js"></script>
     <script type="module" src="./Javascript/Products/Products.js"></script>
     
     <script src="./swiper.js"></script>
-</body>
+  </div>
+  </body>
 </html>

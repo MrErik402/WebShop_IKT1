@@ -1,6 +1,8 @@
 let cart = !localStorage.getItem("productsInCart") ? [] : JSON.parse(localStorage.getItem("productsInCart"));
 let popular = !localStorage.getItem("populartsInCart") ? [] : JSON.parse(localStorage.getItem("populartsInCart"));
 
+
+
 function updateCartNumber() {
 
     let sum = 0;
