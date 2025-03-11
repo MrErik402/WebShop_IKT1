@@ -316,7 +316,7 @@ async function CatchData(szuro) {
         DisplayItems(muanyagJatekok);
     }
 
-    if(document.title === "Airsoft fegyverek") {
+    if(document.title === "Airsoftfegyverek") {
         let airsoftFegyver = await AirFegyverek();
 
         if(szuro == "olcsoToDraga"){
