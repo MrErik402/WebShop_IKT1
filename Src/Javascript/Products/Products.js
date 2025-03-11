@@ -69,7 +69,7 @@ window.popUp = function(){
     let sum = 0;
 
     if(cart.length == 0){
-        document.querySelector("#finalPrice").textContent = 0 + "$";
+        document.querySelector("#finalPrice").textContent = 0 + " Ft";
     }
 
     cart.forEach(value => {
@@ -127,6 +127,66 @@ window.popUp = function(){
     */
 }
 
+let getCartItems = () => {
+    let sum = 0;
+    let vegsoAr = 0;
+    if(cart.length == 0){
+        document.querySelector("#fizetesTermekOsszeg").textContent = 0 + " Ft";
+    }
+
+    cart.forEach(value => {
+        let id = value.id;
+        let quantity = Number(value.quantity);
+        let image = value.img;
+        
+        let ar = Number(value.ar);
+        let formattedAr = new Intl.NumberFormat('hu-HU', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        }).format(ar).replace(/\s/g, '\u00A0');
+        let nev = value.nev;
+    
+        sum += ar * quantity;
+    
+        
+        document.querySelector("#fizetesTermekOsszeg").textContent = new Intl.NumberFormat('hu-HU', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        }).format(sum).replace(/\s/g, '\u00A0') + " Ft";
+
+        document.getElementById("fizetesVegosszeg").innerHTML = `${sum + 1000} Ft`
+    
+        document.getElementById("kosarTartalom").innerHTML += `
+            <div class="ring-1 ring-black/30">
+                <div class="flex flex-col  item-container" data-id="${id}">
+                    <img class="p-2 min-w-24 w-full max-w-24 h-full max-h-24 min-h-24 self-center" src="${image}" alt="">
+                    <h1 class="pt-2 px-1 font-thin">${nev}</h1>
+                    <div class="flex gap-2 justify-between px-1 pb-2">
+                        <h1 class="text-right float-right font-medium">${formattedAr} Ft</h1>
+                        <input onChange="inputChange(${id}, Number(this.value))" min="0" type="number" value="${quantity}" class="w-8 bg-white/50" />
+                    </div>
+                    <button class="hover:ring-1 ring-black/20 remove-item p-1 m-1 rounded-lg text-white bg-[#867070]">Eltávolítás</button>
+                </div>
+            </div>
+
+            <div class="termek flex flex-col md:flex-row items-center border border-black w-4/5 gap-4 py-4 shadow-lg dark:bg-tarsas3-dark dark:text-white" data-id="${id}">
+                <img src="${image}" alt="Termék" class="w-1/5 object-contain">
+                <div class="flex flex-col w-3/5">
+                    <h1 class="font-bold text-xl">${nev}</h1>
+                    <p>${leiras}</p>
+                </div>
+                <div class="flex flex-col justify-around items-center">
+                    <div class="w-full flex justify-center">
+                    <input onChange="inputChange(${id}, Number(this.value))" min="0" type="number" value="${quantity}" class="w-8 bg-white/50" />
+                        <label for="darab" class="text-lg">db</label>
+                    </div>
+                    <p class="text-3xl">${formattedAr}</p>
+                </div>
+            </div>
+        `;
+    });
+}
+
 window.removeThisItem = function (id) {
     if (id) {
         const index = cart.findIndex(item => item.id === id);
@@ -137,9 +197,12 @@ window.removeThisItem = function (id) {
     }
 }
 
-window.closePopUp = function(){
+window.closePopUp = function(fizetes = false){
     document.querySelector(".kosarbanLevoTermekek").innerHTML = ``;
     document.querySelector(".popUp").classList.add("hidden");
+    if (fizetes) {
+        window.location.href = "./fizetes.html";
+    }
 }
 
 window.inputChange = function (id, num){
