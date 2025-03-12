@@ -63,12 +63,12 @@ export default async function AirFegyverek(){
     
     try {
         if(window.location.hostname === "127.0.0.1"){ //Host meghatározása
-            await fetch(baseUrl + "Src/Javascript/Products/AirsoftFegyverek/products.json")
+            await fetch(baseUrl + "Src/Javascript/Products/AirsoftFegyverek/product.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }
         else{
-            await fetch(baseUrl + "Src/Javascript/Products/AirsoftFegyverek/productsGitHub.json")
+            await fetch(baseUrl + "Src/Javascript/Products/AirsoftFegyverek/productGitHub.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }
