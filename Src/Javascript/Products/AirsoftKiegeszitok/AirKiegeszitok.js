@@ -63,12 +63,12 @@ export default async function AirKiegeszito(){
     
     try {
         if(window.location.hostname === "127.0.0.1"){ //Host meghatározása
-            await fetch(baseUrl + "Src/Javascript/Products/AirsoftKiegeszitok/products.json")
+            await fetch(baseUrl + "Src/Javascript/Products/AirsoftKiegeszitok/product.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }
         else{
-            await fetch(baseUrl + "Src/Javascript/Products/AirsoftKiegeszitok/productsGitHub.json")
+            await fetch(baseUrl + "Src/Javascript/Products/AirsoftKiegeszitok/productGitHub.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }
