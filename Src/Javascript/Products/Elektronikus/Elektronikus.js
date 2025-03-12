@@ -68,7 +68,7 @@ export default async function Casual(){
             .then(data => PassData(data))
         }
         else{
-            await fetch(baseUrl + "Src/Javascript/Products/Elektronikus/productsGitHub.json")
+            await fetch(baseUrl + "Src/Javascript/Products/Elektronikus/productGitHub.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }

@@ -49,7 +49,7 @@ export default async function JatekFegyverek(){
             .then(data => PassData(data))
         }
         else{
-            await fetch(baseUrl + "Src/Javascript/Products/Jatekfegyverek/productsGitHub.json")
+            await fetch(baseUrl + "Src/Javascript/Products/Jatekfegyverek/productGitHub.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }

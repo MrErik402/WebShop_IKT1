@@ -53,7 +53,7 @@ export default async function Muanyag(){
             .then(data => PassData(data))
         }
         else{
-            await fetch(baseUrl + "Src/Javascript/Products/Muanyag/productsGitHub.json")
+            await fetch(baseUrl + "Src/Javascript/Products/Muanyag/productGitHub.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }
