@@ -129,6 +129,9 @@ window.popUp = function(){
 
 
 
+
+
+
 window.removeThisItem = function (id) {
     if (id) {
         const index = cart.findIndex(item => item.id === id);
