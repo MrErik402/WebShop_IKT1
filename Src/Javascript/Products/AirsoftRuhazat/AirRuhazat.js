@@ -63,12 +63,12 @@ export default async function AirRuhazat(){
     
     try {
         if(window.location.hostname === "127.0.0.1"){ //Host meghatározása
-            await fetch(baseUrl + "Src/Javascript/Products/AirsoftRuhazat/products.json")
+            await fetch(baseUrl + "Src/Javascript/Products/AirsoftRuhazat/product.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }
         else{
-            await fetch(baseUrl + "Src/Javascript/Products/AirsoftRuhazat/productsGitHub.json")
+            await fetch(baseUrl + "Src/Javascript/Products/AirsoftRuhazat/productGitHub.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }

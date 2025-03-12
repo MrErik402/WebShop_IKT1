@@ -68,7 +68,7 @@ export default async function AirFegyverek(){
             .then(data => PassData(data))
         }
         else{
-            await fetch(baseUrl + "Src/Javascript/Products/AirsoftFegyverek/productsGitHub.json")
+            await fetch(baseUrl + "Src/Javascript/Products/AirsoftFegyverek/productGitHub.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }

@@ -653,3 +653,31 @@ let airsoftFegyverek = [
         kedvelt: false,
     },
 ]
+//AIRSOFT FEGYVEREK VÉGE
+let airsoftToltenyek = [
+    {
+        nev: "BLS BIO 0,28G AIRSOFT BB (3570DB)",
+        kep: "kephely",
+        id: 81,
+        ar: 8990,
+        leiras: "A BB-k súlya nagyban befolyásolja a lövedék repülési tulajdonságait és hatótávolságát. A különböző tömegű BB-k kiválóan alkalmazkodnak a különböző FPS értékekhez, biztosítva a lövedékek stabil és pontos repülését. Kiváló minőség: A BLS BB-k precíz gyártási folyamatának köszönhetően rendkívül sima felületet és tökéletes gömb alakot biztosítanak. Megbízhatóság: Ezek a BB-k nem törnek meg könnyen, így csökkentik a megakadásokat és a fegyver meghibásodásának esélyét.",
+        kedvelt: false,
+    },
+    {
+        nev: "",
+        kep: "kephely",
+        id: 82,
+        ar: 9990,
+        leiras: "",
+        kedvelt: false,
+    },
+    {
+        nev: "",
+        kep: "kephely",
+        id: 83,
+        ar: 9990,
+        leiras: "",
+        kedvelt: false,
+    },
+
+]

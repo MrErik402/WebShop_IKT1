@@ -63,12 +63,12 @@ export default async function AirToltenyek(){
     
     try {
         if(window.location.hostname === "127.0.0.1"){ //Host meghatározása
-            await fetch(baseUrl + "Src/Javascript/Products/AirsoftToltenyek/products.json")
+            await fetch(baseUrl + "Src/Javascript/Products/AirsoftToltenyek/product.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }
         else{
-            await fetch(baseUrl + "Src/Javascript/Products/AirsoftToltenyek/productsGitHub.json")
+            await fetch(baseUrl + "Src/Javascript/Products/AirsoftToltenyek/productGitHub.json")
             .then(res => res.json())
             .then(data => PassData(data))
         }

@@ -33,6 +33,7 @@ let getCartItems = () => {
         document.querySelector("#fizetesTermekOsszeg").textContent = 0 + " Ft";
     }
 
+    document.getElementById("kosartartalom").innerHTML = "";
     cart.forEach(value => {
         let id = value.id;
         let quantity = Number(value.quantity);
@@ -59,6 +60,8 @@ let getCartItems = () => {
             maximumFractionDigits: 2
         }).format(sum + 1000).replace(/\s/g, '\u00A0') + " Ft";
     
+        
+
         document.getElementById("kosarTartalom").innerHTML += `
             
 
