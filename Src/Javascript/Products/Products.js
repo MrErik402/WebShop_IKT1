@@ -241,7 +241,7 @@ async function CatchData(szuro) {
         document.querySelector("#termekek").innerHTML += `Betöltés...`
     }
 
-    if(document.title === "Társasjáték") {
+    if(document.title === "Tarsasjatek") {
         let tarsasProducts = await TarsasProducts();
 
         if(szuro == "olcsoToDraga"){
@@ -284,7 +284,7 @@ async function CatchData(szuro) {
         DisplayItems(elektronikusJatekok);
     }
 
-    if(document.title === "Játékfegyverek") {
+    if(document.title === "Jatekfegyver") {
         let jatekFegyverek = await Jatekfegyverek();
 
         if(szuro == "olcsoToDraga"){
@@ -306,7 +306,7 @@ async function CatchData(szuro) {
         DisplayItems(jatekFegyverek);
     }
 
-    if(document.title === "Műanyag") {
+    if(document.title === "Muanyag") {
         let muanyagJatekok = await Muanyag();
 
         if(szuro == "olcsoToDraga"){
@@ -327,7 +327,7 @@ async function CatchData(szuro) {
         DisplayItems(muanyagJatekok);
     }
 
-    if(document.title === "Airsoft fegyverek") {
+    if(document.title === "Airsoftfegyverek") {
         let airsoftFegyver = await AirFegyverek();
 
         if(szuro == "olcsoToDraga"){
@@ -348,7 +348,7 @@ async function CatchData(szuro) {
         DisplayItems(airsoftFegyver);
     }
 
-    if(document.title === "Airsoft kiegészítők") {
+    if(document.title === "Airsoftkiegeszitok") {
         let AirsoftKiegeszitok = await AirKiegeszito();
 
         if(szuro == "olcsoToDraga"){
@@ -368,7 +368,7 @@ async function CatchData(szuro) {
 
         DisplayItems(AirsoftKiegeszitok);
     }
-    if(document.title === "Airsoft ruházat") {
+    if(document.title === "Airsoftruhazat") {
         let AirsoftRuhazat = await AirRuhazat();
 
         if(szuro == "olcsoToDraga"){
@@ -389,7 +389,7 @@ async function CatchData(szuro) {
         DisplayItems(AirsoftRuhazat);
     }
     
-    if(document.title === "Airsoft töltények") {
+    if(document.title === "Airsofttoltenyek") {
         let AirsoftToltenyek = await AirToltenyek();
 
         if(szuro == "olcsoToDraga"){
