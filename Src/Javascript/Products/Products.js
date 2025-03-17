@@ -51,11 +51,17 @@ maxRangeSlider2.addEventListener("input", () => {
 })
 
 let szuresRendezettseg = document.querySelector("#rendezes")
+let szuresRendezettsegMobil = document.querySelector("#rendezesMobil")
 
 
 szuresRendezettseg.addEventListener("change", () => {
         CatchData(szuresRendezettseg.value)
     }
+)
+
+szuresRendezettsegMobil.addEventListener("change", () => {
+    CatchData(szuresRendezettsegMobil.value)
+}
 )
 
 const ClearPage = () => {
@@ -235,7 +241,7 @@ async function CatchData(szuro) {
         document.querySelector("#termekek").innerHTML += `Betöltés...`
     }
 
-    if(document.title === "Tarsasok") {
+    if(document.title === "Társasjáték") {
         let tarsasProducts = await TarsasProducts();
 
         if(szuro == "olcsoToDraga"){
@@ -278,7 +284,7 @@ async function CatchData(szuro) {
         DisplayItems(elektronikusJatekok);
     }
 
-    if(document.title === "Jatekfegyverek") {
+    if(document.title === "Játékfegyverek") {
         let jatekFegyverek = await Jatekfegyverek();
 
         if(szuro == "olcsoToDraga"){
@@ -300,7 +306,7 @@ async function CatchData(szuro) {
         DisplayItems(jatekFegyverek);
     }
 
-    if(document.title === "Muanyag") {
+    if(document.title === "Műanyag") {
         let muanyagJatekok = await Muanyag();
 
         if(szuro == "olcsoToDraga"){
@@ -321,7 +327,7 @@ async function CatchData(szuro) {
         DisplayItems(muanyagJatekok);
     }
 
-    if(document.title === "Airsoftfegyverek") {
+    if(document.title === "Airsoft fegyverek") {
         let airsoftFegyver = await AirFegyverek();
 
         if(szuro == "olcsoToDraga"){
