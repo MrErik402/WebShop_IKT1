@@ -1,0 +1,42 @@
+[
+    {
+        "nev": "Dye Goggle i4 Black",
+         "kep": "../Pictures/AirsoftRuhazat/sisakFekete.png",
+         "id": 84,
+         "ar": 52000,
+         "leiras": "A Specna Arms Airsoft Sniper SA-S02 CORE egy magas minőségű, kiváló teljesítményű airsoft puska, amely ideális választás a tapasztalt játékosok számára. A fegyver teste és a cső kiváló minőségű ABS műanyagból készült, míg a fogantyú és a válltámasz gumiból. A fegyver hossza 114 cm, a cső hossza 55 cm. A fegyver súlya 2,8 kg. A fegyver 6 mm-es BB lövedékeket lő ki, és a tárkapacitása 30 lövedék. A fegyver sebessége 120 m/s. A fegyverhez mellékelve van egy 8,4 V-os akkumulátor és egy töltő.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Taktikai Coyote térdvédő",
+         "kep": "../Pictures/AirsoftRuhazat/térdvédőCoy.png",
+         "id": 85,
+         "ar": 4650,
+         "leiras": "Térdvédő gumis pántokkal amelyek különböző méretekre lehet beállítani. Pántok kialakításának köszönhetően nem mozdul el és stabilan marad a térden. Gyorsan lehet fel és levenni játék közben. Mérete miatt igen kedvelt, mert kicsi könnyű és kis helyen elfér. Térdvédő használatával is tudod biztonságossá tenni a játékot.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Tactical Rifleman Chest Rig Multicam",
+         "kep": "../Pictures/AirsoftRuhazat/pancel.png",
+         "id": 86,
+         "ar": 16700,
+         "leiras": "8db M4/M16 tár befogadására alkalmas airsoft mellény. MOLLE rendszerű, így szabadon lehet bővíteni MOLLE rendszerű zsebekkel. A mellkasi és hát részbe merevítő lap tehető. A mellkasnál lévő admin panel pedig visszahajtható. Derékben és vállban is állítható a méret.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Taktikai Övtáska Fekete",
+         "kep": "../Pictures/AirsoftRuhazat/öv.png",
+         "id": 87,
+         "ar": 9000,
+         "leiras": "Taktikai Övtáska Fekete hétköznapi és airsoft játékokra ajánlott. Kényelmesen lehet pakolni apró kiegészítő dolgokat, iratokat amelyeket könnyen és gyorsan elér, ha szükség van rá. Különböző elkülönített részeknek köszönhetően könnyedén tudjuk szelektálva pakolni.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Univerzális combtok (balos) OD",
+         "kep": "../Pictures/AirsoftRuhazat/öv.png",
+         "id": 88,
+         "ar": 6990,
+         "leiras": "Balkezesek számára készült pisztoly combtok. Szinte bármely típusra beállítható pisztoly combtok. A combon átfutó pántok szilikonos csíkkal rendelkeznek, hogy intenzívebb mozgás során is a helyén maradjon a tok.",
+         "kedvelt": false
+    }
+]
