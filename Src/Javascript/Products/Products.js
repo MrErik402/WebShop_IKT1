@@ -51,11 +51,17 @@ maxRangeSlider2.addEventListener("input", () => {
 })
 
 let szuresRendezettseg = document.querySelector("#rendezes")
+let szuresRendezettsegMobil = document.querySelector("#rendezesMobil")
 
 
 szuresRendezettseg.addEventListener("change", () => {
         CatchData(szuresRendezettseg.value)
     }
+)
+
+szuresRendezettsegMobil.addEventListener("change", () => {
+    CatchData(szuresRendezettsegMobil.value)
+}
 )
 
 const ClearPage = () => {
