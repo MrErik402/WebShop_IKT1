@@ -50,6 +50,8 @@ export default async function TarsasJatek(){
             await fetch(baseUrl + "Src/Javascript/Products/Tarsasjatekok/products.json")
             .then(res => res.json())
             .then(data => PassData(data))
+            
+            
         }
         else{
             await fetch(baseUrl + "Src/Javascript/Products/Tarsasjatekok/productsGitHub.json")
