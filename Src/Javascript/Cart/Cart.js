@@ -33,7 +33,7 @@ let getCartItems = () => {
         document.querySelector("#fizetesTermekOsszeg").textContent = 0 + " Ft";
     }
 
-    document.getElementById("kosartartalom").innerHTML = "";
+    document.getElementById("kosarTartalom").innerHTML = "";
     cart.forEach(value => {
         let id = value.id;
         let quantity = Number(value.quantity);
