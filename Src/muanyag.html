@@ -72,37 +72,37 @@
                 <!-- Slide 1 -->
                 <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
                   <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img src="../Pictures/Elektronikus/furbyInteraktiv.png" alt="">
+                    <img onclick="tekerjle(55)" id="55" src="../Pictures/Muanyag/babyGroot.png" alt="">
                   </div>
                   <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img src="../Pictures/Elektronikus/bobbyKutyus.png" alt="">
+                    <img onclick="tekerjle(59)" id="59" src="../Pictures/Muanyag/ejfelTorony.png" alt="">
                   </div>
                 </div>
                 <!-- Slide 2 -->
                 <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
                   <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img src="../Pictures/AirsoftFegyverek/granatveto.png" alt="">
+                    <img onclick="tekerjle(64)" id="64" src="../Pictures/Muanyag/clementoni.png" alt="">
                   </div>
                   <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img src="../Pictures/AirsoftRuhazat/kesztyu-removebg-preview.png" alt="">
+                    <img onclick="tekerjle(61)" id="61" src="../Pictures/Muanyag/hidPuzzle.png" alt="">
                   </div>
                 </div>
                 <!-- Slide 3 -->
                 <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
                   <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img src="../Pictures/Elektronikus/jatekTelefon.png" alt="">
+                    <img onclick="tekerjle(54)" id="54" src="../Pictures/Muanyag/starWars.png" alt="">
                   </div>
                   <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img src="../Pictures/Muanyag/HarryPotta.png" alt="">
+                    <img onclick="tekerjle(62)" id="62" src="../Pictures/Muanyag/HarryPotta.png" alt="">
                   </div>
                 </div>
                   <!-- Slide 4 -->
                   <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
                     <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                      <img src="../Pictures/Elektronikus/magikusJinn.png" alt="">
+                      <img onclick="tekerjle(50)" id="50" src="../Pictures/Muanyag/pava.png" alt="">
                     </div>
                     <div class="w-full max-w-[40vw] p-4 text-center">
-                      <img src="../Pictures/Elektronikus/tancSzonyeg.png" alt="">
+                      <img onclick="tekerjle(51)" id="51" src="../Pictures/Muanyag/monaLisa.png" alt="">
                     </div>
                   </div>
                 
@@ -286,7 +286,7 @@
           </div>
           <div id="gombokHivatalos" class="flex h-1/2 justify-between px-4">
           <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">ÁSZF</button>
-          <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">Adatvédelem</button>
+          <button class=" bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">Adatvédelem</button>
 
           </div>
       </div>
@@ -299,6 +299,41 @@
     <script type="module" src="./Javascript/Products/Products.js"></script>
     
     <script src="./swiper.js"></script>
+
+    <script>
+      let lefutottEgyszer = false;
+      var elozoId; 
+      function tekerjle(id){
+        if(!lefutottEgyszer){
+          var my_element = document.getElementById(`_${id}`);
+          my_element.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+          });
+
+          my_element.style.border = "4px dashed black"
+          elozoId = id;
+          lefutottEgyszer = true;
+        }
+        else{
+
+          
+          document.getElementById(`_${elozoId}`).style.border = "none"
+          var my_element2 = document.getElementById(`_${id}`);
+          my_element2.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+          });
+
+          my_element2.style.border = "4px dashed black"
+          elozoId = id;
+        }
+        }
+        
+      
+    </script>
   </div>
   </body>
 </html>
