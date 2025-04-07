@@ -299,6 +299,23 @@
     <script type="module" src="./Javascript/Products/Products.js"></script>
     
     <script src="./swiper.js"></script>
+    <script>
+
+    document.querySelector('.kartyaAnimacio').forEach((card) => {
+        card.addEventListener('mousemove', (e) => {
+            const cardRect = card.getBoundingClientRect();
+            const x = (e.clientX - cardRect.left) / cardRect.width - 0.5;
+            const y = (e.clientY - cardRect.top) / cardRect.height - 0.5;
+
+            card.style.transform = `rotateY(${x * 25}deg) rotateX(${y * -25}deg)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'rotateY(0deg) rotateX(0deg)';
+        });
+    });
+
+    </script>
   </div>
   </body>
 </html>
