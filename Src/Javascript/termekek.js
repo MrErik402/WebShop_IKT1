@@ -830,3 +830,5 @@ let airsoftToltenyek = [
 
 ]
 
+
+let osszesLista = [tarsasJatek, elektronikusJatek, jatekFegyverek, muanyag, airsoftFegyverek, airsoftRuhazat, airsoftToltenyek]
