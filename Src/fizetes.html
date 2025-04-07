@@ -19,6 +19,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
+    <script>
+        import { Modal } from 'flowbite';
+    </script>
+
     
 </head>
 
@@ -51,7 +55,7 @@
                     <input type="checkbox" name="hirlevelElfogad" id="hirlevelElfogad" class="bg-gray-300">
                     <label for="hirlevelElfogad">Feliratkozom a hírlevélre</label>
                 </div>
-                <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl mt-4" type="button">
+                <button onclick="fizugomb()" class="block bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl mt-4" type="button">
                     Fizetés
                 </button>
             </div>
@@ -153,6 +157,24 @@
 
 
     <script>
+    
+
+    const $targetEl = document.getElementById('authentication-modal');
+
+    const modal = new Modal($targetEl);
+
+
+    let fizugomb = () => {
+        if (document.getElementById("aszfElfogad").checked) {
+            modal.toggle();
+        } else {
+            alert("Az ÁSZF-et kötelező elfogadni!");
+        }
+    }
+
+    
+
+
     window.popUp = function() {
         document.querySelector(".kosarbanLevoTermekek").innerHTML = ``;
         document.querySelector(".popUp").classList.remove("hidden");
