@@ -49,3 +49,34 @@ tombKedveltTermekekkel.forEach(element => {
         kedveltAirsoftKiegeszitok.push(element);
     }
 });
+
+let aktualisOldal = "oldalCime";
+let atadottTomb = kedveltTarsas
+
+switch (aktualisOldal) {
+    case "Tarsasjatek":
+        //Társasjáték tömböt kell használnia
+        atadottTomb = kedveltTarsas;
+        break;
+    case "Muanyag":
+        atadottTomb = kedveltMuanyag
+        break;
+    case "Jatekfegyver":
+        atadottTomb = kedveltJatekfegyver
+        break;
+    case "Elektronikus":
+        atadottTomb = kedveltElektronikus
+        break;
+    case "Airsoftfegyverek":
+        atadottTomb = kedveltAirsoftFegyver
+        break;
+    case "Airsoftruhazat":
+        atadottTomb = kedveltAirsoftRuhazat
+        break;
+    case "Airsoftkiegeszitok":
+        atadottTomb = kedveltAirsoftKiegeszitok
+        break;
+    case "Airsofttoltenyek":
+        atadottTomb = kedveltAirsoftToltenyek
+        break;
+}
