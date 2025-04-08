@@ -787,3 +787,4 @@ let airsoftToltenyek = [
 
 ]
 
+const osszesLista = [tarsasJatek, elektronikusJatek, muanyag, jatekFegyverek, airsoftFegyverek]
