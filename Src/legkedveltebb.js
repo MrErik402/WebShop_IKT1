@@ -50,7 +50,7 @@ tombKedveltTermekekkel.forEach(element => {
     }
 });
 
-let aktualisOldal = "oldalCime";
+let aktualisOldal = document.title.toString();
 let atadottTomb = kedveltTarsas
 
 switch (aktualisOldal) {
