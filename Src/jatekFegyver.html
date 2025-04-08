@@ -68,43 +68,8 @@
         <div id="carousel" class="relative w-full overflow-hidden block xl:hidden">
             <div class="swiper-container mx-auto">
               <h1 class="text-center p-2 font-bold text-lg">Legkedveltebb termékek</h1>
-              <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img src="../Pictures/Elektronikus/furbyInteraktiv.png" alt="">
-                  </div>
-                  <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img src="../Pictures/Elektronikus/bobbyKutyus.png" alt="">
-                  </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img src="../Pictures/AirsoftFegyverek/granatveto.png" alt="">
-                  </div>
-                  <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img src="../Pictures/AirsoftRuhazat/kesztyu-removebg-preview.png" alt="">
-                  </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img src="../Pictures/Elektronikus/jatekTelefon.png" alt="">
-                  </div>
-                  <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img src="../Pictures/Muanyag/HarryPotta.png" alt="">
-                  </div>
-                </div>
-                  <!-- Slide 4 -->
-                  <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                    <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                      <img src="../Pictures/Elektronikus/magikusJinn.png" alt="">
-                    </div>
-                    <div class="w-full max-w-[40vw] p-4 text-center">
-                      <img src="../Pictures/Elektronikus/tancSzonyeg.png" alt="">
-                    </div>
-                  </div>
+              <div class="swiper-wrapper sliderek">
+                
                 
               </div>
         
@@ -299,6 +264,41 @@
     <script type="module" src="./Javascript/Products/Products.js"></script>
     
     <script src="./swiper.js"></script>
+    <script src="./Javascript/termekek.js"></script>
+    <script src="./legkedveltebb.js"></script>
+
+    <script>
+      let lefutottEgyszer = false;
+      var elozoId; 
+      function tekerjle(id){
+        if(!lefutottEgyszer){
+          var my_element = document.getElementById(`_${id}`);
+          my_element.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+          });
+
+          my_element.style.border = "4px dashed black"
+          elozoId = id;
+          lefutottEgyszer = true;
+        }
+        else{
+          document.getElementById(`_${elozoId}`).style.border = "none"
+          var my_element2 = document.getElementById(`_${id}`);
+          my_element2.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+          });
+
+          my_element2.style.border = "4px dashed black"
+          elozoId = id;
+        }
+        }
+        
+      
+    </script>
   </div>
   </body>
 </html>

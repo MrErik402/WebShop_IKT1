@@ -80,3 +80,32 @@ switch (aktualisOldal) {
         atadottTomb = kedveltAirsoftToltenyek
         break;
 }
+
+console.log(aktualisOldal)
+
+atadottTomb.forEach(targy => {
+    console.log(targy.kep)
+    document.querySelector(".sliderek").innerHTML += `
+    <!-- Slide 1 -->
+    <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
+      <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
+        <img src="${targy.kep}" alt="" onclick="tekerjle(${targy.id})" id="${targy.id}">
+      </div>
+      
+    </div>
+    `
+
+    
+    
+});
+
+
+atadottTomb.slice(7).forEach(targy => {
+    document.querySelector(".legkedveltebbpc").innerHTML += `
+        <div class="border max-w-xs p-2 border-black/40 shadow-md shadow-black/50 ">
+            <img onclick="tekerjle(${targy.id})" id="${targy.id}" src="${targy.kep}" alt="">
+            <h1 class="font-light text-xl">${targy.nev}</h1>
+            <h1 class="font-bold text-lg">2 elegendő vásárló</h1>
+        </div>
+    `
+})
