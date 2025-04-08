@@ -830,5 +830,4 @@ let airsoftToltenyek = [
 
 ]
 
-
-let osszesLista = [tarsasJatek, elektronikusJatek, jatekFegyverek, muanyag, airsoftFegyverek, airsoftRuhazat, airsoftToltenyek]
+const osszesLista = [tarsasJatek, elektronikusJatek, muanyag, jatekFegyverek, airsoftFegyverek]
