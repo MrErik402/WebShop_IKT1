@@ -1,0 +1,130 @@
+[
+    {
+        "nev": "RAM 3-9x50 Scope",
+         "kep": "../Pictures/AirsoftKiegeszitok/scope.png",
+         "id": 113,
+         "ar": 47000,
+         "leiras": "A RAM-Tactical 3-9x50 AO SFP céltávcső egy sokoldalú céltávcső, amelyet hosszú távú precíziós és taktikai alkalmazásokra terveztek. Ennek a céltávcsőnek a műszaki adatai kiváló választássá teszik légpuskákhoz, lőfegyverekhez és airsoft replikákhoz egyaránt.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Digital LiPo/Li-ion Töltő",
+         "kep": "../Pictures/AirsoftKiegeszitok/tolto.png",
+         "id": 114,
+         "ar": 16000,
+         "leiras": "Az előző modellünkhöz képest kétszeres sebességgel (1500 mah óránként) ez a verzió hihetetlenül gyorsan biztonságosan tölti mind a lítium-iont, mind a lítium-polimert (FCC, CE, RoHS, WEEE tanúsítvánnyal rendelkező)",
+         "kedvelt": false
+    },
+    {
+        "nev": "G&G Shooting Glasses",
+         "kep": "../Pictures/AirsoftKiegeszitok/szemuveg.png",
+         "id": 115,
+         "ar": 12000,
+         "leiras": "Airsoft játék közben a biztonság a legfontosabb, és a legfontosabb dolog, amit megvédhetsz, az a szemed. És mi lenne jobb szemvédelem, mint a G&G Transparent Protect lőszemüveg. Ezek a fantasztikus védőszemüvegek átlátszó lencsékkel rendelkeznek, amelyek törésbiztosak és nulla torzítással rendelkeznek. Az objektívek precíziós kialakításúak a kiváló vizuális tisztaság érdekében, keménybevonatúak, karcállóak, és megfelelnek a CSA és ANSI biztonsági szabványoknak. Puha, kivehető párnázás, amely a belső kerethez rögzíthető, biztosítja a szellőzést.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Ragnar Raids RÖK Térdvédő",
+         "kep": "../Pictures/AirsoftKiegeszitok/terdVedo.png",
+         "id": 116,
+         "ar": 7000,
+         "leiras": "A LIMBER-IMPACT technológiával ellátott Rök térdvédőket úgy tervezték, hogy maximális ütéselnyelést biztosítsanak az ízületi területen, nagyon alacsony, 2 cm vastag profillal, hogy ne zavarják a térd megfelelő biomechanikai mozgását.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Umarex CO2 Capsule 12g",
+         "kep": "../Pictures/AirsoftKiegeszitok/Patronco2.png",
+         "id": 117,
+         "ar": 500,
+         "leiras": "Az airsoft CO2 patron egy kis, összesűrített szén-dioxidot tartalmazó patron.",
+         "kedvelt": false
+    },
+    {
+        "nev": "CQB Riot Pajzs",
+         "kep": "../Pictures/AirsoftKiegeszitok/shield.png",
+         "id": 118,
+         "ar": 34000,
+         "leiras": "Az Evike.com CQB Riot / Camera Crew Shield egy könnyű, könnyen hordozható, 3 mm vastag, magas szilárdságú polikarbonátból készült védőpajzs, amely +2000-es páncélértéket biztosít, nagy, ívelt védelmet nyújt, és képes ellenállni 600+ FPS sebességű Airsoft BB-knek és más projektiloknak.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Fenix GL22 újratölthető taktikai fegyverlámpa",
+         "kep": "../Pictures/AirsoftKiegeszitok/lampa.png",
+         "id": 119,
+         "ar": 65000,
+         "leiras": "A Fenix GL22 Tactical Light készen áll arra, hogy az Ön arzenáljának fontos eszközévé váljon. Ez a 750 lumen fényerejű pisztolylámpa a bal vagy a jobb kapcsoló egyszerű megérintésével azonnal 591 láb magasra tudja dobni a fényt, tökéletes bal- vagy jobbkezes lövészek számára.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Matrix Tactical újratölthető foregrip lézer",
+         "kep": "../Pictures/AirsoftKiegeszitok/foregripLezer.png",
+         "id": 120,
+         "ar": 25000,
+         "leiras": "A Matrix Tactical Rechargeable Picatinny/M-LOK Foregrip Flashlight and Laser egy könnyű, tartós alumíniumból készült, 1000 lumenes fényerővel és 200 méteres hatótávval rendelkező lámpa és zöld lézer, amely 4 üzemmódot kínál, újratölthető akkumulátorral, USB-C töltéssel, ergonomikus foregrip kialakítással és víz-, ütés- és rázkódásállósággal rendelkezik.",
+         "kedvelt": false
+    },
+    {
+        "nev": "PVC 3D tapasz Paramedic",
+         "kep": "../Pictures/AirsoftKiegeszitok/patch.png",
+         "id": 121,
+         "ar": 1700,
+         "leiras": "PVC tapasz Mentős. Az EmersonGear tapaszok speciális módszerrel készülnek és 3D-sek, így a motívum kiemelkedik a tapasz felületéből. A tapaszok teljes hátsó felületén tépőzárral vannak ellátva, így könnyen rögzíthetőek sapkára, hátizsákra, kabátra,...",
+         "kedvelt": false
+    },
+    {
+        "nev": "Arcmaszk Shadow Warrior",
+         "kep": "../Pictures/AirsoftKiegeszitok/arcMaszk.png",
+         "id": 122,
+         "ar": 6200,
+         "leiras": "Kényelmes elasztikus kapucni maszkkal, amely lehetővé teszi, hogy egyidejűleg lövészszemüveget viseljen. Az elasztikus poliészter használatának köszönhetően a kapucni nagyon kényelmes viselet, és aggodalom nélkül nyújtható, valamint nagyon gyorsan szárad. Az orrot és a szájat védő maszk fémből készült, amely enyhén hajlítható, hogy alkalmazkodjon az arc formájához.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Taktikai rádiótáska",
+         "kep": "../Pictures/AirsoftKiegeszitok/walkietalkie.png",
+         "id": 123,
+         "ar": 8600,
+         "leiras": "A PRC 148/152 rádiótáska a legkézenfekvőbb választás ennek a masszív katonai rádiónak a hordozására. Annyira kifinomult, hogy még egy szakembert sem bántana, és az airsoft játékosoknak egyáltalán nem kell habozniuk.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Bővíthető gumibot, fekete",
+         "kep": "../Pictures/AirsoftKiegeszitok/vipera.png",
+         "id": 124,
+         "ar": 8800,
+         "leiras": "A teleszkópos gumibot gyors önvédelemre szolgál különböző konfliktushelyzetekben. Az ESP gumibotot a hétköznapi felhasználók személyes védelmére ajánljuk - nem hivatásos használatra.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Open Strike Vörös pont",
+         "kep": "../Pictures/AirsoftKiegeszitok/redDot.png",
+         "id": 125,
+         "ar": 7000,
+         "leiras": "Egyszerű, nyílt látómezejű kollimátor 20x30mm-es téglalap alakú látómezővel a jól ismert ASG cégtől.",
+         "kedvelt": false
+    },
+    {
+        "nev": "RIS kétlábú Harris bipod",
+         "kep": "../Pictures/AirsoftKiegeszitok/bipod.png",
+         "id": 126,
+         "ar": 18000,
+         "leiras": "Harris bipod fémből. Standard RIS sínre szerelhető, de a VSR mesterlövészpuskákhoz hasonlóan klasszikus szemre is felszerelhető. A bipod lábai összecsukhatóak és 11 pozícióba is kihúzhatóak. A lábak végén gumihegyek vannak.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Maverick-III nagyító",
+         "kep": "../Pictures/AirsoftKiegeszitok/nagyitosScope.png",
+         "id": 127,
+         "ar": 32000,
+         "leiras": "A Vector Optics Maverick Gen III SOP 3x22 3x nagyítású optika, amely a kollimátor előtt (a kollimátor és a lövész között) helyezkedik el. Nagyobb távolságokra a kollimátoron keresztül történő célzáskor ráközelít a célpontra. Rövidebb távolságokra történő lövéskor egyszerűen oldalra dönthető, és csak a kollimátoron keresztül célozhat tovább.",
+         "kedvelt": false
+    },
+    {
+        "nev": "Fém hangtompító Navy Seal",
+         "kep": "../Pictures/AirsoftKiegeszitok/hangtompito.png",
+         "id": 128,
+         "ar": 7900,
+         "leiras": "Fém (alumínium) hangtompító, egyik oldalán bal oldali 14mm-es menettel, másik oldalán jobb oldali 14mm-es menettel. Ennek köszönhetően gyakorlatilag a lecsavarozhatatlan lángszűrővel ellátott airsoft fegyverek túlnyomó többségéhez alkalmazható. Belső töltete habbetétből készült. A hangtompító színe fekete, logóval - lásd a fotót.",
+         "kedvelt": false
+    }
+]
