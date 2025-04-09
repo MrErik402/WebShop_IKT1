@@ -68,43 +68,9 @@
         <div id="carousel" class="relative w-full overflow-hidden block xl:hidden">
             <div class="swiper-container mx-auto">
               <h1 class="text-center p-2 font-bold text-lg">Legkedveltebb termékek</h1>
-              <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img src="../Pictures/Elektronikus/furbyInteraktiv.png" alt="">
-                  </div>
-                  <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img src="../Pictures/Elektronikus/bobbyKutyus.png" alt="">
-                  </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img src="../Pictures/AirsoftFegyverek/granatveto.png" alt="">
-                  </div>
-                  <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img src="../Pictures/AirsoftRuhazat/kesztyu-removebg-preview.png" alt="">
-                  </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img src="../Pictures/Elektronikus/jatekTelefon.png" alt="">
-                  </div>
-                  <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img src="../Pictures/Muanyag/HarryPotta.png" alt="">
-                  </div>
-                </div>
-                  <!-- Slide 4 -->
-                  <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                    <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                      <img src="../Pictures/Elektronikus/magikusJinn.png" alt="">
-                    </div>
-                    <div class="w-full max-w-[40vw] p-4 text-center">
-                      <img src="../Pictures/Elektronikus/tancSzonyeg.png" alt="">
-                    </div>
-                  </div>
+              <div class="swiper-wrapper sliderek">
+                
+                
                 
               </div>
         
@@ -228,32 +194,11 @@
                                 <hr class="w-full">
                             </div>
 
-                            <div class="">
-                                <h1 class="indent-2 text-2xl p-2">Legkedveltebb termékek</h1>
-                                <div class="negydbtermek flex flex-col w-full gap-4 ">
-                                    <div class="flex ketTermek w-full justify-center gap-6 ">
-                                        <div class="border p-2 border-black/40 shadow-md shadow-black/50">
-                                            <img src="../Pictures/Tarsas/csordaSzellem.png" alt="" class="w-24 mx-auto">
-                                            <h1 class="font-light text-xl">Név</h1>
-                                            <h1 class="font-bold text-lg">2 elegendő vásárló</h1>
-                                        </div>
-                                        <div class="border p-2 border-black/40 shadow-md shadow-black/50">
-                                            <img src="../Pictures/Tarsas/csordaSzellem.png" alt="" class="w-24 mx-auto">
-                                            <h1 class="font-light text-xl">Név</h1>
-                                            <h1 class="font-bold text-lg">2 elegendő vásárló</h1>
-                                        </div>
-                                    </div>
-                                    <div class="flex ketTermek w-full justify-center gap-6">
-                                        <div class="border p-2 border-black/40 shadow-md shadow-black/50">
-                                            <img src="../Pictures/Tarsas/csordaSzellem.png" alt="" class="w-24 mx-auto">
-                                            <h1 class="font-light text-xl">Név</h1>
-                                            <h1 class="font-bold text-lg">2 elegendő vásárló</h1>
-                                        </div>
-                                        <div class="border p-2 border-black/40 shadow-md shadow-black/50">
-                                            <img src="../Pictures/Tarsas/csordaSzellem.png" alt="" class="w-24 mx-auto">
-                                            <h1 class="font-light text-xl">Név</h1>
-                                            <h1 class="font-bold text-lg">2 elegendő vásárló</h1>
-                                        </div>
+                            <div class="w-full">
+                                <h1 class="indent-2 text-2xl p-2 ">Legkedveltebb termékek</h1>
+                                <div class="negydbtermek flex flex-col   gap-4  ">
+                                    <div class="flex flex-wrap ketTermek justify-center gap-6  legkedveltebbpc  ">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +231,7 @@
           </div>
           <div id="gombokHivatalos" class="flex h-1/2 justify-between px-4">
           <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">ÁSZF</button>
-          <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">Adatvédelem</button>
+          <button class=" bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">Adatvédelem</button>
 
           </div>
       </div>
@@ -298,24 +243,13 @@
     <script src="./Javascript/Cart/Cart.js"></script>
     <script type="module" src="./Javascript/Products/Products.js"></script>
     
+    <script src="./Javascript/termekek.js"></script>
     <script src="./swiper.js"></script>
-    <script>
+    <script src="./legkedveltebb.js"></script>
 
-    document.querySelector('.kartyaAnimacio').forEach((card) => {
-        card.addEventListener('mousemove', (e) => {
-            const cardRect = card.getBoundingClientRect();
-            const x = (e.clientX - cardRect.left) / cardRect.width - 0.5;
-            const y = (e.clientY - cardRect.top) / cardRect.height - 0.5;
+    <script src="./Javascript/tekerjle.js"></script>
+    
 
-            card.style.transform = `rotateY(${x * 25}deg) rotateX(${y * -25}deg)`;
-        });
-
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'rotateY(0deg) rotateX(0deg)';
-        });
-    });
-
-    </script>
   </div>
   </body>
 </html>
