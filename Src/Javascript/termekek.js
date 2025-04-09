@@ -402,7 +402,7 @@ let muanyag = [
     },
     {
         nev: "Egzotikus páva",
-        kep: "../Pictures/Jatekfegyverek/pava.png",
+        kep: "../Pictures/Muanyag/pava.png",
         id: 50,
         ar: 6990,
         leiras: "A LEGO® Creator Egzotikus páva (31157) 3 az 1-ben szettel a 7 éves vagy nagyobb fiúk és lányok 3 különböző egzotikus LEGO® állatos játékot építhetnek meg, és játszhatnak is velük. Tartalmaz egy játék pávát, amelynek gyönyörű és részletgazdag farktollai összecsukhatók és kitárhatók. Ez a LEGO® Creator 3 az 1-ben készlet egy szett kockával nyújt 3 különböző építési és játékélményt a gyerekeknek. Építhetnek egy páva játékfigurát, majd átépíthetik egy játék szitakötővé, amelynek beállítható szárnya és farka van, és egy tavirózsa-állványon pihen, vagy egy színes játék pillangóvá, beállítható szárnyakkal. Mind a 3, játékra is alkalmas modell szép kiállítási darab lehet a polcon vagy az éjjeliszekrényen.",
@@ -410,7 +410,7 @@ let muanyag = [
     },
     {
         nev: "Mona Lisa",
-        kep: "../Pictures/Jatekfegyverek/moneLisa.png",
+        kep: "../Pictures/Muanyag/moneLisa.png",
         id: 51,
         ar: 42990,
         leiras: "Alkosd meg saját mesterművedet ezzel a LEGO® Art Mona Lisa (31213) festményt rejtő építőszettel! A műkedvelők egy magával ragadó, örömteli projektben merülhetnek el, miközben egyedül, vagy a barátaikkal összerakják Leonardo da Vinci műalkotásának merész és egyedi újragondolását. Ez a falra akasztható műalkotás remek ajándék lehet a számodra, de lakásdekorációs meglepetés is lehet férfiaknak, nőknek, műkedvelőknek. A kékebb árnyalat azokat a színeket próbálja megeleveníteni, amelyeket da Vinci használt 500 évvel ezelőtt, mielőtt a festék az évek múlásával megváltozott volna. A Mona Lisa híres tekintetét ábrázoló elemek sima, díszítés nélküli elemekre cserélhetők, hogy még elvontabb legyen a megjelenése.",
@@ -418,7 +418,7 @@ let muanyag = [
     },
     {
         nev: "Obi-Wan Kenobi™ és Darth Vader™",
-        kep: "../Pictures/Jatekfegyverek/obiWan.png",
+        kep: "../Pictures/Muanyag/obiWan.png",
         id: 52,
         ar: 8990,
         leiras: "A rajongók újra átélhetik a Star Wars: Obi-Wan Kenobi című sorozat drámai jeleneteit, miközben megépítik Obi-Wan Kenobi és Darth Vader ikonikus szereplők LEGO® BrickHeadz változatait. Ezzel a párossal hatalmas az Erő – a hiteles részletek között megtalálod Darth Vader piros szemét és 1-1 fénykardot mindkét megépíthető LEGO® figurához. A kiállításhoz pedig bemutatóállványok is várnak rád. Ez a kreatív építőjáték remek 10 éves kortól, emellett bármelyik Star Wars™ rajongó gyűjteményének nagyszerű része lehet.",
@@ -426,7 +426,7 @@ let muanyag = [
     },
     {
         nev: "Pókember maszkja",
-        kep: "../Pictures/Jatekfegyverek/pokember.png",
+        kep: "../Pictures/Muanyag/pokember.png",
         id: 53,
         ar: 8990,
         leiras: "Ezzel a gyűjthető, LEGO® Marvel Pókember maszkja (76285) szettel a felnőtt Marvel-rajongók megmutathatják, mennyire imádják Pókembert. Ez a részletgazdag, megépíthető modell magán viseli a Marvel-moziuniverzum egyik legismertebb, ikonikus szuperhősének stílusát. A 487 elemből álló megépíthető modell 19 cm magas, és névtáblával ellátott, masszív állványon pihen. A kényelem kedvéért, a készlethez tartozó építési útmutató digitális változatát a LEGO Builder appban is megtalálod. A felnőtteknek szóló LEGO Marvel ajándékok választéka olyan igazán örömteli építési és kiállítási élményt nyújt, amely a megépítés után is sokáig velük marad.",
@@ -434,7 +434,7 @@ let muanyag = [
     },
     {
         nev: "Birodalmi csillagromboló™",
-        kep: "../Pictures/Jatekfegyverek/starWars.png",
+        kep: "../Pictures/Muanyag/starWars.png",
         id: 54,
         ar: 69990,
         leiras: "Urald a galaxist ezzel a LEGO® Star Wars™ Birodalmi csillagromboló™, megépíthető, gyermekeknek készült játékszettel (75394)! Szuper születésnapi ajándék 10+ éves fiúknak, lányoknak és rajongóknak, hiszen ezen a Star Wars csillaghajót tartalmazó építőjátékon van egy rejtett, kihajtható hordozófül a modell reptetéséhez, továbbá 2 rugós kilövővel van ellátva, a tetején lévő panel levehető, az oldalsó panelek pedig kinyithatók, hogy könnyen hozzá lehessen férni a részletgazdag belső térhez. A játékos belső elemek közt egy hidat, egy irányítótermet, egy pihenőszobát, egy fegyverraktárat, továbbá irányítópaneleket és hődetonátor-elemeket rejtő rakományt találsz.",
@@ -442,7 +442,7 @@ let muanyag = [
     },
     {
         nev: "Mordály & Baby Groot",
-        kep: "../Pictures/Jatekfegyverek/babyGroot.png",
+        kep: "../Pictures/Muanyag/babyGroot.png",
         id: 55,
         ar: 24990,
         leiras: "Emeled a Marvel-filmek akciójeleneteit egy új szintre a LEGO® Marvel Mordály és Baby Groot (76282) szettel! Ez a 10 éves kortól fiúknak és lányoknak egyaránt ajánlott, megépíthető játék csuklós, valósághűen részletgazdag és 22 cm magas. Ez a játék több, mint egy gyerekeknek készült építőjáték, hiszen a Marvel Studios A galaxis őrzői című film ikonikus szereplőjének valósághű mása. A beállítható, megépíthető modell tükrözi a szuperhős lázadó karakterét és fegyverimádatát. Mindegyik illesztés (a könyökök kivételével) mozgatható a maximális játék- és kiállítási élményért. A figura rugós kilövőt és pisztolyt tart a kezében. Vállán az édes kis barátja, Baby Groot ül. Ha egy vagány megépíthető játékot keresel kis szuperhősöknek, akkor a LEGO Marvel Mordály & Baby Groot tökéletes választás azoknak a gyerekeknek, akik meg akarják mutatni, mennyire szuper szuperhősök! Az extra digitális élményért pedig, az építők felnagyíthatják és elforgathatják a modellek 3D-s változatát, és követhetik a haladásukat a vidám és intuitív LEGO Builder appal.",
@@ -450,7 +450,7 @@ let muanyag = [
     },
     {
         nev: "A sütőtök farm",
-        kep: "../Pictures/Jatekfegyverek/mc.png",
+        kep: "../Pictures/Muanyag/mc.png",
         id: 56,
         ar: 15990,
         leiras: "A Minecraft® játékosok a videójátékban megjelenő sütőtököket helyezhetik a középpontba a LEGO® Minecraft A sütőtök farm (21248) készlettel. A videójáték egyik legnépszerűbb karakterével és egy bajkeverő boszorkánnyal ez a játékszett végtelen, akciódús kalandot tartogat a sütőtök farmon a 8+ éves gyerekeknek. Ez a sokoldalúan alakítható játék a hírhedt mocsár biomban, a tök formájú ház körüli tökfarmon játszódik Steve-vel, az egyik főszereplővel. A ház be van rendezve, található benne egy ágy, egy barkácsasztal, egy kohó és egy békalámpa. Körülötte található a sütőtök farm, amelyet Steve művel meg a kapájával. A játéklehetőségek közt megjelenik a csatázás, amikor a boszorkány bájitalokat dobál Steve-re, aki az íjával hárítja a támadást. A szetthez tartozik egy béka, egy csónak és egy kincsesláda is, amely tojást és cukrot rejt, hogy a gyerekek sütőtökös pitét készíthessenek! A digitális élmény kedvéért az építők 3D-nézetben ráközelíthetnek és elforgathatják a szetteket, és követhetik az építés menetét a szórakoztató LEGO Builder appal.",
@@ -458,7 +458,7 @@ let muanyag = [
     },
     {
         nev: "Mega műanyag 350 darabos építőjáték",
-        kep: "../Pictures/Jatekfegyverek/epitojatek.png",
+        kep: "../Pictures/Muanyag/epitojatek.png",
         id: 57,
         ar: 3590,
         leiras: "Rakj össze szép építményeket, különleges formájú építőelemekből! A Mega műanyag 350 darabos építőjáték különleges formájú, piros, sárga, zöld, kék, fehér és fekete építőelemekből áll, amiket rengeteg módon tudsz összeakasztani. A kirakós játékból autókat, hajókat, házakat és kertet is össze tudsz rakni, a furcsa darabokból kocka formákat tudsz készíteni, de akár 45 fokban is illesztheted őket! A Mega műanyag 350 darabos építőjáték fejleszti a kreativitást, az összerakás fejleszti a kézügyességed is! Csomagolás méretei: 22 x 14 x 9 cm.",
@@ -466,7 +466,7 @@ let muanyag = [
     },
     {
         nev: "Ravensburger Puzzle 3x49 db - Minecraft Biomák",
-        kep: "../Pictures/Jatekfegyverek/mcLego.png",
+        kep: "../Pictures/Muanyag/mcLego.png",
         id: 58,
         ar: 4495,
         leiras: "Puzzle 3x49 db - Minecraft Biomák 3 x 49 darabos Minecraft puzzle a Ravensburger márkától. A kirakó dobozában 3 darab kirakót rakhattok ki a Minecraft Biomokról. A kirakó, minőségi, kemény kartonpapírból készült, nagyon színes és tűéles képet ábrázol miután kiraktátok Ha gyermeked rajong a Minecraftos játékokért, lepd meg őt ezzel a 3 x 49 darabos kirakóval, melynek biztosan örülni fog",
@@ -474,7 +474,7 @@ let muanyag = [
     },
     {
         nev: "Ravensburger: Eiffel-torony 216 darabos 3D puzzle fénnyel",
-        kep: "../Pictures/Jatekfegyverek/ejfelTorony.png",
+        kep: "../Pictures/Muanyag/ejfelTorony.png",
         id: 59,
         ar: 14995,
         leiras: "Párizs legismertebb épülete, LED világítással, mozaikdarabokból! A Ravensburger Eiffel-torony 216 darabos 3D puzzle fénnyel az 1889-es világkiállításra készült hatalmas épület, amit puzzle elemekből tudsz összeállítani. A mozaikdarabok könnyen és pontosan csatlakoznak egymáshoz, az alapzat LED fénnyel van felszerelve, ami akár több, váltakozó színekkel is képes világítani. A játék 3 darab AAA mikro ceruzaelemmel működik, a csomagolás az elemeket nem tartalmazza. Az Eiffel-torony 216 darabos 3D puzzle fénnyel összerakott magassága: 47 cm, az alap méretei: 18 X18 cm.",
@@ -482,7 +482,7 @@ let muanyag = [
     },
     {
         nev: "Dino Mini puzzle 54 db Disney mesék",
-        kep: "../Pictures/Jatekfegyverek/frozenPuzli.png",
+        kep: "../Pictures/Muanyag/frozenPuzli.png",
         id: 60,
         ar: 795,
         leiras: "Walt Disney állatfiguráit, vagy hercegnőit szereted jobban? A Disney mini 54 darabos puzzle készletek között megtalálod a kedvenced! A kirakós Disney hercegnők, Verdák, Micimackó és Mikiegér változatban rendelhető, erős kartonból készültek, élénk színekkel. Kirakott méretek: 19 x 13 cm. A játékok külön kaphatóak. A megjegyzésben kérjük tüntesd fel, hogy melyik változatot szeretnéd.",
@@ -490,7 +490,7 @@ let muanyag = [
     },
     {
         nev: "Ravensburger Puzzle 2000 db Brooklynból Manhattenbe",
-        kep: "../Pictures/Jatekfegyverek/hidPuzzle.png",
+        kep: "../Pictures/Muanyag/hidPuzzle.png",
         id: 61,
         ar: 11995,
         leiras: "Ismerd meg New York legismertebb hídját a puzzle kirakásával! A Puzzle 2000 db - Brooklynból Manhattenbe készletért ódáig lesz minden utazni vágyó! A 2000 darabból álló puzzle a Brooklyn hidat ábrázolja naplementében. Keltsd életre a képet otthonodban és rakd ki a puzzle-t! Az izgalmas játékot a család összes tagja élvezni fogja. Keressétek meg az összeillő párokat és pattintsátok össze őket! A kép elkészítése közben fejlődik a koncentrációs képességetek és a logikus gondolkodásotok is. Mindegy egyes elem összeállításával közelebb kerültök a kép elkészítéséhez! Kellemes időtöltés lesz a New York-i látkép elkészítése, miközben sokat nevet együtt a család. Az elkészített műalkotást kitehetitek otthonotok díszéül, így mindig jó élményeket fog okozni, ha rá néztek. A készlet tartalmazza a 2000 db-os puzzle-t, mely a Brooklyn hidat ábrázolja. A színpompás játék összeállítását 10 éves kortól ajánljuk.",
@@ -498,7 +498,7 @@ let muanyag = [
     },
     {
         nev: "Ravensburger Puzzle 500 db Harry Potter Roxfortban",
-        kep: "../Pictures/Jatekfegyverek/HarryPotta.png",
+        kep: "../Pictures/Muanyag/HarryPotta.png",
         id: 62,
         ar: 4995,
         leiras: "Kedvenc Harry Potter sorozatod szereplőit rakhatod ki ezzel az 500 darabos kirakóval. A Ravensburger® már 1891 óta gyártja puzzle képkirakó termékeit. A több, mint 120 éves gyártói tapasztalat és a fokozott figyelem, amit a részletekre fordítanak, garantálja a minőséget. Puzzle képeik, az általuk kizárólagosan kifejlesztett, extra vastag, vászon strukturált kartonpapírból készülnek. A vágószerszámok gondos tervezése és kézzel történő kialakítása garantálja a tökéletes illeszkedést és azt, hogy nincs két egyforma puzzle darab.",
@@ -506,7 +506,7 @@ let muanyag = [
     },
     {
         nev: "Dino Puzzle 24 db - Peppa malac",
-        kep: "../Pictures/Jatekfegyverek/PeppaPuzzle.png",
+        kep: "../Pictures/Muanyag/PeppaPuzzle.png",
         id: 63,
         ar: 1995,
         leiras: "A játszóházba igyekvő Peppa malac, mozaikdarabokból kirakható képen! A Peppa malac 24 darabos puzzle George, Nagymami malac és Peppa malac képét ábrázolja, ahogy a kertben, egy játszóház előtt szórakoznak. A kirkaós kicsi kezekhez készült, a mozaikdarabok pontosan illeszkednek egymáshoz. A Peppa malac 24 darabos puzzle kirakott méretei: 26 x 18 cm.",
@@ -514,7 +514,7 @@ let muanyag = [
     },
     {
         nev: "Clementoni: 150 db-os puzzle Monster High Draculaura",
-        kep: "../Pictures/Jatekfegyverek/clementoni.png",
+        kep: "../Pictures/Muanyag/clementoni.png",
         id: 64,
         ar: 2995,
         leiras: "A Monster High Draculaura puzzle egy izgalmas és színes kirakó, amely 150 darabból áll, és a népszerű Monster High sorozat egyik kedvelt karakterét, Draculaurát ábrázolja. A kirakós játék kiváló minőségű, és a Clementoni által gyártott, garantálva a tartósságot és a részletek éles megjelenését",
@@ -681,7 +681,7 @@ let airsoftRuhazat = [
     },
     {
         nev: "Taktikai Övtáska Fekete",
-         kep: "../Pictures/AirsoftRuhazat/öv.png",
+         kep: "../Pictures/AirsoftRuhazat/övtáska.png",
          id: 84,
          ar: 9000,
          leiras: "Taktikai Övtáska Fekete hétköznapi és airsoft játékokra ajánlott. Kényelmesen lehet pakolni apró kiegészítő dolgokat, iratokat amelyeket könnyen és gyorsan elér, ha szükség van rá. Különböző elkülönített részeknek köszönhetően könnyedén tudjuk szelektálva pakolni.",
@@ -689,13 +689,104 @@ let airsoftRuhazat = [
     },
     {
         nev: "Univerzális combtok (balos) OD",
-         kep: "../Pictures/AirsoftRuhazat/öv.png",
+         kep: "../Pictures/AirsoftRuhazat/combtok.png",
          id: 85,
          ar: 6990,
          leiras: "Balkezesek számára készült pisztoly combtok. Szinte bármely típusra beállítható pisztoly combtok. A combon átfutó pántok szilikonos csíkkal rendelkeznek, hogy intenzívebb mozgás során is a helyén maradjon a tok.",
          kedvelt: false
+    },
+    {
+        nev: "MULTICAM egyenruha",
+         kep: "../Pictures/AirsoftRuhazat/terepmintasRuha.png",
+         id: 86,
+         ar: 15000,
+         leiras: "Az airsoft egyenruha az airsoft játék során használt ruházat, amely célja a játékosok védelme, kényelme és a játékélmény növelése.",
+         kedvelt: false
+    },
+    {
+        nev: "COMBAT SHIRT - FEKETE",
+         kep: "../Pictures/AirsoftRuhazat/feketeFelso.png",
+         id: 87,
+         ar: 7700,
+         leiras: "Az airsoft combat póló egy olyan ruhadarab, amelyet airsoft játékok során viselnek. Ezek a pólók olyan tulajdonságokkal rendelkezhetnek, amelyek megkönnyítik a játékot és kényelmesek a viselőjük számára.",
+         kedvelt: false
+    },
+    {
+        nev: "COMBAT NADRÁG - MULTICAM",
+         kep: "../Pictures/AirsoftRuhazat/terepGatya.png",
+         id: 88,
+         ar: 12500,
+         leiras: "Az airsoft combat nadrág egy olyan ruhadarab, amelyet airsoft játékok során használnak a kényelem és a funkcionalitás érdekében. Ezek a nadrágok airsoftra, taktikai használatra és körülményekre vannak kialakítva, és számos jellemzőjük van, amelyek hasznosak lehetnek a játékosok számára.",
+         kedvelt: false
+    },
+    {
+        nev: "COMBAT NADRÁG - FEKETE",
+         kep: "../Pictures/AirsoftRuhazat/feketeGatya.png",
+         id: 89,
+         ar: 12500,
+         leiras: "Az airsoft combat nadrág egy olyan ruhadarab, amelyet airsoft játékok során használnak a kényelem és a funkcionalitás érdekében. Ezek a nadrágok airsoftra, taktikai használatra és körülményekre vannak kialakítva, és számos jellemzőjük van, amelyek hasznosak lehetnek a játékosok számára.",
+         kedvelt: false
+    },
+    {
+        nev: "FAST PJ CFH fekete Taktikai Sisak",
+         kep: "../Pictures/AirsoftRuhazat/sisakFekete.png",
+         id: 90,
+         ar: 14990,
+         leiras: "FAST PJ CFH taktikai airsoft sisak amely modern sisakok airsoft változata amelyet könnyedén állíthatunk különböző fejméretre. Könnyű súlya ellenére kiválóan védi a felhasználót. A sisakon található szereléksínre különböző kiegészítők rakhatóak (lámpa, kamera). ",
+         kedvelt: false
+    },
+    {
+        nev: "Armored Claw Taktikai protektoros védőkesztyű",
+         kep: "../Pictures/AirsoftRuhazat/kesztyu.png",
+         id: 91,
+         ar: 7990,
+         leiras: "Airsoft felhasználásra tervezett lövész kesztyű nagyobb igénybevételre. Airsoft fegyverkezeléshez megfelelő tapadást biztosító tenyérrész. Kevlár protektorral a bütyköknél. A jól tervezett varrásoknak köszönhetően megmarad az ujjak jó tapintása, valamint kapacitív kijelzőkkel is használható a kesztyű.",
+         kedvelt: false
+    },
+    {
+        nev: "8109M High Abrasion Gloves",
+         kep: "../Pictures/AirsoftRuhazat/terepKesztyu.png",
+         id: 92,
+         ar: 16000,
+         leiras: "A MoG „Céllövészkesztyű-sorozat” számos elkötelezett és nehéz felhasználóval együtt került kifejlesztésre a különleges erőknél és a rendészeti szerveknél, a különféle környezetekben tartott kiterjedt edzések során.",
+         kedvelt: false
+    },
+    {
+        nev: "M-Tramp légiós sapka",
+         kep: "../Pictures/AirsoftRuhazat/legio.png",
+         id: 93,
+         ar: 3500,
+         leiras: "Napellenzős pamut sapka, extrém meleg időjárásra szánt. Megvéd a napsugárzástól.",
+         kedvelt: false
+    },
+    {
+        nev: "Merevített molle öv",
+         kep: "../Pictures/AirsoftRuhazat/öv.png",
+         id: 94,
+         ar: 7990,
+         leiras: "Merevített és párnázott MOLLE rendszerű málha öv amely merevített tartása miatt kényelmesen és fixen használható airsoft játékokra. Bármely MOLLE rendszerű taktikai zsebet rálehet rakni. Erős anyaga miatt jól bírja a használatot.",
+         kedvelt: false
+    },
+    {
+        nev: "Pentagon SWAT póló szürke",
+         kep: "../Pictures/AirsoftRuhazat/swat_polo.png",
+         id: 95,
+         ar: 5900,
+         leiras: "Kényelmes pamut póló a hétköznapokra. Vékony anyag, melegben is kényelmes. A ring-spun szövés miatt strapabíró.",
+         kedvelt: false
+    },
+    {
+        nev: "Fekete MA1 Bomber",
+         kep: "../Pictures/AirsoftRuhazat/bomber.png",
+         id: 96,
+         ar: 18900,
+         leiras: "Fekete bomber dzseki, az amerikai légierő hivatalos MA-1 bomber dzseki másolata, közkedvelt átmeneti kabát.",
+         kedvelt: false
     }
+
+
 ]
+
 
 let airsoftToltenyek = [
     {

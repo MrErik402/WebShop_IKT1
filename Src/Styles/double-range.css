@@ -67,6 +67,10 @@ input[type="range"]::-moz-range-thumb {
   border: none;
 }
 
+input[type="range"]::-moz-range-progress {
+  background: transparent; /* eltünteti a "kék" részt */
+}
+
 
 
 input[type="range"]::-ms-thumb {

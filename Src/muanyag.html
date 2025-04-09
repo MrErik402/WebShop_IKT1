@@ -68,43 +68,9 @@
         <div id="carousel" class="relative w-full overflow-hidden block xl:hidden">
             <div class="swiper-container mx-auto">
               <h1 class="text-center p-2 font-bold text-lg">Legkedveltebb termékek</h1>
-              <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img onclick="tekerjle(55)" id="55" src="../Pictures/Muanyag/babyGroot.png" alt="">
-                  </div>
-                  <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img onclick="tekerjle(59)" id="59" src="../Pictures/Muanyag/ejfelTorony.png" alt="">
-                  </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img onclick="tekerjle(64)" id="64" src="../Pictures/Muanyag/clementoni.png" alt="">
-                  </div>
-                  <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img onclick="tekerjle(61)" id="61" src="../Pictures/Muanyag/hidPuzzle.png" alt="">
-                  </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                  <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                    <img onclick="tekerjle(54)" id="54" src="../Pictures/Muanyag/starWars.png" alt="">
-                  </div>
-                  <div class="w-full max-w-[40vw] p-4 text-center">
-                    <img onclick="tekerjle(62)" id="62" src="../Pictures/Muanyag/HarryPotta.png" alt="">
-                  </div>
-                </div>
-                  <!-- Slide 4 -->
-                  <div class="swiper-slide flex space-x-4 mx-auto items-center self-center justify-center w-full">
-                    <div class="w-full max-w-[40vw]  md:max-w-screen-xs  p-4 text-center">
-                      <img onclick="tekerjle(50)" id="50" src="../Pictures/Muanyag/pava.png" alt="">
-                    </div>
-                    <div class="w-full max-w-[40vw] p-4 text-center">
-                      <img onclick="tekerjle(51)" id="51" src="../Pictures/Muanyag/monaLisa.png" alt="">
-                    </div>
-                  </div>
+              <div class="swiper-wrapper sliderek">
+                
+                
                 
               </div>
         
@@ -228,32 +194,11 @@
                                 <hr class="w-full">
                             </div>
 
-                            <div class="">
+                            <div class="w-full">
                                 <h1 class="indent-2 text-2xl p-2 ">Legkedveltebb termékek</h1>
-                                <div class="negydbtermek flex flex-col w-full gap-4  ">
-                                    <div class="flex ketTermek w-full justify-center gap-6  ">
-                                        <div class="border p-2 border-black/40 shadow-md shadow-black/50">
-                                          <img onclick="tekerjle(55)" id="55" src="../Pictures/Muanyag/babyGroot.png" alt="">
-                                            <h1 class="font-light text-xl">Név</h1>
-                                            <h1 class="font-bold text-lg">2 elegendő vásárló</h1>
-                                        </div>
-                                        <div class="border p-2 border-black/40 shadow-md shadow-black/50">
-                                          <img onclick="tekerjle(59)" id="59" src="../Pictures/Muanyag/ejfelTorony.png" alt="">
-                                            <h1 class="font-light text-xl">Név</h1>
-                                            <h1 class="font-bold text-lg">2 elegendő vásárló</h1>
-                                        </div>
-                                    </div>
-                                    <div class="flex ketTermek w-full justify-center gap-6">
-                                        <div class="border p-2 border-black/40 shadow-md shadow-black/50">
-                                            <img src="../Pictures/Tarsas/csordaSzellem.png" alt="" class="w-24 mx-auto">
-                                            <h1 class="font-light text-xl">Név</h1>
-                                            <h1 class="font-bold text-lg">2 elegendő vásárló</h1>
-                                        </div>
-                                        <div class="border p-2 border-black/40 shadow-md shadow-black/50">
-                                            <img src="../Pictures/Tarsas/csordaSzellem.png" alt="" class="w-24 mx-auto">
-                                            <h1 class="font-light text-xl">Név</h1>
-                                            <h1 class="font-bold text-lg">2 elegendő vásárló</h1>
-                                        </div>
+                                <div class="negydbtermek flex flex-col gap-4 ">
+                                    <div class="flex flex-wrap ketTermek justify-center gap-6  legkedveltebbpc  ">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -298,42 +243,13 @@
     <script src="./Javascript/Cart/Cart.js"></script>
     <script type="module" src="./Javascript/Products/Products.js"></script>
     
-    <script src="./swiper.js"></script>
-
-    <script>
-      let lefutottEgyszer = false;
-      var elozoId; 
-      function tekerjle(id){
-        if(!lefutottEgyszer){
-          var my_element = document.getElementById(`_${id}`);
-          my_element.scrollIntoView({
-            behavior: "smooth",
-            block: "center",
-            inline: "nearest"
-          });
-
-          my_element.style.border = "4px dashed black"
-          elozoId = id;
-          lefutottEgyszer = true;
-        }
-        else{
-          document.getElementById(`_${elozoId}`).style.border = "none"
-          var my_element2 = document.getElementById(`_${id}`);
-          my_element2.scrollIntoView({
-            behavior: "smooth",
-            block: "center",
-            inline: "nearest"
-          });
-
-          my_element2.style.border = "4px dashed black"
-          elozoId = id;
-        }
-        }
-        
-      
-    </script>
     <script src="./Javascript/termekek.js"></script>
-    <script src="../legkedveltebb.js"></script>
+    <script src="./swiper.js"></script>
+    <script src="./legkedveltebb.js"></script>
+
+    <script src="./Javascript/tekerjle.js"></script>
+    
+
   </div>
   </body>
 </html>
