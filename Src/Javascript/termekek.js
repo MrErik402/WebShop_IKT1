@@ -681,7 +681,7 @@ let airsoftRuhazat = [
     },
     {
         nev: "Taktikai Övtáska Fekete",
-         kep: "../Pictures/AirsoftRuhazat/öv.png",
+         kep: "../Pictures/AirsoftRuhazat/övtáska.png",
          id: 84,
          ar: 9000,
          leiras: "Taktikai Övtáska Fekete hétköznapi és airsoft játékokra ajánlott. Kényelmesen lehet pakolni apró kiegészítő dolgokat, iratokat amelyeket könnyen és gyorsan elér, ha szükség van rá. Különböző elkülönített részeknek köszönhetően könnyedén tudjuk szelektálva pakolni.",
@@ -689,13 +689,104 @@ let airsoftRuhazat = [
     },
     {
         nev: "Univerzális combtok (balos) OD",
-         kep: "../Pictures/AirsoftRuhazat/öv.png",
+         kep: "../Pictures/AirsoftRuhazat/combtok.png",
          id: 85,
          ar: 6990,
          leiras: "Balkezesek számára készült pisztoly combtok. Szinte bármely típusra beállítható pisztoly combtok. A combon átfutó pántok szilikonos csíkkal rendelkeznek, hogy intenzívebb mozgás során is a helyén maradjon a tok.",
          kedvelt: false
+    },
+    {
+        nev: "MULTICAM egyenruha",
+         kep: "../Pictures/AirsoftRuhazat/terepmintasRuha.png",
+         id: 86,
+         ar: 15000,
+         leiras: "Az airsoft egyenruha az airsoft játék során használt ruházat, amely célja a játékosok védelme, kényelme és a játékélmény növelése.",
+         kedvelt: false
+    },
+    {
+        nev: "COMBAT SHIRT - FEKETE",
+         kep: "../Pictures/AirsoftRuhazat/feketeFelso.png",
+         id: 87,
+         ar: 7700,
+         leiras: "Az airsoft combat póló egy olyan ruhadarab, amelyet airsoft játékok során viselnek. Ezek a pólók olyan tulajdonságokkal rendelkezhetnek, amelyek megkönnyítik a játékot és kényelmesek a viselőjük számára.",
+         kedvelt: false
+    },
+    {
+        nev: "COMBAT NADRÁG - MULTICAM",
+         kep: "../Pictures/AirsoftRuhazat/terepGatya.png",
+         id: 88,
+         ar: 12500,
+         leiras: "Az airsoft combat nadrág egy olyan ruhadarab, amelyet airsoft játékok során használnak a kényelem és a funkcionalitás érdekében. Ezek a nadrágok airsoftra, taktikai használatra és körülményekre vannak kialakítva, és számos jellemzőjük van, amelyek hasznosak lehetnek a játékosok számára.",
+         kedvelt: false
+    },
+    {
+        nev: "COMBAT NADRÁG - FEKETE",
+         kep: "../Pictures/AirsoftRuhazat/feketeGatya.png",
+         id: 89,
+         ar: 12500,
+         leiras: "Az airsoft combat nadrág egy olyan ruhadarab, amelyet airsoft játékok során használnak a kényelem és a funkcionalitás érdekében. Ezek a nadrágok airsoftra, taktikai használatra és körülményekre vannak kialakítva, és számos jellemzőjük van, amelyek hasznosak lehetnek a játékosok számára.",
+         kedvelt: false
+    },
+    {
+        nev: "FAST PJ CFH fekete Taktikai Sisak",
+         kep: "../Pictures/AirsoftRuhazat/sisakFekete.png",
+         id: 90,
+         ar: 14990,
+         leiras: "FAST PJ CFH taktikai airsoft sisak amely modern sisakok airsoft változata amelyet könnyedén állíthatunk különböző fejméretre. Könnyű súlya ellenére kiválóan védi a felhasználót. A sisakon található szereléksínre különböző kiegészítők rakhatóak (lámpa, kamera). ",
+         kedvelt: false
+    },
+    {
+        nev: "Armored Claw Taktikai protektoros védőkesztyű",
+         kep: "../Pictures/AirsoftRuhazat/kesztyu.png",
+         id: 91,
+         ar: 7990,
+         leiras: "Airsoft felhasználásra tervezett lövész kesztyű nagyobb igénybevételre. Airsoft fegyverkezeléshez megfelelő tapadást biztosító tenyérrész. Kevlár protektorral a bütyköknél. A jól tervezett varrásoknak köszönhetően megmarad az ujjak jó tapintása, valamint kapacitív kijelzőkkel is használható a kesztyű.",
+         kedvelt: false
+    },
+    {
+        nev: "8109M High Abrasion Gloves",
+         kep: "../Pictures/AirsoftRuhazat/terepKesztyu.png",
+         id: 92,
+         ar: 16000,
+         leiras: "A MoG „Céllövészkesztyű-sorozat” számos elkötelezett és nehéz felhasználóval együtt került kifejlesztésre a különleges erőknél és a rendészeti szerveknél, a különféle környezetekben tartott kiterjedt edzések során.",
+         kedvelt: false
+    },
+    {
+        nev: "M-Tramp légiós sapka",
+         kep: "../Pictures/AirsoftRuhazat/legio.png",
+         id: 93,
+         ar: 3500,
+         leiras: "Napellenzős pamut sapka, extrém meleg időjárásra szánt. Megvéd a napsugárzástól.",
+         kedvelt: false
+    },
+    {
+        nev: "Merevített molle öv",
+         kep: "../Pictures/AirsoftRuhazat/öv.png",
+         id: 94,
+         ar: 7990,
+         leiras: "Merevített és párnázott MOLLE rendszerű málha öv amely merevített tartása miatt kényelmesen és fixen használható airsoft játékokra. Bármely MOLLE rendszerű taktikai zsebet rálehet rakni. Erős anyaga miatt jól bírja a használatot.",
+         kedvelt: false
+    },
+    {
+        nev: "Pentagon SWAT póló szürke",
+         kep: "../Pictures/AirsoftRuhazat/swat_polo.png",
+         id: 95,
+         ar: 5900,
+         leiras: "Kényelmes pamut póló a hétköznapokra. Vékony anyag, melegben is kényelmes. A ring-spun szövés miatt strapabíró.",
+         kedvelt: false
+    },
+    {
+        nev: "Fekete MA1 Bomber",
+         kep: "../Pictures/AirsoftRuhazat/bomber.png",
+         id: 96,
+         ar: 18900,
+         leiras: "Fekete bomber dzseki, az amerikai légierő hivatalos MA-1 bomber dzseki másolata, közkedvelt átmeneti kabát.",
+         kedvelt: false
     }
+
+
 ]
+
 
 let airsoftToltenyek = [
     {
