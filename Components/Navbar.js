@@ -89,7 +89,7 @@ let FullNavbar = () => {
         </div>
 
                 <a href="./rolunk.html" id="rolunkGomb" class="hidden lg:block h-full">
-                    <p class="bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em] hover:dark:bg-tarsas1-dark hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl"> Rólunk</p>
+                    <p class="bg-tarsas2-light dark:bg-tarsas2-dark h-[2em] w-[5em] align-baseline text-center mr-[2em] mt-[1em] hover:dark:bg-tarsas1-dark align-baseline content-center hover:bg-tarsas1-light dark:text-white hover:dark:text-black hover:text-white rounded-2xl"> Rólunk</p>
                 </a>
             </div>
             <div id="burgerGomb" class="flex justify-center items-center w-16 mr-2 lg:hidden" onclick="burgerKattintas()" style="cursor: pointer;">

@@ -163,8 +163,16 @@
                 });
             });
         };
-    
-        
+    window.removeThisItem = function (id) {
+        if (id) {
+            const index = cart.findIndex(item => item.id === id);
+            cart.splice(index, 1); // Item törlése a kosárból
+            saveTheCart();
+            updateCartNumber();
+            popUp();
+            getCartItems();
+        }
+    }   
     window.closePopUp = function(fizetes = false){
         document.querySelector(".kosarbanLevoTermekek").innerHTML = ``;
         document.querySelector(".popUp").classList.add("hidden");
