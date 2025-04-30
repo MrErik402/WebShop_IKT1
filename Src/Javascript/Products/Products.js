@@ -99,9 +99,9 @@ window.popUp = function(){
         }).format(sum).replace(/\s/g, '\u00A0') + " Ft";
     
         document.querySelector(".kosarbanLevoTermekek").innerHTML += `
-            <div class="ring-1 ring-black/30">
+            <div class="ring-1 ring-black/30 max-w-56 min-w-56">
                 <div class="flex flex-col  item-container" data-id="${id}">
-                    <img class="p-2 min-w-24 w-full max-w-24 h-full max-h-24 min-h-24 self-center" src="${image}" alt="">
+                    <img class="p-2 min-w-24 w-24 max-w-24 max-h-24 h-24 self-center" src="${image}" alt="">
                     <h1 class="pt-2 px-1 font-thin">${nev}</h1>
                     <div class="flex gap-2 justify-between px-1 pb-2">
                         <h1 class="text-right float-right font-medium">${formattedAr} Ft</h1>
