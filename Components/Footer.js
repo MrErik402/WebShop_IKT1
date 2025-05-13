@@ -5,7 +5,7 @@ const footer = () => {
             <div id="hirlevel" class="flex flex-col w-full lg:w-1/3 px-16 gap-4">
                 <p>Iratkozzon fel a hírlevelünkre!</p>
                 <input type="email" name="" id="" placeholder="E-mail" class="rounded text-lg p-2">
-                <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end">Feliratkozás</button>
+                <button class="bg-tarsas4-light dark:bg-tarsas4-dark text-white px-6 py-2 rounded-xl self-end" onClick="alert('Sikeresen feliratkozott!')">Feliratkozás</button>
             </div>
             <div id="elerhetoseg" class="flex flex-col w-full lg:w-1/3 px-16 text-center">
                 <p class="mb-4 text-lg">Elérhetőség</p>

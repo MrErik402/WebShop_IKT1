@@ -79,12 +79,6 @@ let FullNavbar = () => {
                 </a>
                 </li>
             <div class="w-[25vh] my-2 mx-auto flex justify-center h-0.5 bg-black/70"></div>
-            <li><a href="./airsoftTolteny.html"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
-                        style="display: inline;">Töltények<img id="kepNav" src="../Pictures/Navbar/loszer.png"
-                        class="" style="display: inline">
-                </a>
-            </li>
-            <div class="w-[25vh] my-2 mx-auto flex justify-center h-0.5 bg-black/70"></div>
         </ul>
         </div>
 
@@ -143,11 +137,7 @@ let FullNavbar = () => {
                 style="display: inline;">Kiegészítők<img id="kepNav" src="../Pictures/Navbar/tavcso.png" class=""
                 style="display: inline;"></p>
             </a>
-            <a href="./airsoftTolteny.html">
-                <p class="border-b border-black p-4"><img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
-                style="display: inline;">Lőszerek<img id="kepNav" src="../Pictures/Navbar/loszer.png" class=""
-                style="display: inline;"></p>
-            </a>
+            
         </div>
         <a href="./rolunk.html">
             <div id="burgerRolunk" class="py-4 text-white">Rolunk</div>

@@ -130,7 +130,7 @@ atadottTomb.slice(7).forEach(targy => {
         <div class="border w-[15vw] max-w-xs p-2 border-black/40 shadow-md shadow-black/50">
             <img class="max-w-[10vw] mx-auto" onclick="tekerjle(${targy.id})" id="${targy.id}" src="${targy.kep}" alt="">
             <h1 class="font-light text-xl">${targy.nev}</h1>
-            <h1 class="font-bold text-lg">${szam} elegendő vásárló</h1>
+            <h1 class="font-bold text-lg">${szam} elégedett vásárló</h1>
         </div>
     `;
 });
