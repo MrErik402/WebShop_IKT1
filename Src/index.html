@@ -160,7 +160,7 @@
             getCartItems();
         }
     }   
-    window.closePopUp = function(fizetes = false){
+    window.closePopUp = function(fizetes = true){
         document.querySelector(".kosarbanLevoTermekek").innerHTML = ``;
         document.querySelector(".popUp").classList.add("hidden");
         if (fizetes) {
