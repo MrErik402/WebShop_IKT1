@@ -4,7 +4,7 @@ Ez a webshop az első féléves projektmunka feladatunk lesz. Résztvevő csapat
 # Fontos linkek
 :)
 ## Deploy
-https://docziadrian.github.io/WebShop_IKT1/Src/index.html
+[GitHub Pages](https://mrerik402.github.io/WebShop_IKT1/Src/index.html)
 
 ## JIRA 
 
